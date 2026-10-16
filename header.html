@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header v1</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg nav-background">
+      <div class="container-xxl">
+        <a class="navbar-brand" href="/">
+          <img src="assests/raachLogo.svg" alt="Logo" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse custom-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto text-center">
+            <!-- Always visible nav links -->
+            <li class="nav-item">
+              <a class="nav-link active" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="our_projects.html">Projects</a>
+            </li>
+
+            <!-- Menu Dropdown: Only visible on large devices -->
+            <li class="nav-item dropdown d-none d-lg-block">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Menu
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="about_us.html">About Us</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="build_customer_plant.html"
+                    >Build Custom Plant</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="checkout_details.html"
+                    >Checkout Details</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="company_profile.html"
+                    >Company Profile</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="company_profile_edit.html"
+                    >Company Profile Edit</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="compare_products.html"
+                    >Compare Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="my_cart_empty.html"
+                    >Empty Cart</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="my_cart.html">My Cart</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="my_profile_details.html"
+                    >My Profile Details</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="order_confirmed.html"
+                    >Order Confirmed</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="order_track.html"
+                    >Order Track</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="our_product.html"
+                    >Our Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="product_page.html"
+                    >Product Page</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_add_product.html"
+                    >Vendor Add Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_edit_product.html"
+                    >Vendor Edit Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_profile_details.html"
+                    >Vendor Profile Details</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_login.html"
+                    >Vendor Login</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_signup.html"
+                    >Vendor Signup</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- search-->
+            <li class="nav-item d-none d-lg-block">
+              <form class="search-box">
+                <div class="input-group input-group-sm mt-1">
+                  <span class="input-group-text border-0">
+                    <img src="./assests/header/search.svg" alt="" />
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control border-0 custom-search-input"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </div>
+              </form>
+            </li>
+
+            <!--cart -->
+            <button class="cart-button d-none d-lg-block">
+              <div class="cart-container">
+                <img
+                  src="./assests/header/cart.svg"
+                  alt="Cart Icon"
+                  class="cart-icon"
+                />
+                <span class="cart-count">3</span>
+                <!-- Dynamic cart count -->
+              </div>
+              <span class="mx-2">Cart</span>
+            </button>
+
+            <!-- Expanded menu: visible only on small & medium devices -->
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="about_us.html">About Us</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="build_customer_plant.html"
+                >Build Custom Plant</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="checkout_details.html"
+                >Checkout Details</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="company_profile.html"
+                >Company Profile</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="company_profile_edit.html"
+                >Company Profile Edit</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="compare_products.html"
+                >Compare Product</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="my_cart_empty.html">Empty Cart</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="my_cart.html">My Cart</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="my_profile_details.html"
+                >My Profile Details</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="order_confirmed.html"
+                >Order Confirmed</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="order_track.html">Order Track</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="our_product.html">Our Product</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="product_page.html">Product Page</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_add_product.html"
+                >Vendor Add Product</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_edit_product.html"
+                >Vendor Edit Product</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_profile_details.html"
+                >Vendor Profile Details</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_login.html">Vendor Login</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_signup.html">Vendor Signup</a>
+            </li>
+
+            <!-- search box -->
+            <li class="nav-item d-lg-none d-flex justify-content-center">
+              <form class="search-box">
+                <div class="input-group input-group-sm mt-1">
+                  <span class="input-group-text border-0">
+                    <img src="./assests/header/search.svg" alt="" />
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control border-0 custom-search-input"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </div>
+              </form>
+            </li>
+
+            <!--cart -->
+            <button class="cart-button d-flex justify-content-center d-lg-none">
+              <div class="cart-container">
+                <img
+                  src="./assests/header/cart.svg"
+                  alt="Cart Icon"
+                  class="cart-icon"
+                />
+                <span class="cart-count">3</span>
+                <!-- Dynamic cart count -->
+              </div>
+              <span class="mx-2">Cart</span>
+            </button>
+          </ul>
+
+          <div class="nav-btn-area text-center text-lg-end">
+            <span class="header-user-name">RoroNoa Zoro</span>
+            <img
+              src="./assests/header/propic.svg"
+              class="profile-img-header"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

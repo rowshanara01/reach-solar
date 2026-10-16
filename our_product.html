@@ -1,0 +1,1609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Product</title>
+    <!--swipper and others css links-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!--nav start-->
+    <nav class="navbar navbar-expand-lg nav-background">
+      <div class="container-xxl">
+        <a class="navbar-brand" href="/">
+          <img src="assests/raachLogo.svg" alt="Logo" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse custom-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto text-center">
+            <!-- Always visible nav links -->
+            <li class="nav-item">
+              <a class="nav-link active" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="our_projects.html">Projects</a>
+            </li>
+
+            <!-- Menu Dropdown: Only visible on large devices -->
+            <li class="nav-item dropdown d-none d-lg-block">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Menu
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="about_us.html">About Us</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="build_customer_plant.html"
+                    >Build Custom Plant</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="checkout_details.html"
+                    >Checkout Details</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="company_profile.html"
+                    >Company Profile</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="company_profile_edit.html"
+                    >Company Profile Edit</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="compare_products.html"
+                    >Compare Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="my_cart_empty.html"
+                    >Empty Cart</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="my_cart.html">My Cart</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="my_profile_details.html"
+                    >My Profile Details</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="order_confirmed.html"
+                    >Order Confirmed</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="order_track.html"
+                    >Order Track</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="our_product.html"
+                    >Our Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="product_page.html"
+                    >Product Page</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_add_product.html"
+                    >Vendor Add Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_edit_product.html"
+                    >Vendor Edit Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_profile_details.html"
+                    >Vendor Profile Details</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_login.html"
+                    >Vendor Login</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_signup.html"
+                    >Vendor Signup</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- search-->
+            <li class="nav-item d-none d-lg-block">
+              <form class="search-box">
+                <div class="input-group input-group-sm mt-1">
+                  <span class="input-group-text border-0">
+                    <img src="./assests/header/search.svg" alt="" />
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control border-0 custom-search-input"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </div>
+              </form>
+            </li>
+
+            <!--cart -->
+            <button class="cart-button d-none d-lg-block">
+              <div class="cart-container">
+                <img
+                  src="./assests/header/cart.svg"
+                  alt="Cart Icon"
+                  class="cart-icon"
+                />
+                <span class="cart-count">3</span>
+                <!-- Dynamic cart count -->
+              </div>
+              <span class="mx-2">Cart</span>
+            </button>
+
+            <!-- Expanded menu: visible only on small & medium devices -->
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="about_us.html">About Us</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="build_customer_plant.html"
+                >Build Custom Plant</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="checkout_details.html"
+                >Checkout Details</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="company_profile.html"
+                >Company Profile</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="company_profile_edit.html"
+                >Company Profile Edit</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="compare_products.html"
+                >Compare Product</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="my_cart_empty.html">Empty Cart</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="my_cart.html">My Cart</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="my_profile_details.html"
+                >My Profile Details</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="order_confirmed.html"
+                >Order Confirmed</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="order_track.html">Order Track</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="our_product.html">Our Product</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="product_page.html">Product Page</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_add_product.html"
+                >Vendor Add Product</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_edit_product.html"
+                >Vendor Edit Product</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_profile_details.html"
+                >Vendor Profile Details</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_login.html">Vendor Login</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_signup.html">Vendor Signup</a>
+            </li>
+
+            <!-- search box -->
+            <li class="nav-item d-lg-none d-flex justify-content-center">
+              <form class="search-box">
+                <div class="input-group input-group-sm mt-1">
+                  <span class="input-group-text border-0">
+                    <img src="./assests/header/search.svg" alt="" />
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control border-0 custom-search-input"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </div>
+              </form>
+            </li>
+
+            <!--cart -->
+            <button class="cart-button d-flex justify-content-center d-lg-none">
+              <div class="cart-container">
+                <img
+                  src="./assests/header/cart.svg"
+                  alt="Cart Icon"
+                  class="cart-icon"
+                />
+                <span class="cart-count">3</span>
+                <!-- Dynamic cart count -->
+              </div>
+              <span class="mx-2">Cart</span>
+            </button>
+          </ul>
+
+          <div class="nav-btn-area text-center text-lg-end">
+            <span class="header-user-name">RoroNoa Zoro</span>
+            <img
+              src="./assests/header/propic.svg"
+              class="profile-img-header"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--nav end-->
+    <section class="selection-bg p-4">
+      <!-- our selection-->
+      <div class="text-center">
+        <h2 class="headline-small">OUR SELECTION</h2>
+        <h1 class="headline-large">Explore Our Curated</h1>
+        <h1 class="headline-large">Products for You Today!</h1>
+      </div>
+      <!-- our selection slide div -->
+      <div class="container-xxl py-5">
+        <div class="row">
+          <!-- Left side div -->
+          <div class="col-12 col-md-6 equal-height mb-3">
+            <div class="box p-4">
+              <p class="headline-others">Most Popular</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. <br />
+                Egestas amet rhoncus in nisi ipsum dictum. <br />
+                Quam at dignissim ut diam.
+              </p>
+            </div>
+
+            <!--pannel showing div slide -->
+            <div class="pannel">
+              <div class="carousel-container">
+                <!-- Slide 1 -->
+                <div class="carousel-slide">
+                  <div class="row pannel-div mx-2">
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <div>
+                        <h5>
+                          Long Ran Monocrystalline 220W Half-Cut Solar Panel
+                          12V...
+                        </h5>
+                        <p>Price: <span class="price-font">BDT 6090</span></p>
+                      </div>
+
+                      <div class="d-flex flex-md-row gap-2">
+                        <button class="btn cube-button">Buy Now</button>
+                        <button class="btn cart-button">
+                          <img src="./assests/home/shopping.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <img
+                        class="custom-img"
+                        src="./assests/home/pannel.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-slide">
+                  <div class="row pannel-div mx-2">
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <img
+                        class="custom-img"
+                        src="./assests/home/pannel.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <div>
+                        <h5>
+                          Long Ran Monocrystalline 220W Half-Cut Solar Panel
+                          12V...
+                        </h5>
+                        <p>Price: <span class="price-font">BDT 6090</span></p>
+                      </div>
+                      <div class="d-flex flex-md-row gap-2">
+                        <button class="btn cube-button">Buy Now</button>
+                        <button class="btn cart-button">
+                          <img src="./assests/home/shopping.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-slide">
+                  <div class="row pannel-div mx-2">
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <div>
+                        <h5>
+                          Long Ran Monocrystalline 220W Half-Cut Solar Panel
+                          12V...
+                        </h5>
+                        <p>Price: <span class="price-font">BDT 6090</span></p>
+                      </div>
+
+                      <div class="d-flex flex-md-row gap-2">
+                        <button class="btn cube-button">Buy Now</button>
+                        <button class="btn cart-button">
+                          <img src="./assests/home/shopping.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <img
+                        class="custom-img"
+                        src="./assests/home/pannel.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="carousel-slide">
+                  <div class="row pannel-div mx-2">
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <img
+                        class="custom-img"
+                        src="./assests/home/pannel.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <div>
+                        <h5>
+                          Long Ran Monocrystalline 220W Half-Cut Solar Panel
+                          12V...
+                        </h5>
+                        <p>Price: <span class="price-font">BDT 6090</span></p>
+                      </div>
+                      <div class="d-flex flex-md-row gap-2">
+                        <button class="btn cube-button">Buy Now</button>
+                        <button class="btn cart-button">
+                          <img src="./assests/home/shopping.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Navigation buttons -->
+                <button class="prev-btn" onclick="moveSlide('prev')">
+                  &#10094;
+                </button>
+                <button class="next-btn" onclick="moveSlide('next')">
+                  &#10095;
+                </button>
+              </div>
+            </div>
+            <!--pannel showing div slide end -->
+          </div>
+
+          <!-- Right side div, split into two sub-divs for small screens and above -->
+          <div class="col-12 col-md-6 d-flex flex-column">
+            <!--box1-->
+            <div class="box box1 mb-3">
+              <div class="row mx-2 d-flex">
+                <div class="col-12 col-md-6 col-lg-6">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <img
+                      class="w-100"
+                      src="./assests/home/bestSeller.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                  <div class="my-lg-5">
+                    <p class="headline-others">Best Seller</p>
+                    <p>
+                      Lorem ipsum dolor sit amet consect consectetur. Egestas
+                      amet rhoncus in nisi ipsum dictum. Quam at dignissim ut
+                      diam.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--box2-->
+            <div class="box box2">
+              <div class="row mx-2">
+                <div class="col-12 col-md-6">
+                  <div class="my-lg-4">
+                    <p class="headline-others">New Arrival</p>
+                    <p>
+                      Lorem ipsum dolor sit amet consect consectetur. Egestas
+                      amet rhoncus in nisi ipsum dictum. Quam at dignissim ut
+                      diam.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <img
+                      class="custom-img1"
+                      src="./assests/home/newArrival.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--categories and product slide -->
+    <section class="categories-bg pt-5">
+      <!--categories-->
+      <div class="text-center">
+        <p class="headline-small">CATEGORIES</p>
+        <p class="headline-large">Discover solar solutions</p>
+        <p class="headline-large">tailored to your needs</p>
+      </div>
+
+      <!--solar panel slide start -->
+      <section class="home-service container-xxl">
+        <div class="home-client-slider-container">
+          <div class="row">
+            <div class="slide-container swiper">
+              <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                  <!--slide 1 -->
+                  <div class="card swiper-slide">
+                    <div class="row g-0 p-3">
+                      <div class="col-lg-6 col-md-6 col-12 p-3">
+                        <h4>Solar Panels</h4>
+                        <p>
+                          A solar panel is a device that converts sunlight into
+                          electricity using photovoltaic cells. Made up of
+                          silicon or other materials, these cells capture solar
+                          energy and generate direct current (DC) electricity,
+                          which is then converted into usable alternating
+                          current (AC) for homes or businesses. Solar panels are
+                          an eco-friendly, renewable energy solution that helps
+                          reduce reliance on fossil fuels and lowers electricity
+                          costs.
+                        </p>
+                        <!--buttons-->
+                        <div class="d-flex flex-md-row gap-3">
+                          <button class="btn cube-button">Buy Now</button>
+                          <button class="btn cart-button">
+                            <img src="./assests/home/shopping.svg" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-12">
+                        <img
+                          class="p-3"
+                          src="./assests/home/solarPanel.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--slide 2 -->
+                  <div class="card swiper-slide">
+                    <div class="row g-0 p-3">
+                      <div class="col-lg-6 col-md-6 col-12">
+                        <img
+                          class="p-3"
+                          src="./assests/home/solarPanel.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-12 p-3">
+                        <h4>Solar Panels</h4>
+                        <p>
+                          A solar panel is a device that converts sunlight into
+                          electricity using photovoltaic cells. Made up of
+                          silicon or other materials, these cells capture solar
+                          energy and generate direct current (DC) electricity,
+                          which is then converted into usable alternating
+                          current (AC) for homes or businesses. Solar panels are
+                          an eco-friendly, renewable energy solution that helps
+                          reduce reliance on fossil fuels and lowers electricity
+                          costs.
+                        </p>
+                        <div class="d-flex flex-md-row gap-3">
+                          <button class="btn cube-button">Buy Now</button>
+                          <button class="btn cart-button">
+                            <img src="./assests/home/shopping.svg" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--slide 3 -->
+                  <div class="card swiper-slide">
+                    <div class="row g-0 p-3">
+                      <div class="col-lg-6 col-md-6 col-12 p-3">
+                        <h4>Solar Panels</h4>
+                        <p>
+                          A solar panel is a device that converts sunlight into
+                          electricity using photovoltaic cells. Made up of
+                          silicon or other materials, these cells capture solar
+                          energy and generate direct current (DC) electricity,
+                          which is then converted into usable alternating
+                          current (AC) for homes or businesses. Solar panels are
+                          an eco-friendly, renewable energy solution that helps
+                          reduce reliance on fossil fuels and lowers electricity
+                          costs.
+                        </p>
+                        <div class="d-flex flex-md-row gap-3">
+                          <button class="btn cube-button">Buy Now</button>
+                          <button class="btn cart-button">
+                            <img src="./assests/home/shopping.svg" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-12">
+                        <img
+                          class="p-3"
+                          src="./assests/home/solarPanel.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--slide 4-->
+                  <div class="card swiper-slide">
+                    <div class="row g-0 p-3">
+                      <div class="col-lg-6 col-md-6 col-12">
+                        <img
+                          class="p-3"
+                          src="./assests/home/solarPanel.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-12 p-3">
+                        <h4>Solar Panels</h4>
+                        <p>
+                          A solar panel is a device that converts sunlight into
+                          electricity using photovoltaic cells. Made up of
+                          silicon or other materials, these cells capture solar
+                          energy and generate direct current (DC) electricity,
+                          which is then converted into usable alternating
+                          current (AC) for homes or businesses. Solar panels are
+                          an eco-friendly, renewable energy solution that helps
+                          reduce reliance on fossil fuels and lowers electricity
+                          costs.
+                        </p>
+                        <div class="d-flex flex-md-row gap-3">
+                          <button class="btn cube-button">Buy Now</button>
+                          <button class="btn cart-button">
+                            <img src="./assests/home/shopping.svg" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-button-next swiper-navBtn"></div>
+              <div class="swiper-button-prev swiper-navBtn"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--solar panel slide end -->
+
+      <!--product slide start-->
+      <div class="home-service ">
+        <div class="container-fluid service-slider-container">
+          <!-- Swiper -->
+          <div style="overflow-x: hidden; margin-top: -150px">
+            <div class="display-half">
+              <div class="swiper service-slider">
+                <div class="swiper-wrapper">
+                  <!-- 1 -->
+                  <div class="card swiper-slide h-100">
+                    <div class="card-content">
+                      <p class="description">
+                        <img
+                          class="product-img-custom"
+                          src="./assests/home/fuses.svg"
+                          alt=""
+                        />
+                        <p class="text-center fw-bold">Fuses and <br> Circuit Breakers</p>
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="card swiper-slide h-100">
+                    <div class="card-content">
+                      <p class="description">
+                        <img
+                          class="product-img-custom"
+                          src="./assests/home/combinerbox.svg"
+                          alt=""
+                        />
+                        <p class="text-center fw-bold">Combiner <br>Boxes</p>
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 3 -->
+                  <div class="card swiper-slide h-100">
+                    <div class="card-content">
+                      <p class="description">
+                        <img
+                          class="product-img-custom"
+                          src="./assests/home/wiring.svg"
+                          alt=""
+                        />
+                        <p class="text-center fw-bold">Cables and <br> Wiring</p>
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 4 -->
+                  <div class="card swiper-slide h-100">
+                    <div class="card-content">
+                      <p class="description">
+                        <img
+                          class="product-img-custom"
+                          src="./assests/home/mounting.svg"
+                          alt=""
+                        />
+                        <p class="text-center fw-bold">Mounting <br> Structures</p>
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 5 -->
+                  <div class="card swiper-slide h-100">
+                    <div class="card-content">
+                      <p class="description">
+                        <img
+                          class="product-img-custom"
+                          src="./assests/home/fuses.svg"
+                          alt=""
+                        />
+                        <p class="text-center fw-bold">Fuses and <br> Circuit Breakers</p>
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 6 -->
+                  <div class="card swiper-slide h-100">
+                    <div class="card-content">
+                      <p class="description">
+                        <img
+                          class="product-img-custom"
+                          src="./assests/home/combinerbox.svg"
+                          alt=""
+                        />
+                        <p class="text-center fw-bold">Combiner <br>Boxes</p>
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 7 -->
+                  <div class="card swiper-slide h-100 ">
+                    <div class="card-content ">
+                      <p class="description">
+                        <img
+                          class="product-img-custom"
+                          src="./assests/home/wiring.svg"
+                          alt=""
+                        />
+                        <p class="text-center fw-bold">Cables and <br> Wiring</p>
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 8 -->
+                  <div class="card swiper-slide h-100">
+                    <div class="card-content">
+                      <p class="description">
+                        <img
+                          class="product-img-custom "
+                          src="./assests/home/mounting.svg"
+                          alt=""
+                        />
+                        <p class="text-center fw-bold">Mounting <br> Structures</p>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--product slide end-->
+
+      <!--OUR PRODUCTS div-->
+      <div class="container-fluid p-3 pb-4">
+        <!--headline-->
+        <div class="text-center">
+            <p class="headline-small">OUR PRODUCTS</p>
+            <p class="headline-large">We Bring You the Best</p>
+            <p class="headline-large">Products in Town</p>
+        </div>
+        
+        <!--others-->
+        <div class="row">
+            <!-- Left Sidebar (Visible only on Large Screens) -->
+            <div class="col-lg-4 d-none d-lg-block">
+              <div class="px-3 ">
+                <div class="div-head">
+                    Filter
+                </div>
+                <!--search-->
+                <div class="filter-custom-div mt-4">
+                    <p class="fw-bold">Search</p>
+                    <div class="input-wrapper">
+                        <img src="./assests/products/search.svg" alt="Search" class="search-icon">
+                        <div class="divider"></div>
+                        <input type="text" class="custom-input" placeholder="Search...">
+                    </div>                    
+                </div>
+                <!--categories-->
+                <div class="filter-custom-div mt-4">
+                    <p class="fw-bold">Categories</p>
+                    <div class="btn-container">
+                        <button class="custom-button_unselect">Fuses and Circuit Breakers</button>
+                        <button class="custom-button_unselect">Solar Panels</button>
+                        <button class="custom-button_unselect">Inverters</button>
+                        <button class="custom-button_unselect">Mounting Structures</button>
+                        <button class="custom-button_unselect">Transformers</button>
+                        <button class="custom-button_unselect">Solar Batteries</button>
+                        <button class="custom-button_unselect">Combiner Boxes</button>
+                        <button class="custom-button_unselect">Monitoring Systems</button>
+                        <button class="custom-button_unselect">Power Conditioning Units (PCU)</button>
+                        <button class="custom-button_select">Charge Controllers</button>
+                        <button class="custom-button_unselect">Cables and Wiring</button>
+                        <button class="custom-button_unselect">Surge Protection Devices (SPDs)</button>
+                        <button class="custom-button_unselect">Grounding Equipment</button>
+                        <button class="custom-button_unselect">Storage System</button>
+                    </div>
+                </div>
+                <!--status-->
+                <div class="filter-custom-div mt-4">
+                    <p class="fw-bold">Status</p>
+                    <div class="btn-container">
+                        <button class="custom-button_unselect">Most Popular</button>
+                        <button class="custom-button_select">On Sale</button>
+                        <button class="custom-button_unselect">Best Seller</button>
+                        <button class="custom-button_unselect">New Arrivals</button>
+                    </div>
+                </div>
+                <!--price-range-->
+                <div class="filter-custom-div mt-4">
+                  <p class="fw-bold">Price</p>
+
+                  <!-- Example single danger button -->
+                  <select class="form-select currency-btn" aria-label="Default select example">
+                    <option selected>Currency </option>
+                    <option value="1">Us Dollar</option>
+                    <option value="2">BDT</option>
+                    <option value="3">Rupee</option>
+                  </select>
+
+                  <!--price-->
+                  <div class="price-range mt-4">
+                    <div class="wrapper">
+                      <div class="slider">
+                        <div class="progress"></div>
+                      </div>
+                      <div class="range-input">
+                        <input type="range" class="range-min" min="0" max="10000" value="2500" step="100" />
+                        <input type="range" class="range-max" min="0" max="10000" value="7500" step="100" />
+                      </div>
+                      <div class="price-input d-flex justify-content-between">
+                        <div class="field mb-2">
+                          <span>Min Price</span>
+                          <input type="number" class="input-min" value="2500" readonly />
+                        </div>
+                        <div class="field mb-2">
+                          <span>Max Price</span>
+                          <input type="number" class="input-max" value="7500" readonly />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
+                </div>
+
+                <!--companies-->
+                <div class="filter-custom-div mt-4">
+                  <p class="fw-bold">Companies</p>
+                  <!--search field-->
+                  <div class="input-wrapper">
+                      <img src="./assests/header/search.svg" alt="Search" class="search-icon">
+                      <div class="divider"></div>
+                      <input type="text" class="custom-input" placeholder="Search...">
+                  </div>   
+                  
+                  <!--companies-->
+                  <div class="input-wrapper mt-3">
+                    <img src="./assests/products/flu.svg" alt="Search" class="company-logo">
+                    <span class="mx-3">Art Amour</span>
+                  </div>
+
+                  <div class="input-wrapper mt-3">
+                    <img src="./assests/products/bloom.svg" alt="Search" class="company-logo">
+                    <span class="mx-3">Impact Form</span>
+                  </div>
+
+                  <div class="input-wrapper custom-div-select mt-3">
+                    <img src="./assests/products/first.svg" alt="Search" class="company-logo">
+                    <span class="mx-3">Fashion Voice</span>
+                  </div>
+
+                  <div class="input-wrapper mt-3">
+                    <img src="./assests/products/image.svg" alt="Search" class="company-logo">
+                    <span class="mx-3">Doodle Mark</span>
+                  </div>
+                  
+              </div>
+
+              </div>
+            </div>
+        
+            <!-- Right Content (Always Visible) -->
+            <div class="col-lg-8 col-12">
+                <div class="div-head d-flex align-items-center justify-content-between">
+                    <button class="btn d-lg-none custom-btn-offcanvas" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidebar">
+                        <img class="filter-img" src="./assests/products/filter.svg" alt=""> 
+                        <span class="px-2">Filter</span> 
+                    </button>                    
+                    <span class="mx-2 text-center flex-grow-1">Showing 125 items</span>
+                </div>
+                
+              <div class="p-3  ">
+                <!--cards-->
+                <div class="row row-cols-1 row-cols-md-3 g-4 ">
+                    <!--card 1-->
+                    <div class="col">
+                      <div class="card favourite-card h-100">
+                        <!-- Best Seller Badge -->
+                        <div class="best-seller-badge">Best Seller</div>
+                        <img
+                          src="./assests/profile/f1.svg"
+                          class="card-img-top mt-5"
+                          alt="..."
+                        />
+                        <div class="card-body">
+                          <div class="star">
+                            <img src="./assests/profile/star.svg" alt="" />
+                            <span class="mx-2">4.67</span>
+                          </div>
+                          <h6 class="card-title mt-3">
+                            Long Ran Monocrystalline 220W Half-Cut Solar Panel
+                            12V...
+                          </h6>
+                          <p class="card-text"> <p> seller: <span class="seller">RAACH Solar</span> </p> </p>
+                          <p class="card-text"> <p> seller: <span class="regular-price">BDT 6090</span> <span class="discount text-decoration-line-through mx-2"> BDT 8700 </span> </p> </p>
+                          <!--buttons-->
+                          <div class="d-flex justify-content-center align-items-center flex-md-row gap-3">
+                              <!--cart-->
+                              <button class="btn cart-button">
+                                  <img src="./assests/home/shopping.svg" alt="" />
+                              </button>
+                              <!--Buy Now-->
+                              <button class="btn cube-button">Buy Now</button>
+                              <!--heart icon button-->
+                              <button class="btn cart-button">
+                                  <img src="./assests/profile/heart.svg" alt="" />
+                              </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--card 2-->
+                    <div class="col">
+                      <div class="card favourite-card h-100">
+                        <!-- 30% Off -->
+                        <div class="off-badge">30% Off</div>
+                        <img
+                          src="./assests/profile/f2.svg"
+                          class="card-img-top mt-5"
+                          alt="..."
+                        />
+                        <div class="card-body">
+                          <div class="star">
+                            <img src="./assests/profile/star.svg" alt="" />
+                            <span class="mx-2">4.67</span>
+                          </div>
+                          <h6 class="card-title mt-3">
+                            Long Ran Monocrystalline 220W Half-Cut Solar Panel
+                            12V...
+                          </h6>
+                          <p class="card-text"> <p> seller: <span class="seller">RAACH Solar</span> </p> </p>
+                          <p class="card-text"> <p> seller: <span class="regular-price">BDT 6090</span> <span class="discount text-decoration-line-through mx-2"> BDT 8700 </span> </p> </p>
+                          <!--buttons-->
+                          <div class="d-flex justify-content-center align-items-center flex-md-row gap-3">
+                              <!--cart-->
+                              <button class="btn cart-button">
+                                  <img src="./assests/home/shopping.svg" alt="" />
+                              </button>
+                              <!--Buy Now-->
+                              <button class="btn cube-button">Buy Now</button>
+                              <!--heart icon button-->
+                              <button class="btn cart-button">
+                                  <img src="./assests/profile/heart.svg" alt="" />
+                              </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--card 3-->
+                    <div class="col">
+                      <div class="card favourite-card h-100">
+                        <!-- 30% Off -->
+                        <div class="off-badge">30% Off</div>
+                        <img
+                          src="./assests/profile/f3.svg"
+                          class="card-img-top mt-5"
+                          alt="..."
+                        />
+                        <div class="card-body">
+                          <div class="star">
+                            <img src="./assests/profile/star.svg" alt="" />
+                            <span class="mx-2">4.67</span>
+                          </div>
+                          <h6 class="card-title mt-3">
+                            Long Ran Monocrystalline 220W Half-Cut Solar Panel
+                            12V...
+                          </h6>
+                          <p class="card-text"> <p> seller: <span class="seller">RAACH Solar</span> </p> </p>
+                          <p class="card-text"> <p> seller: <span class="regular-price">BDT 6090</span> <span class="discount text-decoration-line-through mx-2"> BDT 8700 </span> </p> </p>
+                          <!--buttons-->
+                          <div class="d-flex justify-content-center align-items-center flex-md-row gap-3">
+                              <!--cart-->
+                              <button class="btn cart-button">
+                                  <img src="./assests/home/shopping.svg" alt="" />
+                              </button>
+                              <!--Buy Now-->
+                              <button class="btn cube-button">Buy Now</button>
+                              <!--heart icon button-->
+                              <button class="btn cart-button">
+                                  <img src="./assests/profile/heart.svg" alt="" />
+                              </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--card 4-->
+                    <div class="col">
+                      <div class="card favourite-card h-100">
+                        
+                        <img
+                          src="./assests/profile/f4.svg"
+                          class="card-img-top mt-5"
+                          alt="..."
+                        />
+                        <div class="card-body">
+                          <div class="star">
+                            <img src="./assests/profile/star.svg" alt="" />
+                            <span class="mx-2">4.67</span>
+                          </div>
+                          <h6 class="card-title mt-3">
+                            Long Ran Monocrystalline 220W Half-Cut Solar Panel
+                            12V...
+                          </h6>
+                          <p class="card-text"> <p> seller: <span class="seller">RAACH Solar</span> </p> </p>
+                          <p class="card-text"> <p> seller: <span class="regular-price">BDT 6090</span> <span class="discount text-decoration-line-through mx-2"> BDT 8700 </span> </p> </p>
+                          <!--buttons-->
+                          <div class="d-flex justify-content-center align-items-center flex-md-row gap-3">
+                              <!--cart-->
+                              <button class="btn cart-button">
+                                  <img src="./assests/home/shopping.svg" alt="" />
+                              </button>
+                              <!--Buy Now-->
+                              <button class="btn cube-button">Buy Now</button>
+                              <!--heart icon button-->
+                              <button class="btn cart-button">
+                                  <img src="./assests/profile/heart.svg" alt="" />
+                              </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--card 5-->
+                    <div class="col">
+                      <div class="card favourite-card h-100">
+                        <!-- 30% Off -->
+                        <div class="off-badge">30% Off</div>
+                        <img
+                          src="./assests/profile/f5.svg"
+                          class="card-img-top mt-5"
+                          alt="..."
+                        />
+                        <div class="card-body">
+                          <div class="star">
+                            <img src="./assests/profile/star.svg" alt="" />
+                            <span class="mx-2">4.67</span>
+                          </div>
+                          <h6 class="card-title mt-3">
+                            Long Ran Monocrystalline 220W Half-Cut Solar Panel
+                            12V...
+                          </h6>
+                          <p class="card-text"> <p> seller: <span class="seller">RAACH Solar</span> </p> </p>
+                          <p class="card-text"> <p> seller: <span class="regular-price">BDT 6090</span> <span class="discount text-decoration-line-through mx-2"> BDT 8700 </span> </p> </p>
+                          <!--buttons-->
+                          <div class="d-flex justify-content-center align-items-center flex-md-row gap-3">
+                              <!--cart-->
+                              <button class="btn cart-button">
+                                  <img src="./assests/home/shopping.svg" alt="" />
+                              </button>
+                              <!--Buy Now-->
+                              <button class="btn cube-button">Buy Now</button>
+                              <!--heart icon button-->
+                              <button class="btn cart-button">
+                                  <img src="./assests/profile/heart.svg" alt="" />
+                              </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--6-->
+                    <div class="col">
+                        <div class="card favourite-card h-100">
+                          
+                          <img
+                            src="./assests/products/pr1.svg"
+                            class="card-img-top mt-5"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <div class="star">
+                              <img src="./assests/profile/star.svg" alt="" />
+                              <span class="mx-2">4.67</span>
+                            </div>
+                            <h6 class="card-title mt-3">
+                              Long Ran Monocrystalline 220W Half-Cut Solar Panel
+                              12V...
+                            </h6>
+                            <p class="card-text"> <p> seller: <span class="seller">RAACH Solar</span> </p> </p>
+                            <p class="card-text"> <p> seller: <span class="regular-price">BDT 6090</span> <span class="discount text-decoration-line-through mx-2"> BDT 8700 </span> </p> </p>
+                            <!--buttons-->
+                            <div class="d-flex justify-content-center align-items-center flex-md-row gap-3">
+                                <!--cart-->
+                                <button class="btn cart-button">
+                                    <img src="./assests/home/shopping.svg" alt="" />
+                                </button>
+                                <!--Buy Now-->
+                                <button class="btn cube-button">Buy Now</button>
+                                <!--heart icon button-->
+                                <button class="btn cart-button">
+                                    <img src="./assests/profile/heart.svg" alt="" />
+                                </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <!--7-->
+                    <div class="col">
+                        <div class="card favourite-card h-100">
+                          
+                          <img
+                            src="./assests/products/pr2.svg"
+                            class="card-img-top mt-5"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <div class="star">
+                              <img src="./assests/profile/star.svg" alt="" />
+                              <span class="mx-2">4.67</span>
+                            </div>
+                            <h6 class="card-title mt-3">
+                              Long Ran Monocrystalline 220W Half-Cut Solar Panel
+                              12V...
+                            </h6>
+                            <p class="card-text"> <p> seller: <span class="seller">RAACH Solar</span> </p> </p>
+                            <p class="card-text"> <p> seller: <span class="regular-price">BDT 6090</span> <span class="discount text-decoration-line-through mx-2"> BDT 8700 </span> </p> </p>
+                            <!--buttons-->
+                            <div class="d-flex justify-content-center align-items-center flex-md-row gap-3">
+                                <!--cart-->
+                                <button class="btn cart-button">
+                                    <img src="./assests/home/shopping.svg" alt="" />
+                                </button>
+                                <!--Buy Now-->
+                                <button class="btn cube-button">Buy Now</button>
+                                <!--heart icon button-->
+                                <button class="btn cart-button">
+                                    <img src="./assests/profile/heart.svg" alt="" />
+                                </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--8-->
+                      <div class="col">
+                        <div class="card favourite-card h-100">
+                          <!-- Best Seller Badge -->
+                          <div class="best-seller-badge">Best Seller</div>
+                          <img
+                            src="./assests/products/pr3.svg"
+                            class="card-img-top mt-5"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <div class="star">
+                              <img src="./assests/profile/star.svg" alt="" />
+                              <span class="mx-2">4.67</span>
+                            </div>
+                            <h6 class="card-title mt-3">
+                              Long Ran Monocrystalline 220W Half-Cut Solar Panel
+                              12V...
+                            </h6>
+                            <p class="card-text"> <p> seller: <span class="seller">RAACH Solar</span> </p> </p>
+                            <p class="card-text"> <p> seller: <span class="regular-price">BDT 6090</span> <span class="discount text-decoration-line-through mx-2"> BDT 8700 </span> </p> </p>
+                            <!--buttons-->
+                            <div class="d-flex justify-content-center align-items-center flex-md-row gap-3">
+                                <!--cart-->
+                                <button class="btn cart-button">
+                                    <img src="./assests/home/shopping.svg" alt="" />
+                                </button>
+                                <!--Buy Now-->
+                                <button class="btn cube-button">Buy Now</button>
+                                <!--heart icon button-->
+                                <button class="btn cart-button">
+                                    <img src="./assests/profile/heart.svg" alt="" />
+                                </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--9-->
+                      <div class="col">
+                        <div class="card favourite-card h-100">
+                          <!-- 30% Off -->
+                          <div class="off-badge">30% Off</div>
+                          <img
+                            src="./assests/products/pr4.svg"
+                            class="card-img-top mt-5"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <div class="star">
+                              <img src="./assests/profile/star.svg" alt="" />
+                              <span class="mx-2">4.67</span>
+                            </div>
+                            <h6 class="card-title mt-3">
+                              Long Ran Monocrystalline 220W Half-Cut Solar Panel
+                              12V...
+                            </h6>
+                            <p class="card-text"> <p> seller: <span class="seller">RAACH Solar</span> </p> </p>
+                            <p class="card-text"> <p> seller: <span class="regular-price">BDT 6090</span> <span class="discount text-decoration-line-through mx-2"> BDT 8700 </span> </p> </p>
+                            <!--buttons-->
+                            <div class="d-flex justify-content-center align-items-center flex-md-row gap-3">
+                                <!--cart-->
+                                <button class="btn cart-button">
+                                    <img src="./assests/home/shopping.svg" alt="" />
+                                </button>
+                                <!--Buy Now-->
+                                <button class="btn cube-button">Buy Now</button>
+                                <!--heart icon button-->
+                                <button class="btn cart-button">
+                                    <img src="./assests/profile/heart.svg" alt="" />
+                                </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--10-->
+                      <div class="col">
+                        <div class="card favourite-card h-100">
+                          <!-- 30% Off -->
+                          <div class="off-badge">30% Off</div>
+                          <img
+                            src="./assests/profile/f4.svg"
+                            class="card-img-top mt-5"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <div class="star">
+                              <img src="./assests/profile/star.svg" alt="" />
+                              <span class="mx-2">4.67</span>
+                            </div>
+                            <h6 class="card-title mt-3">
+                              Long Ran Monocrystalline 220W Half-Cut Solar Panel
+                              12V...
+                            </h6>
+                            <p class="card-text"> <p> seller: <span class="seller">RAACH Solar</span> </p> </p>
+                            <p class="card-text"> <p> seller: <span class="regular-price">BDT 6090</span> <span class="discount text-decoration-line-through mx-2"> BDT 8700 </span> </p> </p>
+                            <!--buttons-->
+                            <div class="d-flex justify-content-center align-items-center flex-md-row gap-3">
+                                <!--cart-->
+                                <button class="btn cart-button">
+                                    <img src="./assests/home/shopping.svg" alt="" />
+                                </button>
+                                <!--Buy Now-->
+                                <button class="btn cube-button">Buy Now</button>
+                                <!--heart icon button-->
+                                <button class="btn cart-button">
+                                    <img src="./assests/profile/heart.svg" alt="" />
+                                </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--11-->
+                      <div class="col">
+                        <div class="card favourite-card h-100">
+                          <img
+                            src="./assests/profile/f1.svg"
+                            class="card-img-top mt-5"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <div class="star">
+                              <img src="./assests/profile/star.svg" alt="" />
+                              <span class="mx-2">4.67</span>
+                            </div>
+                            <h6 class="card-title mt-3">
+                              Long Ran Monocrystalline 220W Half-Cut Solar Panel
+                              12V...
+                            </h6>
+                            <p class="card-text"> <p> seller: <span class="seller">RAACH Solar</span> </p> </p>
+                            <p class="card-text"> <p> seller: <span class="regular-price">BDT 6090</span> <span class="discount text-decoration-line-through mx-2"> BDT 8700 </span> </p> </p>
+                            <!--buttons-->
+                            <div class="d-flex justify-content-center align-items-center flex-md-row gap-3">
+                                <!--cart-->
+                                <button class="btn cart-button">
+                                    <img src="./assests/home/shopping.svg" alt="" />
+                                </button>
+                                <!--Buy Now-->
+                                <button class="btn cube-button">Buy Now</button>
+                                <!--heart icon button-->
+                                <button class="btn cart-button">
+                                    <img src="./assests/profile/heart.svg" alt="" />
+                                </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--12-->
+                      <div class="col">
+                        <div class="card favourite-card h-100">
+                          <img
+                            src="./assests/profile/f3.svg"
+                            class="card-img-top mt-5"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <div class="star">
+                              <img src="./assests/profile/star.svg" alt="" />
+                              <span class="mx-2">4.67</span>
+                            </div>
+                            <h6 class="card-title mt-3">
+                              Long Ran Monocrystalline 220W Half-Cut Solar Panel
+                              12V...
+                            </h6>
+                            <p class="card-text"> <p> seller: <span class="seller">RAACH Solar</span> </p> </p>
+                            <p class="card-text"> <p> seller: <span class="regular-price">BDT 6090</span> <span class="discount text-decoration-line-through mx-2"> BDT 8700 </span> </p> </p>
+                            <!--buttons-->
+                            <div class="d-flex justify-content-center align-items-center flex-md-row gap-3">
+                                <!--cart-->
+                                <button class="btn cart-button">
+                                    <img src="./assests/home/shopping.svg" alt="" />
+                                </button>
+                                <!--Buy Now-->
+                                <button class="btn cube-button">Buy Now</button>
+                                <!--heart icon button-->
+                                <button class="btn cart-button">
+                                    <img src="./assests/profile/heart.svg" alt="" />
+                                </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                </div>
+                <!--cards end-->
+              </div>
+            </div>
+        </div>
+
+      </div>
+      <!-- Offcanvas (Replaces Sidebar on Small & Medium Screens) -->
+      <div class="offcanvas offcanvas-end offcanvas-div" tabindex="-1" id="offcanvasSidebar">
+        <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Filter</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <!--offcanvas menu-->
+        <div class="offcanvas-body">
+          <div class="">
+            <div class="p-3 ">
+              <div class="div-head">
+                  Filter
+              </div>
+              <!--search-->
+              <div class="filter-custom-div mt-4">
+                  <p class="fw-bold">Search</p>
+                  <div class="input-wrapper">
+                      <img src="./assests/products/search.svg" alt="Search" class="search-icon">
+                      <div class="divider"></div>
+                      <input type="text" class="custom-input" placeholder="Search...">
+                  </div>                    
+              </div>
+              <!--categories-->
+              <div class="filter-custom-div mt-4">
+                  <p class="fw-bold">Categories</p>
+                  <div class="btn-container">
+                      <button class="custom-button_unselect">Fuses and Circuit Breakers</button>
+                      <button class="custom-button_unselect">Solar Panels</button>
+                      <button class="custom-button_unselect">Inverters</button>
+                      <button class="custom-button_unselect">Mounting Structures</button>
+                      <button class="custom-button_unselect">Transformers</button>
+                      <button class="custom-button_unselect">Solar Batteries</button>
+                      <button class="custom-button_unselect">Combiner Boxes</button>
+                      <button class="custom-button_unselect">Monitoring Systems</button>
+                      <button class="custom-button_unselect">Power Conditioning Units (PCU)</button>
+                      <button class="custom-button_select">Charge Controllers</button>
+                      <button class="custom-button_unselect">Cables and Wiring</button>
+                      <button class="custom-button_unselect">Surge Protection Devices (SPDs)</button>
+                      <button class="custom-button_unselect">Grounding Equipment</button>
+                      <button class="custom-button_unselect">Storage System</button>
+                  </div>
+              </div>
+              <!--status-->
+              <div class="filter-custom-div mt-4">
+                  <p class="fw-bold">Status</p>
+                  <div class="btn-container">
+                      <button class="custom-button_unselect">Most Popular</button>
+                      <button class="custom-button_select">On Sale</button>
+                      <button class="custom-button_unselect">Best Seller</button>
+                      <button class="custom-button_unselect">New Arrivals</button>
+                  </div>
+              </div>
+              <!--price range-->
+              <div class="filter-custom-div mt-4">
+                <p class="fw-bold">Price</p>
+
+                <!-- Example single danger button -->
+                <select class="form-select currency-btn" aria-label="Default select example">
+                  <option selected>Currency </option>
+                  <option value="1">Us Dollar</option>
+                  <option value="2">BDT</option>
+                  <option value="3">Rupee</option>
+                </select>
+
+                <!--price-->
+                <div class="price-range mt-4">
+                  <div class="wrapper">
+                    <div class="slider">
+                      <div class="progress"></div>
+                    </div>
+                    <div class="range-input">
+                      <input
+                        type="range"
+                        class="range-min"
+                        min="0"
+                        max="10000"
+                        value="2500"
+                        step="100"
+                      />
+                      <input
+                        type="range"
+                        class="range-max"
+                        min="0"
+                        max="10000"
+                        value="7500"
+                        step="100"
+                      />
+                    </div>
+
+
+                    <div class="price-input d-flex justify-content-between ">
+                      <div class="field mb-2">
+                        <span>Min Price</span>
+                        <input type="number" class="input-min" value="2500" readonly />
+                      </div>
+                    
+                      <div class="field mb-2">
+                        <span>Max Price</span>
+                        <input type="number" class="input-max" value="7500" readonly />
+                      </div>
+                    </div>
+                    
+
+                  </div>
+                </div>
+                
+              </div>
+
+              <!--companies-->
+              <div class="filter-custom-div mt-4">
+                <p class="fw-bold">Search</p>
+                <!--search field-->
+                <div class="input-wrapper">
+                    <img src="./assests/header/search.svg" alt="Search" class="search-icon">
+                    <div class="divider"></div>
+                    <input type="text" class="custom-input" placeholder="Search...">
+                </div>   
+                
+                <!--companies-->
+                <div class="input-wrapper mt-3">
+                  <img src="./assests/products/flu.svg" alt="Search" class="company-logo">
+                  <span class="mx-3">Art Amour</span>
+                </div>
+
+                <div class="input-wrapper mt-3">
+                  <img src="./assests/products/bloom.svg" alt="Search" class="company-logo">
+                  <span class="mx-3">Impact Form</span>
+                </div>
+
+                <div class="input-wrapper custom-div-select mt-3">
+                  <img src="./assests/products/first.svg" alt="Search" class="company-logo">
+                  <span class="mx-3">Fashion Voice</span>
+                </div>
+
+                <div class="input-wrapper mt-3">
+                  <img src="./assests/products/image.svg" alt="Search" class="company-logo">
+                  <span class="mx-3">Doodle Mark</span>
+                </div>
+                
+            </div>
+
+            </div>
+          </div>
+
+            
+        </div>
+      </div>
+      <!--OUR PRODUCTS div end -->
+
+      <!--pagination-->
+      <div class="container pb-5">
+        <nav>
+            <ul class="pagination">
+                <li><span class="disabled">« First</span></li>
+                <li><span class="disabled">‹ Previous</span></li>
+                <li><span class="active">1</span></li>
+                <li><a href="#">2</a></li>
+                <li class="ellipsis"><span>.</span></li>
+                <li class="ellipsis"><span>.</span></li>
+                <li class="ellipsis"><span>.</span></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">Next ›</a></li>
+                <li><a href="#">Last »</a></li>
+            </ul>
+        </nav>
+      </div>
+
+    </section>
+
+    <!--footer start-->
+    <section class="footer">
+      <div class="container mx-auto text-center">
+        <img src="assests/raachLogo.svg" alt="Logo" class="" />
+        <p class="mt-4">
+          At interdum pellentesque odio faucibus. Nibh tempor in id ultricies
+          orci morbi sit mi id. <br />
+          Arcu sed vestibulum liber sed vestibulum liber sed vestibulum .
+        </p>
+
+        <p class="fw-bold">Contact Us</p>
+        <p>
+          <span> <img src="./assests/footer/envelope.svg" alt="" /></span>
+          info@ourhoneybee.eu
+        </p>
+
+        <div>
+          <img src="./assests/footer/Facebook.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/instagram.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/linkedin.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/x.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/other.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/youtube.svg" alt="" class="mx-2" />
+        </div>
+        <hr class="custom-hr" />
+        <div>
+          <p>
+            Copyright © 2024
+            <span class="footer-text"> RAACH Solar </span>
+            <span class="mx-2">Powered by</span>
+            <span class="fw-bold">© 2024 RAACH Solar</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--footer end-->
+
+    <!--js files-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/range.js"></script>
+  </body>
+</html>

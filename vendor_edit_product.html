@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vendor Edit Product</title>
+    <!--swipper and others css links-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!--nav start-->
+    <nav class="navbar navbar-expand-lg nav-background">
+      <div class="container-xxl">
+        <a class="navbar-brand" href="/">
+          <img src="assests/raachLogo.svg" alt="Logo" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse custom-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto text-center">
+            <!-- Always visible nav links -->
+            <li class="nav-item">
+              <a class="nav-link active" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="our_projects.html">Projects</a>
+            </li>
+
+            <!-- Menu Dropdown: Only visible on large devices -->
+            <li class="nav-item dropdown d-none d-lg-block">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Menu
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="about_us.html">About Us</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="build_customer_plant.html"
+                    >Build Custom Plant</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="checkout_details.html"
+                    >Checkout Details</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="company_profile.html"
+                    >Company Profile</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="company_profile_edit.html"
+                    >Company Profile Edit</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="compare_products.html"
+                    >Compare Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="my_cart_empty.html"
+                    >Empty Cart</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="my_cart.html">My Cart</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="my_profile_details.html"
+                    >My Profile Details</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="order_confirmed.html"
+                    >Order Confirmed</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="order_track.html"
+                    >Order Track</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="our_product.html"
+                    >Our Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="product_page.html"
+                    >Product Page</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_add_product.html"
+                    >Vendor Add Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_edit_product.html"
+                    >Vendor Edit Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_profile_details.html"
+                    >Vendor Profile Details</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_login.html"
+                    >Vendor Login</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_signup.html"
+                    >Vendor Signup</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- search-->
+            <li class="nav-item d-none d-lg-block">
+              <form class="search-box">
+                <div class="input-group input-group-sm mt-1">
+                  <span class="input-group-text border-0">
+                    <img src="./assests/header/search.svg" alt="" />
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control border-0 custom-search-input"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </div>
+              </form>
+            </li>
+
+            <!--cart -->
+            <button class="cart-button d-none d-lg-block">
+              <div class="cart-container">
+                <img
+                  src="./assests/header/cart.svg"
+                  alt="Cart Icon"
+                  class="cart-icon"
+                />
+                <span class="cart-count">3</span>
+                <!-- Dynamic cart count -->
+              </div>
+              <span class="mx-2">Cart</span>
+            </button>
+
+            <!-- Expanded menu: visible only on small & medium devices -->
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="about_us.html">About Us</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="build_customer_plant.html"
+                >Build Custom Plant</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="checkout_details.html"
+                >Checkout Details</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="company_profile.html"
+                >Company Profile</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="company_profile_edit.html"
+                >Company Profile Edit</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="compare_products.html"
+                >Compare Product</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="my_cart_empty.html">Empty Cart</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="my_cart.html">My Cart</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="my_profile_details.html"
+                >My Profile Details</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="order_confirmed.html"
+                >Order Confirmed</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="order_track.html">Order Track</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="our_product.html">Our Product</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="product_page.html">Product Page</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_add_product.html"
+                >Vendor Add Product</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_edit_product.html"
+                >Vendor Edit Product</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_profile_details.html"
+                >Vendor Profile Details</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_login.html">Vendor Login</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_signup.html">Vendor Signup</a>
+            </li>
+
+            <!-- search box -->
+            <li class="nav-item d-lg-none d-flex justify-content-center">
+              <form class="search-box">
+                <div class="input-group input-group-sm mt-1">
+                  <span class="input-group-text border-0">
+                    <img src="./assests/header/search.svg" alt="" />
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control border-0 custom-search-input"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </div>
+              </form>
+            </li>
+
+            <!--cart -->
+            <button class="cart-button d-flex justify-content-center d-lg-none">
+              <div class="cart-container">
+                <img
+                  src="./assests/header/cart.svg"
+                  alt="Cart Icon"
+                  class="cart-icon"
+                />
+                <span class="cart-count">3</span>
+                <!-- Dynamic cart count -->
+              </div>
+              <span class="mx-2">Cart</span>
+            </button>
+          </ul>
+
+          <div class="nav-btn-area text-center text-lg-end">
+            <span class="header-user-name">RoroNoa Zoro</span>
+            <img
+              src="./assests/header/propic.svg"
+              class="profile-img-header"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--nav end-->
+
+    <section class="login-page-background">
+      <div class="login-background pt-5">
+        <div class="container-xxl">
+          <div class="row d-flex justify-content-center align-items-center">
+            <!--img-->
+            <div class="col-12 col-md-6 col-lg-6">
+              <img
+                class="w-100"
+                src="./assests/add_edit_product/addbanner.svg"
+                alt=""
+              />
+              <p class="welcome mt-3"> Edit Product</p>
+              <p class="text-center">
+                We're thrilled to have you here. To access your account, kindly
+                provide your username and password. Your security is our top
+                priority, so rest assured that your information is safe with us.
+              </p>
+            </div>
+            <!--form-->
+            <div class="col-12 col-md-6 col-lg-6">
+              <p class="signup-in-headline"> Edit Product</p>
+              <div class="login-card">
+                <form class="">
+                  <!--one product input-->
+                  <div class="d-flex justify-content-center">
+                    <div>
+                      <!--product name-->
+                      <div class="d-flex align-items-center mt-4 mb-3">
+                        <!-- Left Image -->
+                        <img
+                          src="./assests/add_edit_product/solar.svg"
+                          alt=""
+                          class="styled-img"
+                        />
+
+                        <!-- Input Group -->
+                        <div
+                          class="ms-2 input-group custom-input-group form-floating"
+                        >
+                          <span class="input-group-text left-icon">
+                            <img
+                              src="./assests/add_edit_product/pen.svg"
+                              alt="User Icon"
+                            />
+                          </span>
+                          <div class="form-floating flex-grow-1">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="floatingInput"
+                              placeholder="Email "
+                              value="Long Ran Monocrystalline 220W Half-Cut Solar Panel 12V pretium donec nib "
+                              aria-label="Username"
+                              required
+                            />
+                            <label for="floatingInput">
+                              Name of Product
+                              <span>
+                                <img
+                                  src="./assests/vendor_signup/hexa.svg"
+                                  alt=""
+                                />
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <!--product description-->
+                      <div
+                        class="input-group custom-input-group form-floating mb-3"
+                      >
+                        <span class="input-group-text left-icon">
+                          <img
+                            src="./assests/add_edit_product/note-text.svg"
+                            alt="User Icon"
+                          />
+                        </span>
+                        <div class="form-floating flex-grow-1">
+                          <textarea
+                            class="form-control textarea-fixed"
+                            id="floatingTextarea"
+                            placeholder="Enter product details"
+                            aria-label="Product Name"
+                            required
+                          >
+Long Ran Monocrystalline 220W Half-Cut Solar Panel 12V pretium donec nib</textarea
+                          >
+                          <label for="floatingTextarea">
+                            Product Description
+                            <span>
+                              <img
+                                src="./assests/vendor_signup/hexa.svg"
+                                alt=""
+                              />
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                      <!--price and discount-->
+                      <div class="d-flex gap-3">
+                        <div
+                          class="input-group custom-input-group form-floating"
+                        >
+                          <span class="input-group-text left-icon">
+                            <img
+                              src="./assests/add_edit_product/dollar-square.svg"
+                              alt="User Icon"
+                            />
+                          </span>
+                          <div class="form-floating flex-grow-1">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="floatingInput"
+                              placeholder="Email "
+                              value="$1234 "
+                              aria-label="Username"
+                              required
+                            />
+                            <label for="floatingInput">
+                              Unit Price
+                              <span>
+                                <img
+                                  src="./assests/vendor_signup/hexa.svg"
+                                  alt=""
+                                />
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                        <!--discount-->
+                        <div
+                          class="input-group custom-input-group form-floating"
+                        >
+                          <span class="input-group-text left-icon">
+                            <img
+                              src="./assests/add_edit_product/square.svg"
+                              alt="User Icon"
+                            />
+                          </span>
+                          <div class="form-floating flex-grow-1">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="floatingInput"
+                              placeholder="Email "
+                              value="20%"
+                              aria-label="Username"
+                              required
+                            />
+                            <label for="floatingInput">
+                              Discount
+                              <span>
+                                <img
+                                  src="./assests/vendor_signup/hexa.svg"
+                                  alt=""
+                                />
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!--file upload-->
+                      <div
+                        class="d-flex mt-3 justify-content-center align-items-center gap-3"
+                      >
+                        <!--1-->
+                        <img
+                          src="./assests/add_edit_product/pannel.svg"
+                          alt=""
+                          class="styled-img"
+                        />
+                        <!--2-->
+                        <div>
+                          <!-- Upload Box -->
+                          <label
+                            for="fileInput"
+                            class="upload-box"
+                            id="uploadBox"
+                          >
+                            <img
+                              src="./assests/add_edit_product/refresh.svg"
+                              alt="Upload Icon"
+                              class="upload-icon"
+                            />
+                          </label>
+
+                          <!-- Hidden File Input -->
+                          <input
+                            type="file"
+                            id="fileInput"
+                            class="file-input"
+                            accept="image/*"
+                          />
+
+                          <!-- Dropdown Menu -->
+                          <div class="dropdown-menu" id="dropdownMenu">
+                            <a href="#" id="replaceImage">Replace</a>
+                            <a href="#" id="deleteImage" class="delete-btn"
+                              >Delete</a
+                            >
+                          </div>
+                        </div>
+
+                        <!--3-->
+                        <div class="d-flex align-items-center gap-2">
+                          <!-- Upload Box -->
+                          <label for="fileInput" class="upload-box">
+                            <img
+                              src="./assests/add_edit_product/gallery-add.svg"
+                              alt="Upload Icon"
+                              class="upload-icon"
+                            />
+                          </label>
+
+                          <!-- Hidden File Input -->
+                          <input
+                            type="file"
+                            id="fileInput"
+                            class="file-input"
+                          />
+                        </div>
+                        <!--4-->
+                        <div class="d-flex align-items-center gap-2">
+                          <!-- Upload Box -->
+                          <label for="fileInput" class="upload-box">
+                            <img
+                              src="./assests/add_edit_product/gallery-add.svg"
+                              alt="Upload Icon"
+                              class="upload-icon"
+                            />
+                          </label>
+
+                          <!-- Hidden File Input -->
+                          <input
+                            type="file"
+                            id="fileInput"
+                            class="file-input"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--2nd product add-->
+
+                  <div class="d-flex justify-content-center gap-3 mt-4">
+                    <div>
+                      <!--product name-->
+                      <div class="d-flex align-items-center mt-4 mb-3">
+                        <!-- Left Image -->
+                        <img
+                          src="./assests/add_edit_product/pannel.svg"
+                          alt=""
+                          class="styled-img"
+                        />
+
+                        <!-- Input Group -->
+                        <div
+                          class="ms-2 input-group custom-input-group form-floating"
+                        >
+                          <span class="input-group-text left-icon">
+                            <img
+                              src="./assests/add_edit_product/pen.svg"
+                              alt="User Icon"
+                            />
+                          </span>
+                          <div class="form-floating flex-grow-1">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="floatingInput"
+                              placeholder="Email "
+                              value=""
+                              aria-label="Username"
+                              required
+                            />
+                            <label for="floatingInput">
+                              Name of Product
+                              <span>
+                                <img
+                                  src="./assests/vendor_signup/hexa.svg"
+                                  alt=""
+                                />
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <!--product description-->
+                      <div
+                        class="input-group custom-input-group form-floating mb-3"
+                      >
+                        <span class="input-group-text left-icon">
+                          <img
+                            src="./assests/add_edit_product/note-text.svg"
+                            alt="User Icon"
+                          />
+                        </span>
+                        <div class="form-floating flex-grow-1">
+                          <textarea
+                            class="form-control textarea-fixed"
+                            id="floatingTextarea"
+                            placeholder="Enter product details"
+                            aria-label="Product Name"
+                            required
+                          ></textarea>
+                          <label for="floatingTextarea">
+                            Product Description
+                            <span>
+                              <img
+                                src="./assests/vendor_signup/hexa.svg"
+                                alt=""
+                              />
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                      <!--price and discount-->
+                      <div class="d-flex gap-3">
+                        <div
+                          class="input-group custom-input-group form-floating"
+                        >
+                          <span class="input-group-text left-icon">
+                            <img
+                              src="./assests/add_edit_product/dollar-square.svg"
+                              alt="User Icon"
+                            />
+                          </span>
+                          <div class="form-floating flex-grow-1">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="floatingInput"
+                              placeholder="Email "
+                              value=""
+                              aria-label="Username"
+                              required
+                            />
+                            <label for="floatingInput">
+                              Unit Price
+                              <span>
+                                <img
+                                  src="./assests/vendor_signup/hexa.svg"
+                                  alt=""
+                                />
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                        <!--discount-->
+                        <div
+                          class="input-group custom-input-group form-floating"
+                        >
+                          <span class="input-group-text left-icon">
+                            <img
+                              src="./assests/add_edit_product/square.svg"
+                              alt="User Icon"
+                            />
+                          </span>
+                          <div class="form-floating flex-grow-1">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="floatingInput"
+                              placeholder="Email "
+                              value=""
+                              aria-label="Username"
+                              required
+                            />
+                            <label for="floatingInput">
+                              Discount
+                              <span>
+                                <img
+                                  src="./assests/vendor_signup/hexa.svg"
+                                  alt=""
+                                />
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!--file upload-->
+                      <div
+                        class="d-flex mt-3 justify-content-center align-items-center gap-3"
+                      >
+                        <!--1-->
+                        <div class="d-flex align-items-center gap-2">
+                          <!-- Upload Box -->
+                          <label for="fileInput" class="upload-box">
+                            <img
+                              src="./assests/add_edit_product/gallery-add.svg"
+                              alt="Upload Icon"
+                              class="upload-icon"
+                            />
+                          </label>
+
+                          <!-- Hidden File Input -->
+                          <input
+                            type="file"
+                            id="fileInput"
+                            class="file-input"
+                          />
+                        </div>
+                        <!--2-->
+                        <div class="d-flex align-items-center gap-2">
+                          <!-- Upload Box -->
+                          <label for="fileInput" class="upload-box">
+                            <img
+                              src="./assests/add_edit_product/gallery-add.svg"
+                              alt="Upload Icon"
+                              class="upload-icon"
+                            />
+                          </label>
+
+                          <!-- Hidden File Input -->
+                          <input
+                            type="file"
+                            id="fileInput"
+                            class="file-input"
+                          />
+                        </div>
+
+                        <!--3-->
+                        <div class="d-flex align-items-center gap-2">
+                          <!-- Upload Box -->
+                          <label for="fileInput" class="upload-box">
+                            <img
+                              src="./assests/add_edit_product/gallery-add.svg"
+                              alt="Upload Icon"
+                              class="upload-icon"
+                            />
+                          </label>
+
+                          <!-- Hidden File Input -->
+                          <input
+                            type="file"
+                            id="fileInput"
+                            class="file-input"
+                          />
+                        </div>
+                        <!--4-->
+                        <div class="d-flex align-items-center gap-2">
+                          <!-- Upload Box -->
+                          <label for="fileInput" class="upload-box">
+                            <img
+                              src="./assests/add_edit_product/gallery-add.svg"
+                              alt="Upload Icon"
+                              class="upload-icon"
+                            />
+                          </label>
+
+                          <!-- Hidden File Input -->
+                          <input
+                            type="file"
+                            id="fileInput"
+                            class="file-input"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--add more, complete button-->
+                  <div
+                    class="mt-4 mb-4 d-flex flex-column flex-md-row gap-3 justify-content-center align-items-center"
+                  >
+                    <button class="btn watch-button px-4">Add More</button>
+                    <button class="btn cube-button px-4">Complete</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--js files-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

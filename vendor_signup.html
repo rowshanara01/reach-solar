@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vendor Signup</title>
+    <!--swipper and others css links-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!--nav start-->
+    <nav class="navbar navbar-expand-lg nav-background">
+      <div class="container-xxl">
+        <a class="navbar-brand" href="/">
+          <img src="assests/raachLogo.svg" alt="Logo" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse custom-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto text-center">
+            <!-- Always visible nav links -->
+            <li class="nav-item">
+              <a class="nav-link active" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="our_projects.html">Projects</a>
+            </li>
+
+            <!-- Menu Dropdown: Only visible on large devices -->
+            <li class="nav-item dropdown d-none d-lg-block">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Menu
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="about_us.html">About Us</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="build_customer_plant.html"
+                    >Build Custom Plant</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="checkout_details.html"
+                    >Checkout Details</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="company_profile.html"
+                    >Company Profile</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="company_profile_edit.html"
+                    >Company Profile Edit</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="compare_products.html"
+                    >Compare Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="my_cart_empty.html"
+                    >Empty Cart</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="my_cart.html">My Cart</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="my_profile_details.html"
+                    >My Profile Details</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="order_confirmed.html"
+                    >Order Confirmed</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="order_track.html"
+                    >Order Track</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="our_product.html"
+                    >Our Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="product_page.html"
+                    >Product Page</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_add_product.html"
+                    >Vendor Add Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_edit_product.html"
+                    >Vendor Edit Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_profile_details.html"
+                    >Vendor Profile Details</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_login.html"
+                    >Vendor Login</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_signup.html"
+                    >Vendor Signup</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- search-->
+            <li class="nav-item d-none d-lg-block">
+              <form class="search-box">
+                <div class="input-group input-group-sm mt-1">
+                  <span class="input-group-text border-0">
+                    <img src="./assests/header/search.svg" alt="" />
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control border-0 custom-search-input"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </div>
+              </form>
+            </li>
+
+            <!--cart -->
+            <button class="cart-button d-none d-lg-block">
+              <div class="cart-container">
+                <img
+                  src="./assests/header/cart.svg"
+                  alt="Cart Icon"
+                  class="cart-icon"
+                />
+                <span class="cart-count">3</span>
+                <!-- Dynamic cart count -->
+              </div>
+              <span class="mx-2">Cart</span>
+            </button>
+
+            <!-- Expanded menu: visible only on small & medium devices -->
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="about_us.html">About Us</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="build_customer_plant.html"
+                >Build Custom Plant</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="checkout_details.html"
+                >Checkout Details</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="company_profile.html"
+                >Company Profile</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="company_profile_edit.html"
+                >Company Profile Edit</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="compare_products.html"
+                >Compare Product</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="my_cart_empty.html">Empty Cart</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="my_cart.html">My Cart</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="my_profile_details.html"
+                >My Profile Details</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="order_confirmed.html"
+                >Order Confirmed</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="order_track.html">Order Track</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="our_product.html">Our Product</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="product_page.html">Product Page</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_add_product.html"
+                >Vendor Add Product</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_edit_product.html"
+                >Vendor Edit Product</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_profile_details.html"
+                >Vendor Profile Details</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_login.html">Vendor Login</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_signup.html">Vendor Signup</a>
+            </li>
+
+            <!-- search box -->
+            <li class="nav-item d-lg-none d-flex justify-content-center">
+              <form class="search-box">
+                <div class="input-group input-group-sm mt-1">
+                  <span class="input-group-text border-0">
+                    <img src="./assests/header/search.svg" alt="" />
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control border-0 custom-search-input"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </div>
+              </form>
+            </li>
+
+            <!--cart -->
+            <button class="cart-button d-flex justify-content-center d-lg-none">
+              <div class="cart-container">
+                <img
+                  src="./assests/header/cart.svg"
+                  alt="Cart Icon"
+                  class="cart-icon"
+                />
+                <span class="cart-count">3</span>
+                <!-- Dynamic cart count -->
+              </div>
+              <span class="mx-2">Cart</span>
+            </button>
+          </ul>
+
+          <div class="nav-btn-area text-center text-lg-end">
+            <span class="header-user-name">RoroNoa Zoro</span>
+            <img
+              src="./assests/header/propic.svg"
+              class="profile-img-header"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--nav end-->
+
+    <section class="login-page-background">
+      <div class="login-background pt-5">
+        <div class="container-xxl">
+          <div class="row d-flex justify-content-center align-items-center">
+            <!--img-->
+            <div class="col-12 col-md-6 col-lg-6">
+              <img class="w-100" src="./assests/login/login.svg" alt="" />
+              <p class="welcome mt-3">Sell Your Product</p>
+              <p class="text-center">
+                We're thrilled to have you here. To access your account, kindly
+                provide your username and password. Your security is our top
+                priority, so rest assured that your information is safe with us.
+              </p>
+            </div>
+            <!--form-->
+            <div class="col-12 col-md-6 col-lg-6">
+              <p class="signup-in-headline">Create Account to Sell Product</p>
+              <div class="login-card">
+                <form>
+                  <!--full name-->
+                  <div
+                    class="input-group custom-input-group form-floating mb-3 mt-5"
+                  >
+                    <span class="input-group-text left-icon">
+                      <img src="./assests/login/user.svg" alt="User Icon" />
+                    </span>
+                    <div class="form-floating flex-grow-1">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="Email "
+                        value="Andrew Sims "
+                        aria-label="Username"
+                        required
+                      />
+                      <label for="floatingInput"
+                        >Your Full Name
+                        <span
+                          ><img src="./assests/vendor_signup/hexa.svg" alt=""
+                        /></span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <!--email address-->
+                  <div
+                    class="input-group custom-input-group form-floating mb-3"
+                  >
+                    <span class="input-group-text left-icon">
+                      <img src="./assests/login/email.svg" alt="User Icon" />
+                    </span>
+                    <div class="form-floating flex-grow-1">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="Email "
+                        value="andrew.sims@email.com"
+                        aria-label="Username"
+                        required
+                      />
+                      <label for="floatingInput">Email Address</label>
+                    </div>
+                  </div>
+
+                  <!--password-->
+                  <div
+                    class="input-group custom-input-group form-floating mb-3"
+                  >
+                    <span class="input-group-text left-icon">
+                      <img src="./assests/login/lock.svg" alt="User Icon" />
+                    </span>
+                    <div class="form-floating flex-grow-1">
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="Enter your password"
+                        value=""
+                        aria-label="Username"
+                        required
+                      />
+                      <label for="floatingInput">
+                        Create a Password
+                        <span
+                          ><img src="./assests/vendor_signup/hexa.svg" alt=""
+                        /></span>
+                      </label>
+                    </div>
+                    <span class="input-group-text">
+                      <button type="button" class="toggle-password toggle-btn">
+                        <img
+                          src="./assests/login/eye-close.svg"
+                          alt="Eye Icon"
+                        />
+                      </button>
+                    </span>
+                  </div>
+
+                  <!--confirm password-->
+                  <div
+                    class="input-group custom-input-group form-floating mb-3"
+                  >
+                    <span class="input-group-text left-icon">
+                      <img
+                        src="./assests/login/confirmlock.svg"
+                        alt="User Icon"
+                      />
+                    </span>
+                    <div class="form-floating flex-grow-1">
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="Enter your password"
+                        value=""
+                        aria-label="Username"
+                        required
+                      />
+                      <label for="floatingInput"
+                        >Confirm Password
+                        <span
+                          ><img src="./assests/vendor_signup/hexa.svg" alt=""
+                        /></span>
+                      </label>
+                    </div>
+                    <span class="input-group-text">
+                      <button type="button" class="toggle-password toggle-btn">
+                        <img
+                          src="./assests/login/eye-close.svg"
+                          alt="Eye Icon"
+                        />
+                      </button>
+                    </span>
+                  </div>
+
+                  <!--phone number-->
+                  <div
+                    class="input-group custom-input-group form-floating mb-3"
+                  >
+                    <span class="input-group-text left-icon">
+                      <img
+                        src="./assests/vendor_signup/phone.svg"
+                        alt="User Icon"
+                      />
+                    </span>
+                    <div class="form-floating flex-grow-1">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="Email "
+                        aria-label="Username"
+                        required
+                      />
+                      <label for="floatingInput"
+                        >Phone Number
+                        <span
+                          ><img src="./assests/vendor_signup/hexa.svg" alt=""
+                        /></span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <!--bank name -->
+                  <div
+                    class="input-group custom-input-group form-floating mb-3"
+                  >
+                    <span class="input-group-text left-icon">
+                      <img
+                        src="./assests/vendor_signup/bank.svg"
+                        alt="User Icon"
+                      />
+                    </span>
+                    <div class="form-floating flex-grow-1">
+                      <select
+                        class="form-select"
+                        id="floatingSelectGrid"
+                        aria-label="Floating label select example"
+                      >
+                        <option selected>Select the bank</option>
+                        <option value="1">One Bank</option>
+                        <option value="2">Brac Bank</option>
+                        <option value="3">Janata Bank</option>
+                      </select>
+                      <label for="floatingInput"
+                        >Bank Name
+                        <span
+                          ><img src="./assests/vendor_signup/hexa.svg" alt=""
+                        /></span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <!--branch name-->
+                  <div
+                    class="input-group custom-input-group form-floating mb-3"
+                  >
+                    <span class="input-group-text left-icon">
+                      <img
+                        src="./assests/vendor_signup/tick.svg"
+                        alt="User Icon"
+                      />
+                    </span>
+                    <div class="form-floating flex-grow-1">
+                      <select
+                        class="form-select"
+                        id="floatingSelectGrid"
+                        aria-label="Floating label select example"
+                      >
+                        <option selected>Select the name of the branch</option>
+                        <option value="1">Gulshan</option>
+                        <option value="2">Uttara</option>
+                        <option value="3">Banani</option>
+                      </select>
+                      <label for="floatingInput"
+                        >Name of the Branch
+                        <span
+                          ><img src="./assests/vendor_signup/hexa.svg" alt=""
+                        /></span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <!--account holder name-->
+                  <div
+                    class="input-group custom-input-group form-floating mb-3"
+                  >
+                    <span class="input-group-text left-icon">
+                      <img
+                        src="./assests/vendor_signup/user-octagon.svg"
+                        alt="User Icon"
+                      />
+                    </span>
+                    <div class="form-floating flex-grow-1">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="Bank account holder’s name "
+                        aria-label="Username"
+                        required
+                      />
+                      <label for="floatingInput"
+                        >Account Holder’s Name
+                        <span
+                          ><img src="./assests/vendor_signup/hexa.svg" alt=""
+                        /></span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <!--account number-->
+                  <div
+                    class="input-group custom-input-group form-floating mb-3"
+                  >
+                    <span class="input-group-text left-icon">
+                      <img
+                        src="./assests/vendor_signup/card-tick.svg"
+                        alt="User Icon"
+                      />
+                    </span>
+                    <div class="form-floating flex-grow-1">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="Bank account holder’s name "
+                        aria-label="Username"
+                        required
+                      />
+                      <label for="floatingInput"
+                        >Account Number
+                        <span
+                          ><img src="./assests/vendor_signup/hexa.svg" alt=""
+                        /></span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <!--remember me part-->
+                  <div class="remember">
+                    <div class="terms">
+                      <input
+                        type="checkbox"
+                        class="checkBox"
+                        id="check"
+                        required
+                      />
+                      <label for="check"
+                        >I hereby accept your
+                        <a class="login-link" href="#">Terms of Service</a>
+                      </label>
+                    </div>
+                  </div>
+
+                  <!--login button-->
+                  <div
+                    class="mt-4 mb-4 d-flex flex-column flex-md-row gap-3 justify-content-center align-items-center"
+                  >
+                    <button class="btn watch-button px-4">
+                      Create Account
+                    </button>
+                    <button class="btn cube-button px-4">
+                      Confirm & Add Product
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--js files-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

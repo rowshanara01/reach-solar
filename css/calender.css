@@ -1,0 +1,91 @@
+.calendar-container {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 300px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.meeting-details {
+  flex: 1;
+  padding-right: 10px;
+}
+
+.meeting-details h5 {
+  font-weight: bold;
+}
+
+.meeting-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.calendar {
+  flex: 2;
+  text-align: center;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  color: #864e2c;
+}
+
+.calendar-header button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.calendar-days div {
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.calendar-days div:hover {
+  background: rgba(134, 78, 44, 0.1);
+}
+
+.selected {
+  background: #864e2c !important;
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .calendar-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .meeting-details {
+    padding-right: 0;
+    margin-bottom: 10px;
+  }
+}

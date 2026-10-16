@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RAACH Solar</title>
+    <!--swipper and others css links-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!--nav start-->
+    <nav class="navbar navbar-expand-lg nav-background">
+      <div class="container-xxl">
+        <a class="navbar-brand" href="/">
+          <img src="assests/raachLogo.svg" alt="Logo" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse custom-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto text-center">
+            <!-- Always visible nav links -->
+            <li class="nav-item">
+              <a class="nav-link active" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="our_projects.html">Projects</a>
+            </li>
+
+            <!-- Menu Dropdown: Only visible on large devices -->
+            <li class="nav-item dropdown d-none d-lg-block">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Menu
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="about_us.html">About Us</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="build_customer_plant.html"
+                    >Build Custom Plant</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="checkout_details.html"
+                    >Checkout Details</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="company_profile.html"
+                    >Company Profile</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="company_profile_edit.html"
+                    >Company Profile Edit</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="compare_products.html"
+                    >Compare Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="my_cart_empty.html"
+                    >Empty Cart</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="my_cart.html">My Cart</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="my_profile_details.html"
+                    >My Profile Details</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="order_confirmed.html"
+                    >Order Confirmed</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="order_track.html"
+                    >Order Track</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="our_product.html"
+                    >Our Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="product_page.html"
+                    >Product Page</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_add_product.html"
+                    >Vendor Add Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_edit_product.html"
+                    >Vendor Edit Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_profile_details.html"
+                    >Vendor Profile Details</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_login.html"
+                    >Vendor Login</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_signup.html"
+                    >Vendor Signup</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- search-->
+            <li class="nav-item d-none d-lg-block">
+              <form class="search-box">
+                <div class="input-group input-group-sm mt-1">
+                  <span class="input-group-text border-0">
+                    <img src="./assests/header/search.svg" alt="" />
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control border-0 custom-search-input"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </div>
+              </form>
+            </li>
+
+            <!--cart -->
+            <button class="cart-button d-none d-lg-block">
+              <div class="cart-container">
+                <img
+                  src="./assests/header/cart.svg"
+                  alt="Cart Icon"
+                  class="cart-icon"
+                />
+                <span class="cart-count">3</span>
+                <!-- Dynamic cart count -->
+              </div>
+              <span class="mx-2">Cart</span>
+            </button>
+
+            <!-- Expanded menu: visible only on small & medium devices -->
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="about_us.html">About Us</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="build_customer_plant.html"
+                >Build Custom Plant</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="checkout_details.html"
+                >Checkout Details</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="company_profile.html"
+                >Company Profile</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="company_profile_edit.html"
+                >Company Profile Edit</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="compare_products.html"
+                >Compare Product</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="my_cart_empty.html">Empty Cart</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="my_cart.html">My Cart</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="my_profile_details.html"
+                >My Profile Details</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="order_confirmed.html"
+                >Order Confirmed</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="order_track.html">Order Track</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="our_product.html">Our Product</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="product_page.html">Product Page</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_add_product.html"
+                >Vendor Add Product</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_edit_product.html"
+                >Vendor Edit Product</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_profile_details.html"
+                >Vendor Profile Details</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_login.html">Vendor Login</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_signup.html">Vendor Signup</a>
+            </li>
+
+            <!-- search box -->
+            <li class="nav-item d-lg-none d-flex justify-content-center">
+              <form class="search-box">
+                <div class="input-group input-group-sm mt-1">
+                  <span class="input-group-text border-0">
+                    <img src="./assests/header/search.svg" alt="" />
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control border-0 custom-search-input"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </div>
+              </form>
+            </li>
+
+            <!--cart -->
+            <button class="cart-button d-flex justify-content-center d-lg-none">
+              <div class="cart-container">
+                <img
+                  src="./assests/header/cart.svg"
+                  alt="Cart Icon"
+                  class="cart-icon"
+                />
+                <span class="cart-count">3</span>
+                <!-- Dynamic cart count -->
+              </div>
+              <span class="mx-2">Cart</span>
+            </button>
+          </ul>
+
+          <div class="nav-btn-area text-center text-lg-end">
+            <a href="login.html" class="login-btn btn ms-2">Login</a>
+            <a href="signup.html" class="create-account-btn btn">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--nav end-->
+
+    <!--bannar start-->
+    <div class="container-fluid top-background">
+      <br /><br /><br /><br />
+      <div class="container-xxl mx-auto ">
+        <p class="raach-title">RAACH SOLAR</p>
+        <p class="first-pera">Your Source for Smart</p>
+        <p class="second-pera">Solar Solutions</p>
+        <!--buttons-->
+        <div class="d-flex flex-column flex-md-row gap-3">
+          <!--1st button-->
+          <button class="btn cube-button">
+            <img src="./assests/home/cube.svg" alt="" />
+            <span>Build Your Custom Plant</span>
+          </button>
+          <!--2nd button-->
+          <button class="btn watch-button">
+            <img src="./assests/home/play.svg" alt="" />
+            <span> Watch a Video</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--bannar end-->
+
+    <!-- company slide start -->
+    <div class="home-service bg-color">
+      <div class="container-fluid service-slider-container">
+        <!-- Swiper -->
+        <div style="overflow-x: hidden; margin-top: -140px">
+          <div class="display-half">
+            <div class="swiper service-slider">
+              <div class="swiper-wrapper">
+                <!-- 1 -->
+                <div class="card swiper-slide h-100">
+                  <div class="card-content">
+                    <p class="description">
+                      <img
+                        class="product-img-custom"
+                        src="./assests/home/clearway.svg"
+                        alt=""
+                      />
+                    </p>
+                  </div>
+                </div>
+                <!-- 2 -->
+                <div class="card swiper-slide h-100">
+                  <div class="card-content">
+                    <p class="description">
+                      <img
+                      
+                        class="product-img-custom"
+                        src="./assests/home/fluence.svg"
+                        alt=""
+                      />
+                    </p>
+                  </div>
+                </div>
+                <!-- 3 -->
+                <div class="card swiper-slide h-100">
+                  <div class="card-content">
+                    <p class="description">
+                      <img
+                      style="width: 100px;"
+                        class="product-img-custom "
+                        src="./assests/home/firstsolar.svg"
+                        alt=""
+                      />
+                    </p>
+                  </div>
+                </div>
+                <!-- 4 -->
+                <div class="card swiper-slide h-100">
+                  <div class="card-content">
+                    <p class="description">
+                      <img
+                        class="product-img-custom"
+                        src="./assests/home/sunrun.svg"
+                        alt=""
+                      />
+                    </p>
+                  </div>
+                </div>
+                <!-- 5 -->
+                <div class="card swiper-slide h-100">
+                  <div class="card-content">
+                    <p class="description">
+                      <img
+                        class="product-img-custom"
+                        src="./assests/home/bloom.svg"
+                        alt=""
+                      />
+                    </p>
+                  </div>
+                </div>
+                <!-- 6 -->
+                <div class="card swiper-slide h-100">
+                  <div class="card-content">
+                    <p class="description">
+                      <img
+                        class="product-img-custom"
+                        src="./assests/home/brookfield.svg"
+                        alt=""
+                      />
+                    </p>
+                  </div>
+                </div>
+                <!-- 7 -->
+                <div class="card swiper-slide h-100">
+                  <div class="card-content">
+                    <p class="description">
+                      <img class="product-img-custom" src="./assests/home/sunrun.svg" alt="" />
+                    </p>
+                  </div>
+                </div>
+                <!-- 8 -->
+                <div class="card swiper-slide h-100">
+                  <div class="card-content">
+                    <p class="description">
+                      <img class="product-img-custom" src="./assests/home/fluence.svg" alt="" />
+                    </p>
+                  </div>
+                </div>
+                <!-- 9 -->
+                <div class="card swiper-slide h-100">
+                  <div class="card-content">
+                    <p class="description">
+                      <img class="product-img-custom" src="./assests/home/sunrun.svg" alt="" />
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-button-next swiper-navBtn"></div>
+              <div class="swiper-button-prev swiper-navBtn"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- company slide end -->
+
+    <section class="bg-color p-4">
+      <!-- our selection-->
+      <div class="text-center">
+        <h2 class="headline-small">OUR SELECTION</h2>
+        <h1 class="headline-large">Explore Our Curated</h1>
+        <h1 class="headline-large">Products for You Today!</h1>
+      </div>
+
+      <div class="container-xxl py-5">
+        <div class="row">
+          <!-- Left side div -->
+          <div class="col-12 col-md-6 equal-height mb-3 ">
+            <div class="box p-4">
+              <p class="headline-others">Most Popular</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. <br />
+                Egestas amet rhoncus in nisi ipsum dictum. <br />
+                Quam at dignissim ut diam.
+              </p>
+            </div>
+
+            <!--pannel showing div slide -->
+            <div class="pannel">
+              <div class="carousel-container ">
+                <!-- Slide 1 -->
+                <div class="carousel-slide">
+                  <div class="row pannel-div mx-2">
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <div>
+                        <h5>
+                          Long Ran Monocrystalline 220W Half-Cut Solar Panel
+                          12V...
+                        </h5>
+                        <p>Price: <span class="price-font">BDT 6090</span></p>
+                      </div>
+
+                      <div class="d-flex flex-md-row gap-2">
+                        <button class="btn cube-button">Buy Now</button>
+                        <button class="btn cart-button">
+                          <img src="./assests/home/shopping.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <img
+                        class="custom-img"
+                        src="./assests/home/pannel.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-slide">
+                  <div class="row pannel-div mx-2">
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <img
+                        class="custom-img"
+                        src="./assests/home/pannel.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <div>
+                        <h5>
+                          Long Ran Monocrystalline 220W Half-Cut Solar Panel
+                          12V...
+                        </h5>
+                        <p>Price: <span class="price-font">BDT 6090</span></p>
+                      </div>
+                      <div class="d-flex flex-md-row gap-2">
+                        <button class="btn cube-button">Buy Now</button>
+                        <button class="btn cart-button">
+                          <img src="./assests/home/shopping.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-slide">
+                  <div class="row pannel-div mx-2">
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <div>
+                        <h5>
+                          Long Ran Monocrystalline 220W Half-Cut Solar Panel
+                          12V...
+                        </h5>
+                        <p>Price: <span class="price-font">BDT 6090</span></p>
+                      </div>
+
+                      <div class="d-flex flex-md-row gap-2">
+                        <button class="btn cube-button">Buy Now</button>
+                        <button class="btn cart-button">
+                          <img src="./assests/home/shopping.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <img
+                        class="custom-img"
+                        src="./assests/home/pannel.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="carousel-slide">
+                  <div class="row pannel-div mx-2">
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <img
+                        class="custom-img"
+                        src="./assests/home/pannel.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <div>
+                        <h5>
+                          Long Ran Monocrystalline 220W Half-Cut Solar Panel
+                          12V...
+                        </h5>
+                        <p>Price: <span class="price-font">BDT 6090</span></p>
+                      </div>
+                      <div class="d-flex flex-md-row gap-2">
+                        <button class="btn cube-button">Buy Now</button>
+                        <button class="btn cart-button">
+                          <img src="./assests/home/shopping.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Navigation buttons -->
+                <button class="prev-btn" onclick="moveSlide('prev')">
+                  &#10094;
+                </button>
+                <button class="next-btn" onclick="moveSlide('next')">
+                  &#10095;
+                </button>
+              </div>
+            </div>
+            <!--pannel showing div slide end -->
+          </div>
+
+          <!-- Right side div, split into two sub-divs for small screens and above -->
+          <div class="col-12 col-md-6 d-flex flex-column ">
+            <!--box1-->
+            <div class="box box1 mb-3">
+              <div class="row mx-2 d-flex">
+                <div class="col-12 col-md-6 col-lg-6">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <img
+                      class="w-100"
+                      src="./assests/home/bestSeller.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                  <div class="my-lg-5">
+                    <p class="headline-others">Best Seller</p>
+                    <p>
+                      Lorem ipsum dolor sit amet consect consectetur. Egestas
+                      amet rhoncus in nisi ipsum dictum. Quam at dignissim ut
+                      diam.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--box2-->
+            <div class="box box2">
+              <div class="row mx-2">
+                <div class="col-12 col-md-6">
+                  <div class="my-lg-4">
+                    <p class="headline-others">New Arrival</p>
+                    <p>
+                      Lorem ipsum dolor sit amet consect consectetur. Egestas
+                      amet rhoncus in nisi ipsum dictum. Quam at dignissim ut
+                      diam.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <img
+                      class="custom-img1"
+                      src="./assests/home/newArrival.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--categories-->
+      <div class="text-center">
+        <p class="headline-small">CATEGORIES</p>
+        <p class="headline-large">Discover solar solutions</p>
+        <p class="headline-large">tailored to your needs</p>
+      </div>
+
+      <!--solar panel slide start -->
+      <section class="home-service container-xxl">
+        <div class="home-client-slider-container">
+          <div class="row">
+            <div class="slide-container swiper">
+              <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                  <!--slide 1 -->
+                  <div class="card swiper-slide">
+                    <div class="row g-0 p-3">
+                      <div class="col-lg-6 col-md-6 col-12 p-3">
+                        <h4>Solar Panels</h4>
+                        <p>
+                          A solar panel is a device that converts sunlight into
+                          electricity using photovoltaic cells. Made up of
+                          silicon or other materials, these cells capture solar
+                          energy and generate direct current (DC) electricity,
+                          which is then converted into usable alternating
+                          current (AC) for homes or businesses. Solar panels are
+                          an eco-friendly, renewable energy solution that helps
+                          reduce reliance on fossil fuels and lowers electricity
+                          costs.
+                        </p>
+                        <!--buttons-->
+                        <div class="d-flex flex-md-row gap-3">
+                          <button class="btn cube-button">Buy Now</button>
+                          <button class="btn cart-button">
+                            <img src="./assests/home/shopping.svg" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-12">
+                        <img
+                          class="p-3"
+                          src="./assests/home/solarPanel.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--slide 2 -->
+                  <div class="card swiper-slide">
+                    <div class="row g-0 p-3">
+                      <div class="col-lg-6 col-md-6 col-12">
+                        <img
+                          class="p-3"
+                          src="./assests/home/solarPanel.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-12 p-3">
+                        <h4>Solar Panels</h4>
+                        <p>
+                          A solar panel is a device that converts sunlight into
+                          electricity using photovoltaic cells. Made up of
+                          silicon or other materials, these cells capture solar
+                          energy and generate direct current (DC) electricity,
+                          which is then converted into usable alternating
+                          current (AC) for homes or businesses. Solar panels are
+                          an eco-friendly, renewable energy solution that helps
+                          reduce reliance on fossil fuels and lowers electricity
+                          costs.
+                        </p>
+                        <div class="d-flex flex-md-row gap-3">
+                          <button class="btn cube-button">Buy Now</button>
+                          <button class="btn cart-button">
+                            <img src="./assests/home/shopping.svg" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--slide 3 -->
+                  <div class="card swiper-slide">
+                    <div class="row g-0 p-3">
+                      <div class="col-lg-6 col-md-6 col-12 p-3">
+                        <h4>Solar Panels</h4>
+                        <p>
+                          A solar panel is a device that converts sunlight into
+                          electricity using photovoltaic cells. Made up of
+                          silicon or other materials, these cells capture solar
+                          energy and generate direct current (DC) electricity,
+                          which is then converted into usable alternating
+                          current (AC) for homes or businesses. Solar panels are
+                          an eco-friendly, renewable energy solution that helps
+                          reduce reliance on fossil fuels and lowers electricity
+                          costs.
+                        </p>
+                        <div class="d-flex flex-md-row gap-3">
+                          <button class="btn cube-button">Buy Now</button>
+                          <button class="btn cart-button">
+                            <img src="./assests/home/shopping.svg" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-12">
+                        <img
+                          class="p-3"
+                          src="./assests/home/solarPanel.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--slide 4-->
+                  <div class="card swiper-slide">
+                    <div class="row g-0 p-3">
+                      <div class="col-lg-6 col-md-6 col-12">
+                        <img
+                          class="p-3"
+                          src="./assests/home/solarPanel.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-12 p-3">
+                        <h4>Solar Panels</h4>
+                        <p>
+                          A solar panel is a device that converts sunlight into
+                          electricity using photovoltaic cells. Made up of
+                          silicon or other materials, these cells capture solar
+                          energy and generate direct current (DC) electricity,
+                          which is then converted into usable alternating
+                          current (AC) for homes or businesses. Solar panels are
+                          an eco-friendly, renewable energy solution that helps
+                          reduce reliance on fossil fuels and lowers electricity
+                          costs.
+                        </p>
+                        <div class="d-flex flex-md-row gap-3">
+                          <button class="btn cube-button">Buy Now</button>
+                          <button class="btn cart-button">
+                            <img src="./assests/home/shopping.svg" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-button-next swiper-navBtn"></div>
+              <div class="swiper-button-prev swiper-navBtn"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--solar panel slide end -->
+
+      <!--product slide start-->
+      <div class="home-service ">
+        <div class="container-fluid service-slider-container">
+          <!-- Swiper -->
+          <div style="overflow-x: hidden; margin-top: -140px">
+            <div class="display-half">
+              <div class="swiper service-slider">
+                <div class="swiper-wrapper">
+                  <!-- 1 -->
+                  <div class="card swiper-slide h-100">
+                    <div class="card-content">
+                      <p class="description">
+                        <img
+                          class="product-img-custom"
+                          src="./assests/home/fuses.svg"
+                          alt=""
+                        />
+                        <p class="text-center fw-bold">Fuses and <br> Circuit Breakers</p>
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="card swiper-slide h-100">
+                    <div class="card-content">
+                      <p class="description">
+                        <img
+                          class="product-img-custom"
+                          src="./assests/home/combinerbox.svg"
+                          alt=""
+                        />
+                        <p class="text-center fw-bold">Combiner <br>Boxes</p>
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 3 -->
+                  <div class="card swiper-slide h-100">
+                    <div class="card-content">
+                      <p class="description">
+                        <img
+                          class="product-img-custom"
+                          src="./assests/home/wiring.svg"
+                          alt=""
+                        />
+                        <p class="text-center fw-bold">Cables and <br> Wiring</p>
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 4 -->
+                  <div class="card swiper-slide h-100">
+                    <div class="card-content">
+                      <p class="description">
+                        <img
+                          class="product-img-custom"
+                          src="./assests/home/mounting.svg"
+                          alt=""
+                        />
+                        <p class="text-center fw-bold">Mounting <br> Structures</p>
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 5 -->
+                  <div class="card swiper-slide h-100">
+                    <div class="card-content">
+                      <p class="description">
+                        <img
+                          class="product-img-custom"
+                          src="./assests/home/fuses.svg"
+                          alt=""
+                        />
+                        <p class="text-center fw-bold">Fuses and <br> Circuit Breakers</p>
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 6 -->
+                  <div class="card swiper-slide h-100">
+                    <div class="card-content">
+                      <p class="description">
+                        <img
+                          class="product-img-custom"
+                          src="./assests/home/combinerbox.svg"
+                          alt=""
+                        />
+                        <p class="text-center fw-bold">Combiner <br>Boxes</p>
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 7 -->
+                  <div class="card swiper-slide h-100 ">
+                    <div class="card-content ">
+                      <p class="description">
+                        <img
+                          class="product-img-custom"
+                          src="./assests/home/wiring.svg"
+                          alt=""
+                        />
+                        <p class="text-center fw-bold">Cables and <br> Wiring</p>
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 8 -->
+                  <div class="card swiper-slide h-100">
+                    <div class="card-content">
+                      <p class="description">
+                        <img
+                          class="product-img-custom "
+                          src="./assests/home/mounting.svg"
+                          alt=""
+                        />
+                        <p class="text-center fw-bold">Mounting <br> Structures</p>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--product slide end-->
+
+      <!--our service start-->
+      <section class="container-xxl">
+        <div class="text-center">
+          <p class="headline-small">OUR SERVICES</p>
+          <p class="headline-large">For World-class Services</p>
+          <p class="headline-large">People Choose Us</p>
+        </div>
+        <!--card start-->
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+          <!--1-->
+          <div class="col">
+            <div
+              class="card h-100 custom-card d-flex flex-column justify-content-center align-items-center text-center"
+            >
+              <!-- Original Content -->
+              <img
+                src="./assests/home/s1.svg"
+                class="service-icon card-img-top product-img-custom mt-4 card-content"
+                alt="..."
+              />
+              <div class="card-body card-content">
+                <h6 class="card-title">End-to-End Solar Solutions</h6>
+              </div>
+              <!-- Hover Content (Initially Hidden) -->
+              <div class="hover-text">
+                <h5>Expertise and Experience</h5>
+                <p class="text-white">
+                  Our team of seasoned solar professionals brings a wealth of
+                  experience and expertise to each installation, ensuring a
+                  seamless and efficient process.
+                </p>
+                <button class="btn get-started-button">Get Started</button>
+              </div>
+            </div>
+          </div>
+
+          <!--2-->
+          <div class="col">
+            <div
+              class="card h-100 custom-card d-flex flex-column justify-content-center align-items-center text-center"
+            >
+              <!-- Original Content -->
+              <img
+                src="./assests/home/s2.svg"
+                class="service-icon card-img-top product-img-custom mt-4 card-content"
+                alt="..."
+              />
+              <div class="card-body card-content">
+                <h6 class="card-title">Ongoing Maintenance and Support</h6>
+              </div>
+              <!-- Hover Content (Initially Hidden) -->
+              <div class="hover-text">
+                <h5>Expertise and Experience</h5>
+                <p class="text-white">
+                  Our team of seasoned solar professionals brings a wealth of
+                  experience and expertise to each installation, ensuring a
+                  seamless and efficient process.
+                </p>
+                <button class="btn get-started-button">Get Started</button>
+              </div>
+            </div>
+          </div>
+          <!--3-->
+          <div class="col">
+            <div
+              class="card h-100 custom-card d-flex flex-column justify-content-center align-items-center text-center"
+            >
+              <!-- Original Content -->
+              <img
+                src="./assests/home/s3.svg"
+                class="service-icon card-img-top product-img-custom mt-4 card-content"
+                alt="..."
+              />
+              <div class="card-body card-content">
+                <h6 class="card-title">Seamless Installation Process</h6>
+              </div>
+              <!-- Hover Content (Initially Hidden) -->
+              <div class="hover-text">
+                <h5>Expertise and Experience</h5>
+                <p class="text-white">
+                  Our team of seasoned solar professionals brings a wealth of
+                  experience and expertise to each installation, ensuring a
+                  seamless and efficient process.
+                </p>
+                <button class="btn get-started-button">Get Started</button>
+              </div>
+            </div>
+          </div>
+          <!--4-->
+          <div class="col">
+            <div
+              class="card h-100 custom-card d-flex flex-column justify-content-center align-items-center text-center"
+            >
+              <!-- Original Content -->
+              <img
+                src="./assests/home/s4.svg"
+                class="service-icon card-img-top product-img-custom mt-4 card-content"
+                alt="..."
+              />
+              <div class="card-body card-content">
+                <h6 class="card-title">Quality Assurance</h6>
+              </div>
+              <!-- Hover Content (Initially Hidden) -->
+              <div class="hover-text">
+                <h5>Expertise and Experience</h5>
+                <p class="text-white">
+                  Our team of seasoned solar professionals brings a wealth of
+                  experience and expertise to each installation, ensuring a
+                  seamless and efficient process.
+                </p>
+                <button class="btn get-started-button">Get Started</button>
+              </div>
+            </div>
+          </div>
+          <!--5-->
+          <div class="col">
+            <div
+              class="card h-100 custom-card d-flex flex-column justify-content-center align-items-center text-center"
+            >
+              <!-- Original Content -->
+              <img
+                src="./assests/home/s5.svg"
+                class="service-icon card-img-top product-img-custom mt-4 card-content"
+                alt="..."
+              />
+              <div class="card-body card-content">
+                <h6 class="card-title">Tailored Consultation</h6>
+              </div>
+              <!-- Hover Content (Initially Hidden) -->
+              <div class="hover-text">
+                <h5>Expertise and Experience</h5>
+                <p class="text-white">
+                  Our team of seasoned solar professionals brings a wealth of
+                  experience and expertise to each installation, ensuring a
+                  seamless and efficient process.
+                </p>
+                <button class="btn get-started-button">Get Started</button>
+              </div>
+            </div>
+          </div>
+          <!--6-->
+          <div class="col">
+            <div
+              class="card h-100 custom-card d-flex flex-column justify-content-center align-items-center text-center"
+            >
+              <!-- Original Content -->
+              <img
+                src="./assests/home/s6.svg"
+                class="service-icon card-img-top product-img-custom mt-4 card-content"
+                alt="..."
+              />
+              <div class="card-body card-content">
+                <h6 class="card-title">Expertise and Experience</h6>
+              </div>
+              <!-- Hover Content (Initially Hidden) -->
+              <div class="hover-text">
+                <h5>Expertise and Experience</h5>
+                <p class="text-white">
+                  Our team of seasoned solar professionals brings a wealth of
+                  experience and expertise to each installation, ensuring a
+                  seamless and efficient process.
+                </p>
+                <button class="btn get-started-button">Get Started</button>
+              </div>
+            </div>
+          </div>
+          <!--7-->
+          <div class="col">
+            <div
+              class="card h-100 custom-card d-flex flex-column justify-content-center align-items-center text-center"
+            >
+              <!-- Original Content -->
+              <img 
+                src="./assests/home/s7.svg"
+                class="service-icon card-img-top product-img-custom mt-4 card-content"
+                alt="..."
+              />
+              <div class="card-body card-content">
+                <h6 class="card-title">Ongoing Maintenance and Support</h6>
+              </div>
+              <!-- Hover Content (Initially Hidden) -->
+              <div class="hover-text">
+                <h5>Expertise and Experience</h5>
+                <p class="text-white">
+                  Our team of seasoned solar professionals brings a wealth of
+                  experience and expertise to each installation, ensuring a
+                  seamless and efficient process.
+                </p>
+                <button class="btn get-started-button">Get Started</button>
+              </div>
+            </div>
+          </div>
+          <!--8-->
+          <div class="col">
+            <div
+              class="card h-100 custom-card d-flex flex-column justify-content-center align-items-center text-center"
+            >
+              <!-- Original Content -->
+              <img  
+                src="./assests/home/s1.svg"
+                class="service-icon card-img-top  product-img-custom mt-4 card-content"
+                alt="..."
+              />
+              <div class="card-body card-content">
+                <h6 class="card-title">End-to-End Solar Solutions</h6>
+              </div>
+              <!-- Hover Content (Initially Hidden) -->
+              <div class="hover-text">
+                <h5>Expertise and Experience</h5>
+                <p class="text-white">
+                  Our team of seasoned solar professionals brings a wealth of
+                  experience and expertise to each installation, ensuring a
+                  seamless and efficient process.
+                </p>
+                <button class="btn get-started-button">Get Started</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--our service end-->
+
+      <!--raach solar design-->
+      <section class="container-xxl">
+        <div class="row solar-design-margin-top solar-design-equal-height">
+          <!--slides started-->
+          <div class="col-12 col-md-8 col-lg-8 mb-4 content-box">
+            <div class="solar-design">
+              <div class="solar-carousel-container">
+                <!-- Slide 1 -->
+                <div class="solar-carousel-slide background-div">
+                  <div class="row solar-pannel-div ">
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <div class="mt-4 p-1">
+                        <h5>RAACH Solar</h5>
+                        <p class="styled-text">Designing photovoltaic power</p>
+                        <p>
+                          Power your home with our high-efficiency solar panels!
+                          Save on energy bills while going green. Reliable,
+                          sustainable, and cost-effective—switch to solar today!
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <img
+                        class="solar-custom-img"
+                        src="./assests/home/solarflat.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="solar-carousel-slide background-div">
+                  <div class="row solar-pannel-div">
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <img
+                        class="solar-custom-img"
+                        src="./assests/home/solarflat.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <div class="mt-4 p-1">
+                        <h5>RAACH Solar</h5>
+                        <p class="styled-text">Designing photovoltaic power</p>
+                        <p>
+                          Power your home with our high-efficiency solar panels!
+                          Save on energy bills while going green. Reliable,
+                          sustainable, and cost-effective—switch to solar today!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="solar-carousel-slide background-div">
+                  <div class="row solar-pannel-div mx-2">
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <div class="mt-4 p-1">
+                        <h5>RAACH Solar</h5>
+                        <p class="styled-text">Designing photovoltaic power</p>
+                        <p>
+                          Power your home with our high-efficiency solar panels!
+                          Save on energy bills while going green. Reliable,
+                          sustainable, and cost-effective—switch to solar today!
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <img
+                        class="solar-custom-img"
+                        src="./assests/home/solarflat.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="solar-carousel-slide background-div">
+                  <div class="row solar-pannel-div mx-2">
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <img
+                        class="solar-custom-img"
+                        src="./assests/home/solarflat.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <div class="mt-4 p-1">
+                        <h5>RAACH Solar</h5>
+                        <p class="styled-text">Designing photovoltaic power</p>
+                        <p>
+                          Power your home with our high-efficiency solar panels!
+                          Save on energy bills while going green. Reliable,
+                          sustainable, and cost-effective—switch to solar today!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Navigation buttons -->
+                <button class="solar-prev-btn" onclick="moveSolarSlide('prev')">
+                  &#10094;
+                </button>
+                <button class="solar-next-btn" onclick="moveSolarSlide('next')">
+                  &#10095;
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--slides end -->
+          <!--contact us-->
+          <div class="col-12 col-md-4 col-lg-4 content-box">
+            <div
+              class="card solar-design-custom-card  d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="./assests/home/social.svg"
+                class="card-img-top product-img-custom mt-3"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Contact Us for Your Ads</h5>
+                <button class="custom-btn btn w-100">Get started</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--knowledge start-->
+      <section class="container-xxl">
+        <div class="mt-5 text-center">
+          <p class="headline-small">Expert knowledge</p>
+          <p class="headline-large">Comparisons Tools and</p>
+          <p class="headline-large">Knowledge for You</p>
+        </div>
+        <!--cards-->
+        <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 g-4 mt-4">
+          <!--1-->
+          <div class="col">
+            <div class="card h-100 knowledge-custom-card p-2">
+              <img 
+                src="./assests/home/k1.svg"
+                class="card-img-top product-img-custom tools-icon-size mt-4"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">Useful Tools</h5>
+              </div>
+            </div>
+          </div>
+          <!--2-->
+          <div class="col">
+            <div class="card h-100 knowledge-custom-card p-2">
+              <img 
+                src="./assests/home/k2.svg"
+                class="card-img-top product-img-custom tools-icon-size mt-4"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">Product Comparisons</h5>
+              </div>
+            </div>
+          </div>
+          <!--3-->
+          <div class="col">
+            <div class="card h-100 knowledge-custom-card p-2">
+              <img 
+                src="./assests/home/k3.svg"
+                class="card-img-top product-img-custom tools-icon-size mt-4"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">Quick Help / Links</h5>
+              </div>
+            </div>
+          </div>
+          <!--4-->
+          <div class="col">
+            <div class="card h-100 knowledge-custom-card p-2">
+              <img 
+                src="./assests/home/k4.svg"
+                class="card-img-top product-img-custom tools-icon-size mt-4"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">Info/News</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--knowledge end-->
+
+      <!--numbers start-->
+      <section class="container-xxl">
+        <div class="text-center mt-5">
+          <h2 class="headline-small">OUR NUMBERS</h2>
+          <h1 class="headline-large">Products Designed to</h1>
+          <h1 class="headline-large">Delight Millions</h1>
+        </div>
+        <div class="mt-5">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!--1-->
+            <div class="col">
+              <div
+                class="card knowledge-custom-card h-100 d-flex justify-content-center align-items-center"
+              >
+                <div class="card-body mt-5">
+                  <h5 class="card-title">Projects</h5>
+                  <p class="info-text">178</p>
+                </div>
+              </div>
+            </div>
+            <!--2-->
+            <div class="col">
+              <div
+                class="card knowledge-custom-card h-100 d-flex justify-content-center align-items-center"
+              >
+                <div class="card-body mt-5">
+                  <h5 class="card-title">Units Sold</h5>
+                  <p class="info-text">500k</p>
+                </div>
+              </div>
+            </div>
+            <!--3-->
+            <div class="col">
+              <div
+                class="card knowledge-custom-card h-100 d-flex justify-content-center align-items-center"
+              >
+                <div class="card-body mt-5">
+                  <h5 class="card-title">Vendors</h5>
+                  <p class="info-text">250</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--numbers end-->
+
+      <!--business form start-->
+      <section class="container-xxl">
+        <div class="row business-container p-3 mt-5">
+          <div class="col-12 col-md-6 col-lg-6">
+            <p class="business-text">Business</p>
+            <p class="business-text">Newsletter to</p>
+            <p class="business-text">Uplift the Growth</p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6">
+            <div>
+              <input
+                class="form-control mb-3 custom-input-background"
+                type="text"
+                placeholder="Andrew Sims"
+                aria-label="default input example"
+              />
+              <input
+                class="form-control mb-3"
+                type="text"
+                placeholder="Default input"
+                aria-label="default input example"
+              />
+              <button class="btn cube-button">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--business form end-->
+    </section>
+
+    <!--footer start-->
+    <section class="footer">
+      <div class="container mx-auto text-center">
+        <img src="assests/raachLogo.svg" alt="Logo" class="" />
+        <p class="mt-4">
+          At interdum pellentesque odio faucibus. Nibh tempor in id ultricies
+          orci morbi sit mi id. <br />
+          Arcu sed vestibulum liber sed vestibulum liber sed vestibulum .
+        </p>
+
+        <p class="fw-bold">Contact Us</p>
+        <p>
+          <span> <img src="./assests/footer/envelope.svg" alt="" /></span>
+          info@ourhoneybee.eu
+        </p>
+
+        <div>
+          <img src="./assests/footer/Facebook.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/instagram.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/linkedin.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/x.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/other.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/youtube.svg" alt="" class="mx-2" />
+        </div>
+        <hr class="custom-hr" />
+        <div>
+          <p>
+            Copyright © 2024
+            <span class="footer-text"> RAACH Solar </span>
+            <span class="mx-2">Powered by</span>
+            <span class="fw-bold">© 2024 RAACH Solar</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--footer end-->
+
+    <!--js files-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile</title>
+    <!--swipper and others css links-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!--nav start-->
+    <nav class="navbar navbar-expand-lg nav-background">
+      <div class="container-xxl">
+        <a class="navbar-brand" href="/">
+          <img src="assests/raachLogo.svg" alt="Logo" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse custom-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto text-center">
+            <!-- Always visible nav links -->
+            <li class="nav-item">
+              <a class="nav-link active" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="our_projects.html">Projects</a>
+            </li>
+
+            <!-- Menu Dropdown: Only visible on large devices -->
+            <li class="nav-item dropdown d-none d-lg-block">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Menu
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="about_us.html">About Us</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="build_customer_plant.html"
+                    >Build Custom Plant</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="checkout_details.html"
+                    >Checkout Details</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="company_profile.html"
+                    >Company Profile</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="company_profile_edit.html"
+                    >Company Profile Edit</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="compare_products.html"
+                    >Compare Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="my_cart_empty.html"
+                    >Empty Cart</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="my_cart.html">My Cart</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="my_profile_details.html"
+                    >My Profile Details</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="order_confirmed.html"
+                    >Order Confirmed</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="order_track.html"
+                    >Order Track</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="our_product.html"
+                    >Our Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="product_page.html"
+                    >Product Page</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_add_product.html"
+                    >Vendor Add Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_edit_product.html"
+                    >Vendor Edit Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_profile_details.html"
+                    >Vendor Profile Details</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_login.html"
+                    >Vendor Login</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_signup.html"
+                    >Vendor Signup</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- search-->
+            <li class="nav-item d-none d-lg-block">
+              <form class="search-box">
+                <div class="input-group input-group-sm mt-1">
+                  <span class="input-group-text border-0">
+                    <img src="./assests/header/search.svg" alt="" />
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control border-0 custom-search-input"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </div>
+              </form>
+            </li>
+
+            <!--cart -->
+            <button class="cart-button d-none d-lg-block">
+              <div class="cart-container">
+                <img
+                  src="./assests/header/cart.svg"
+                  alt="Cart Icon"
+                  class="cart-icon"
+                />
+                <span class="cart-count">3</span>
+                <!-- Dynamic cart count -->
+              </div>
+              <span class="mx-2">Cart</span>
+            </button>
+
+            <!-- Expanded menu: visible only on small & medium devices -->
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="about_us.html">About Us</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="build_customer_plant.html"
+                >Build Custom Plant</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="checkout_details.html"
+                >Checkout Details</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="company_profile.html"
+                >Company Profile</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="company_profile_edit.html"
+                >Company Profile Edit</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="compare_products.html"
+                >Compare Product</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="my_cart_empty.html">Empty Cart</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="my_cart.html">My Cart</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="my_profile_details.html"
+                >My Profile Details</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="order_confirmed.html"
+                >Order Confirmed</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="order_track.html">Order Track</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="our_product.html">Our Product</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="product_page.html">Product Page</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_add_product.html"
+                >Vendor Add Product</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_edit_product.html"
+                >Vendor Edit Product</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_profile_details.html"
+                >Vendor Profile Details</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_login.html">Vendor Login</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_signup.html">Vendor Signup</a>
+            </li>
+
+            <!-- search box -->
+            <li class="nav-item d-lg-none d-flex justify-content-center">
+              <form class="search-box">
+                <div class="input-group input-group-sm mt-1">
+                  <span class="input-group-text border-0">
+                    <img src="./assests/header/search.svg" alt="" />
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control border-0 custom-search-input"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </div>
+              </form>
+            </li>
+
+            <!--cart -->
+            <button class="cart-button d-flex justify-content-center d-lg-none">
+              <div class="cart-container">
+                <img
+                  src="./assests/header/cart.svg"
+                  alt="Cart Icon"
+                  class="cart-icon"
+                />
+                <span class="cart-count">3</span>
+                <!-- Dynamic cart count -->
+              </div>
+              <span class="mx-2">Cart</span>
+            </button>
+          </ul>
+
+          <div class="nav-btn-area text-center text-lg-end">
+            <span class="header-user-name">RoroNoa Zoro</span>
+            <img
+              src="./assests/header/propic.svg"
+              class="profile-img-header"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--nav end-->
+
+    <section class="login-page-background ">
+      <div class="login-background pt-5 pb-5">
+        <div class="container-xxl">
+          <div class="row  d-flex justify-content-center align-items-center">
+            <!--tab-->
+            <nav class="d-flex justify-content-center mt-4">
+              <div class="nav nav-tabs custom-tabs" id="nav-tab" role="tablist">
+                <button
+                  class="nav-link active"
+                  id="nav-home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-home"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-home"
+                  aria-selected="true"
+                >
+                  Profile Details
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-profile"
+                  aria-selected="false"
+                >
+                  My Favorites
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-contact"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-contact"
+                  aria-selected="false"
+                >
+                  Order Details
+                </button>
+              </div>
+            </nav>
+
+            <!-- Tab content -->
+            <div class="tab-content" id="nav-tabContent">
+              <!--tab 1: profile details-->
+              <div
+                class="tab-pane fade show active"
+                id="nav-home"
+                role="tabpanel"
+                aria-labelledby="nav-home-tab"
+              >
+                <img
+                  src="./assests/profile/profileimg.svg"
+                  alt="Profile Image"
+                  class="rounded-circle mt-5 img-fluid profile-img"
+                />
+                <!--showing form-->
+                <form class="form-width">
+                  <!--full name-->
+                  <div
+                    class="input-group custom-input-group form-floating mb-3 mt-5"
+                  >
+                    <span class="input-group-text left-icon">
+                      <img src="./assests/login/user.svg" alt="User Icon" />
+                    </span>
+                    <div class="form-floating flex-grow-1">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="Email "
+                        value="Andrew Sims "
+                        aria-label="Username"
+                        readonly
+                        required
+                      />
+                      <label for="floatingInput"
+                        >Your Full Name
+                        <span
+                          ><img src="./assests/vendor_signup/hexa.svg" alt=""
+                        /></span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <!--email address-->
+                  <div
+                    class="input-group custom-input-group form-floating mb-3"
+                  >
+                    <span class="input-group-text left-icon">
+                      <img src="./assests/login/email.svg" alt="User Icon" />
+                    </span>
+                    <div class="form-floating flex-grow-1">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="Email "
+                        value="andrew.sims@email.com"
+                        aria-label="Username"
+                        readonly
+                        required
+                      />
+                      <label for="floatingInput">Email Address</label>
+                    </div>
+                  </div>
+
+                  <!--phone number-->
+                  <div
+                    class="input-group custom-input-group form-floating mb-3"
+                  >
+                    <span class="input-group-text left-icon">
+                      <img
+                        src="./assests/vendor_signup/phone.svg"
+                        alt="User Icon"
+                      />
+                    </span>
+                    <div class="form-floating flex-grow-1">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="Phone "
+                        value="01234567"
+                        aria-label="Username"
+                        readonly
+                        required
+                      />
+                      <label for="floatingInput"
+                        >Phone Number
+                        <span
+                          ><img src="./assests/vendor_signup/hexa.svg" alt=""
+                        /></span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <!--shipping address-->
+                  <div
+                    class="input-group custom-input-group form-floating mb-3"
+                  >
+                    <span class="input-group-text left-icon">
+                      <img src="./assests/cart/map-pin.svg" alt="User Icon" />
+                    </span>
+                    <div class="form-floating flex-grow-1">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="address "
+                        value="123 Elm Street, Suite 456, Springfield, IL 62704"
+                        aria-label="Username"
+                        readonly
+                        required
+                      />
+                      <label for="floatingInput"
+                        >Shipping Address
+                        <span
+                          ><img src="./assests/vendor_signup/hexa.svg" alt=""
+                        /></span>
+                      </label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!--tab 2: My Favorites-->
+              <div
+                class="tab-pane fade"
+                id="nav-profile"
+                role="tabpanel"
+                aria-labelledby="nav-profile-tab"
+              >
+                <!--cards-->
+                <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+                  <!--card 1-->
+                  <div class="col">
+                    <div class="card favourite-card h-100">
+                      <!-- Best Seller Badge -->
+                      <div class="best-seller-badge">Best Seller</div>
+                      <img
+                        src="./assests/profile/f1.svg"
+                        class="card-img-top mt-5"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <div class="star">
+                          <img src="./assests/profile/star.svg" alt="" />
+                          <span class="mx-2">4.67</span>
+                        </div>
+                        <h6 class="card-title mt-3">
+                          Long Ran Monocrystalline 220W Half-Cut Solar Panel
+                          12V...
+                        </h6>
+                        <p class="card-text"> <p> seller: <span class="seller">RAACH Solar</span> </p> </p>
+                        <p class="card-text"> <p> seller: <span class="regular-price">BDT 6090</span> <span class="discount text-decoration-line-through mx-2"> BDT 8700 </span> </p> </p>
+                        <!--buttons-->
+                        <div class="d-flex justify-content-center align-items-center flex-md-row gap-3">
+                            <!--cart-->
+                            <button class="btn cart-button">
+                                <img src="./assests/home/shopping.svg" alt="" />
+                            </button>
+                            <!--Buy Now-->
+                            <button class="btn cube-button">Buy Now</button>
+                            <!--heart icon button-->
+                            <button class="btn cart-button">
+                                <img src="./assests/profile/heart.svg" alt="" />
+                            </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--card 2-->
+                  <div class="col">
+                    <div class="card favourite-card h-100">
+                      <!-- 30% Off -->
+                      <div class="off-badge">30% Off</div>
+                      <img
+                        src="./assests/profile/f2.svg"
+                        class="card-img-top mt-5"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <div class="star">
+                          <img src="./assests/profile/star.svg" alt="" />
+                          <span class="mx-2">4.67</span>
+                        </div>
+                        <h6 class="card-title mt-3">
+                          Long Ran Monocrystalline 220W Half-Cut Solar Panel
+                          12V...
+                        </h6>
+                        <p class="card-text"> <p> seller: <span class="seller">RAACH Solar</span> </p> </p>
+                        <p class="card-text"> <p> seller: <span class="regular-price">BDT 6090</span> <span class="discount text-decoration-line-through mx-2"> BDT 8700 </span> </p> </p>
+                        <!--buttons-->
+                        <div class="d-flex justify-content-center align-items-center flex-md-row gap-3">
+                            <!--cart-->
+                            <button class="btn cart-button">
+                                <img src="./assests/home/shopping.svg" alt="" />
+                            </button>
+                            <!--Buy Now-->
+                            <button class="btn cube-button">Buy Now</button>
+                            <!--heart icon button-->
+                            <button class="btn cart-button">
+                                <img src="./assests/profile/heart.svg" alt="" />
+                            </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--card 3-->
+                  <div class="col">
+                    <div class="card favourite-card h-100">
+                      <!-- 30% Off -->
+                      <div class="off-badge">30% Off</div>
+                      <img
+                        src="./assests/profile/f3.svg"
+                        class="card-img-top mt-5"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <div class="star">
+                          <img src="./assests/profile/star.svg" alt="" />
+                          <span class="mx-2">4.67</span>
+                        </div>
+                        <h6 class="card-title mt-3">
+                          Long Ran Monocrystalline 220W Half-Cut Solar Panel
+                          12V...
+                        </h6>
+                        <p class="card-text"> <p> seller: <span class="seller">RAACH Solar</span> </p> </p>
+                        <p class="card-text"> <p> seller: <span class="regular-price">BDT 6090</span> <span class="discount text-decoration-line-through mx-2"> BDT 8700 </span> </p> </p>
+                        <!--buttons-->
+                        <div class="d-flex justify-content-center align-items-center flex-md-row gap-3">
+                            <!--cart-->
+                            <button class="btn cart-button">
+                                <img src="./assests/home/shopping.svg" alt="" />
+                            </button>
+                            <!--Buy Now-->
+                            <button class="btn cube-button">Buy Now</button>
+                            <!--heart icon button-->
+                            <button class="btn cart-button">
+                                <img src="./assests/profile/heart.svg" alt="" />
+                            </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--card 4-->
+                  <div class="col">
+                    <div class="card favourite-card h-100">
+                      
+                      <img
+                        src="./assests/profile/f4.svg"
+                        class="card-img-top mt-5"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <div class="star">
+                          <img src="./assests/profile/star.svg" alt="" />
+                          <span class="mx-2">4.67</span>
+                        </div>
+                        <h6 class="card-title mt-3">
+                          Long Ran Monocrystalline 220W Half-Cut Solar Panel
+                          12V...
+                        </h6>
+                        <p class="card-text"> <p> seller: <span class="seller">RAACH Solar</span> </p> </p>
+                        <p class="card-text"> <p> seller: <span class="regular-price">BDT 6090</span> <span class="discount text-decoration-line-through mx-2"> BDT 8700 </span> </p> </p>
+                        <!--buttons-->
+                        <div class="d-flex justify-content-center align-items-center flex-md-row gap-3">
+                            <!--cart-->
+                            <button class="btn cart-button">
+                                <img src="./assests/home/shopping.svg" alt="" />
+                            </button>
+                            <!--Buy Now-->
+                            <button class="btn cube-button">Buy Now</button>
+                            <!--heart icon button-->
+                            <button class="btn cart-button">
+                                <img src="./assests/profile/heart.svg" alt="" />
+                            </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--card 5-->
+                  <div class="col">
+                    <div class="card favourite-card h-100">
+                      <!-- 30% Off -->
+                      <div class="off-badge">30% Off</div>
+                      <img
+                        src="./assests/profile/f5.svg"
+                        class="card-img-top mt-5"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <div class="star">
+                          <img src="./assests/profile/star.svg" alt="" />
+                          <span class="mx-2">4.67</span>
+                        </div>
+                        <h6 class="card-title mt-3">
+                          Long Ran Monocrystalline 220W Half-Cut Solar Panel
+                          12V...
+                        </h6>
+                        <p class="card-text"> <p> seller: <span class="seller">RAACH Solar</span> </p> </p>
+                        <p class="card-text"> <p> seller: <span class="regular-price">BDT 6090</span> <span class="discount text-decoration-line-through mx-2"> BDT 8700 </span> </p> </p>
+                        <!--buttons-->
+                        <div class="d-flex justify-content-center align-items-center flex-md-row gap-3">
+                            <!--cart-->
+                            <button class="btn cart-button">
+                                <img src="./assests/home/shopping.svg" alt="" />
+                            </button>
+                            <!--Buy Now-->
+                            <button class="btn cube-button">Buy Now</button>
+                            <!--heart icon button-->
+                            <button class="btn cart-button">
+                                <img src="./assests/profile/heart.svg" alt="" />
+                            </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--cards end-->
+              </div>
+              <!--tab 3:Past Orders-->
+              <div
+                class="tab-pane fade"
+                id="nav-contact"
+                role="tabpanel"
+                aria-labelledby="nav-contact-tab"
+              >
+              <!--table-->
+              <div class="table-responsive">
+                <table class="table mt-4">
+                  <thead class="table-head">
+                    <tr class="text-style">
+                      <th scope="col"> <span class="profile-table-head">Order Details</span>  </th>
+                      <th scope="col"> <span class="profile-table-head">Date</span> </th>
+                      <th scope="col"> <span class="profile-table-head">Total Price</span> </th>
+                      <th scope="col"> <span class="profile-table-head">Order Status</span> </th>
+                    </tr>
+                  </thead>
+
+                  <tbody class="mt-5">
+                    <!--1st row-->
+                    <tr class="table-head">
+                      <th scope="row">
+                        <div class="d-flex align-items-center gap-3">
+                          <img
+                            src="./assests/profile/boxproduct.svg"
+                            alt="Product"
+                            class="product-img"
+                          />
+                          <div>
+                            <p class="product-text">
+                                Order ID: #20241104_003
+                            </p>
+                            <p class="seller">See Ordered Items</p>
+                            <p>$15887 per unit</p>
+                          </div>
+                        </div>
+                      </th>
+                      <td>
+                        15/12/2022
+                      </td>
+                      <td>$15887</td>
+                      <td> Delivering...
+                        <div class="track-order">Track Order</div>
+                      </td>
+                    </tr>
+
+                    <!--2nd row-->
+                    <tr class="table-head">
+                        <th scope="row">
+                          <div class="d-flex align-items-center gap-3">
+                            <img
+                              src="./assests/profile/boxproduct.svg"
+                              alt="Product"
+                              class="product-img"
+                            />
+                            <div>
+                              <p class="product-text">
+                                  Order ID: #20241104_003
+                              </p>
+                              <p class="seller">See Ordered Items</p>
+                              <p>$15887 per unit</p>
+                            </div>
+                          </div>
+                        </th>
+                        <td>
+                          15/12/2022
+                        </td>
+                        <td>$15887</td>
+                        <td> Delivering...
+                          <div class="recorder">
+                            <span class="mx-2">Recorder</span> 
+                            <img src="./assests/profile/trash.svg" alt="">
+                          </div>
+                        </td>
+                    </tr>
+
+                    <!--3rd row-->
+                    <tr class="table-head">
+                        <th scope="row">
+                          <div class="d-flex align-items-center gap-3">
+                            <img
+                              src="./assests/profile/boxproduct.svg"
+                              alt="Product"
+                              class="product-img"
+                            />
+                            <div>
+                              <p class="product-text">
+                                  Order ID: #20241104_003
+                              </p>
+                              <p class="seller">See Ordered Items</p>
+                              <p>$15887 per unit</p>
+                            </div>
+                          </div>
+                        </th>
+                        <td>
+                          15/12/2022
+                        </td>
+                        <td>$15887</td>
+                        <td> Delivering...
+                          <div class="recorder">
+                            <span class="mx-2 cancel">Cancel</span> 
+                            <span class="text-danger">Delete</span>
+                          </div>
+                        </td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+              </div>
+              <!--table end -->
+              <div class="d-flex justify-content-center align-items-center">
+                <button class="btn shop-btn mt-4 px-4"> < Back to Shopping</button>
+              </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--js files-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

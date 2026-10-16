@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/product_page.css" />
+  </head>
+  <body>
+    <!--nav start-->
+    <nav class="navbar navbar-expand-lg nav-background">
+      <div class="container-xxl">
+        <a class="navbar-brand" href="/">
+          <img src="assests/raachLogo.svg" alt="Logo" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse custom-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto text-center">
+            <!-- Always visible nav links -->
+            <li class="nav-item">
+              <a class="nav-link active" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="our_projects.html">Projects</a>
+            </li>
+
+            <!-- Menu Dropdown: Only visible on large devices -->
+            <li class="nav-item dropdown d-none d-lg-block">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Menu
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="about_us.html">About Us</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="build_customer_plant.html"
+                    >Build Custom Plant</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="checkout_details.html"
+                    >Checkout Details</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="company_profile.html"
+                    >Company Profile</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="company_profile_edit.html"
+                    >Company Profile Edit</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="compare_products.html"
+                    >Compare Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="my_cart_empty.html"
+                    >Empty Cart</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="my_cart.html">My Cart</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="my_profile_details.html"
+                    >My Profile Details</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="order_confirmed.html"
+                    >Order Confirmed</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="order_track.html"
+                    >Order Track</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="our_product.html"
+                    >Our Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="product_page.html"
+                    >Product Page</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_add_product.html"
+                    >Vendor Add Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_edit_product.html"
+                    >Vendor Edit Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_profile_details.html"
+                    >Vendor Profile Details</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_login.html"
+                    >Vendor Login</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_signup.html"
+                    >Vendor Signup</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- search-->
+            <li class="nav-item d-none d-lg-block">
+              <form class="search-box">
+                <div class="input-group input-group-sm mt-1">
+                  <span class="input-group-text border-0">
+                    <img src="./assests/header/search.svg" alt="" />
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control border-0 custom-search-input"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </div>
+              </form>
+            </li>
+
+            <!--cart -->
+            <button class="cart-button d-none d-lg-block">
+              <div class="cart-container">
+                <img
+                  src="./assests/header/cart.svg"
+                  alt="Cart Icon"
+                  class="cart-icon"
+                />
+                <span class="cart-count">3</span>
+                <!-- Dynamic cart count -->
+              </div>
+              <span class="mx-2">Cart</span>
+            </button>
+
+            <!-- Expanded menu: visible only on small & medium devices -->
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="about_us.html">About Us</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="build_customer_plant.html"
+                >Build Custom Plant</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="checkout_details.html"
+                >Checkout Details</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="company_profile.html"
+                >Company Profile</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="company_profile_edit.html"
+                >Company Profile Edit</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="compare_products.html"
+                >Compare Product</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="my_cart_empty.html">Empty Cart</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="my_cart.html">My Cart</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="my_profile_details.html"
+                >My Profile Details</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="order_confirmed.html"
+                >Order Confirmed</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="order_track.html">Order Track</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="our_product.html">Our Product</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="product_page.html">Product Page</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_add_product.html"
+                >Vendor Add Product</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_edit_product.html"
+                >Vendor Edit Product</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_profile_details.html"
+                >Vendor Profile Details</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_login.html">Vendor Login</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_signup.html">Vendor Signup</a>
+            </li>
+
+            <!-- search box -->
+            <li class="nav-item d-lg-none d-flex justify-content-center">
+              <form class="search-box">
+                <div class="input-group input-group-sm mt-1">
+                  <span class="input-group-text border-0">
+                    <img src="./assests/header/search.svg" alt="" />
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control border-0 custom-search-input"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </div>
+              </form>
+            </li>
+
+            <!--cart -->
+            <button class="cart-button d-flex justify-content-center d-lg-none">
+              <div class="cart-container">
+                <img
+                  src="./assests/header/cart.svg"
+                  alt="Cart Icon"
+                  class="cart-icon"
+                />
+                <span class="cart-count">3</span>
+                <!-- Dynamic cart count -->
+              </div>
+              <span class="mx-2">Cart</span>
+            </button>
+          </ul>
+
+          <div class="nav-btn-area text-center text-lg-end">
+            <span class="header-user-name">RoroNoa Zoro</span>
+            <img
+              src="./assests/header/propic.svg"
+              class="profile-img-header"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--nav end-->
+
+    <!--section: 1 => swipper slide and other descriptions-->
+    <section class="login-page-background">
+      <div class="login-background">
+        <div class="container-xxl pt-5">
+          <div class="row">
+            <!-- Left Side (4 columns) -->
+            <div class="col-12 col-md-5">
+              <!--slide-->
+              <div>
+                <!-- Main Slider -->
+                <div
+                  style="
+                    --swiper-navigation-color: #fff;
+                    --swiper-pagination-color: #fff;
+                  "
+                  class="swiper mySwiper2"
+                >
+                  <div class="swiper-wrapper">
+                    <!-- Image 1  -->
+                    <div class="swiper-slide product-div p-4">
+                      <div class="content">
+                        <img
+                          src="./assests/product_page/img1.svg"
+                          alt="Product 2"
+                        />
+                        <!--zoom icon and its text-->
+                        <div
+                          class="mt-4 d-flex flex-column justify-content-between align-items-center"
+                        >
+                          <img
+                            class="search-icon"
+                            src="./assests/product_page/zoom-in.svg"
+                            alt=""
+                          />
+                          <p class="product-text">
+                            Hover over image to zoomed in
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Image 2 -->
+                    <div class="swiper-slide product-div p-4">
+                      <div class="content">
+                        <img
+                          src="./assests/product_page/img2.svg"
+                          alt="Product 2"
+                        />
+                        <!--zoom icon and its text-->
+                        <div
+                          class="mt-4 d-flex flex-column justify-content-between align-items-center"
+                        >
+                          <img
+                            class="search-icon"
+                            src="./assests/product_page/zoom-in.svg"
+                            alt=""
+                          />
+                          <p class="product-text">
+                            Hover over image to zoomed in
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Image 3 -->
+                    <div class="swiper-slide product-div p-4">
+                      <div class="content">
+                        <img
+                          src="./assests/product_page/img3.svg"
+                          alt="Product 3"
+                        />
+                        <!--zoom icon and its text-->
+                        <div
+                          class="mt-4 d-flex flex-column justify-content-between align-items-center"
+                        >
+                          <img
+                            class="search-icon"
+                            src="./assests/product_page/zoom-in.svg"
+                            alt=""
+                          />
+                          <p class="product-text">
+                            Hover over image to zoomed in
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Amazon-style Zoom Viewer -->
+                <div id="zoom-viewer" class="zoom-viewer">
+                  <img id="zoom-image" src="" alt="Zoom View" />
+                </div>
+
+                <!-- Thumbs Section with Navigation Buttons -->
+                <div class="thumbs-container">
+                  <div thumbsSlider="" class="swiper mySwiper">
+                    <div
+                      class="swiper-wrapper d-flex justify-content-center align-items-center gap-3"
+                    >
+                      <!--img 1-->
+                      <div class="swiper-slide p-3 product-div">
+                        <img src="./assests/product_page/img1.svg" />
+                      </div>
+                      <!--img 2-->
+                      <div class="swiper-slide p-3 product-div">
+                        <img src="./assests/product_page/img2.svg" />
+                      </div>
+                      <!--img 3-->
+                      <div class="swiper-slide p-3 product-div">
+                        <img src="./assests/product_page/img3.svg" />
+                      </div>
+                      <!--taking 3-->
+                    </div>
+                    <!-- Navigation Buttons (inside the thumbnails section) -->
+                    <div class="swiper-button-next thumbs-nav"></div>
+                    <div class="swiper-button-prev thumbs-nav"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Side (8 columns) -->
+            <div class="col-12 col-md-7">
+              <div class="row">
+                <!-- Right Left Side (8 columns) -->
+                <div class="col-12 col-lg-8">
+                  <div>
+                    <p class="headline-others">
+                      RAACH 120W Portable Solar Panel for 300/500/1000/1500W
+                      Power Station, Foldable Solar Charger with Ajustable
+                      Kickstand, A+ Monocrystalline PV Cell and Waterproof IP67
+                      for EV, Off Grid System, Camping
+                    </p>
+                    <a href="" class="text-style">Visit the RAACH Store</a>
+                    <p class="mt-3 d-flex">
+                      <img
+                        class="star"
+                        src="./assests/product_page/star.svg"
+                        alt=""
+                      />
+                      <a href="" class="custom-link mx-2">4.67</a>
+                      <span class="rating-count">(5,778 Ratings)</span>
+                      <span class="mx-2">&</span>
+                      <a href="" class="custom-link">447 Customer Reviews</a>
+                    </p>
+                  </div>
+                  <hr class="custom-hr" />
+                  <div>
+                    <p>Size: <span class="mx-3">100W N-Type Panel</span></p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-start">
+                      <div class="unselected-product">50W Solar Panel</div>
+                      <div class="selected-product">100W Single Panel</div>
+                      <div class="selected-product">100W N-Type Panel</div>
+                      <div class="unselected-product">
+                        100W Black Frame Panel
+                      </div>
+                      <div class="unselected-product">
+                        100W+1 Set Z Brackets
+                      </div>
+                      <div class="unselected-product">100W 2-Pack Panels</div>
+                    </div>
+                  </div>
+                  <hr class="custom-hr" />
+                  <div class="container mt-4">
+                    <div class="row mb-2">
+                      <div class="col-sm-4 fw-bold">Brand:</div>
+                      <div class="col-sm-8">RAACH Solar</div>
+                    </div>
+                    <div class="row mb-2">
+                      <div class="col-sm-4 fw-bold">Material:</div>
+                      <div class="col-sm-8">
+                        Tributyltin, Tempered Glass, Aluminium
+                      </div>
+                    </div>
+                    <div class="row mb-2">
+                      <div class="col-sm-4 fw-bold">Product Dimensions:</div>
+                      <div class="col-sm-8">41.8" L x 20.9" W x 1.4" H</div>
+                    </div>
+                    <div class="row mb-2">
+                      <div class="col-sm-4 fw-bold">Item Weight:</div>
+                      <div class="col-sm-8">4.1 Pounds</div>
+                    </div>
+                    <div class="row mb-2">
+                      <div class="col-sm-4 fw-bold">Efficiency:</div>
+                      <div class="col-sm-8">High Efficiency</div>
+                    </div>
+
+                    <div class="row mt-3">
+                      <div class="col-sm-4 fw-bold">About This Item:</div>
+                      <div class="col-sm-8">
+                        <ul>
+                          <li>
+                            <strong>Compact and Reliable</strong> – The 100W 12V
+                            Monocrystalline solar panel delivers a stable output
+                            of an average 500Wh of electricity per day
+                            (depending on sun availability). With its compact
+                            solar cell arrangement, this renogy 100W solar panel
+                            weighs only 14.1 lbs and is 8–10% lighter and
+                            smaller than conventional rigid solar panels.
+                          </li>
+                        </ul>
+                        <div class="text-center mb-3">
+                          <a href="#" class="text-decoration-none text-black"></a>
+                            <u>See More</u> <span>&#x25BC;</span></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Right Right Side (4 columns) -->
+                <div class="col-12 col-lg-4">
+                  <div class="right-div p-4 mb-4">
+                    <div
+                      class="text-div"
+                    >
+                      <p>Price:</p>
+                      <p><span class="price">$1144</span> /Unit</p>
+                    </div>
+                    <hr class="custom-hr" />
+                    <div>
+                      <p>Delivery: November 20 - December 12</p>
+                      <p>Or,</p>
+                      <p>Fastest Delivery: Thursday, November 7</p>
+                    </div>
+                    <hr class="custom-hr" />
+                    <!--Quantity-->
+                    <div>
+                      <p>Quantity</p>
+                      <div class="d-flex quantity ">
+                        <!--minus btn-->
+                        <button id="iminus" class="btn">
+                          <i class="fas fa-minus"></i>
+                        </button>
+                        <!-- product input  -->
+                        <input
+                          id="productInput"
+                          type="number"
+                          min="0"
+                          class="form-control input-custom2"
+                          value="0"
+                        />
+                        <!-- plus button  -->
+                        <button id="iplus" class="btn">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </div>
+                      <p class="mt-2">
+                        Total Price:
+                        <span class="mx-2 price">
+                          $ <span id="updateTotal">0</span>
+                        </span>
+                      </p>
+                    </div>
+                    <hr class="custom-hr" />
+
+                    <div class="d-flex flex-column gap-3">
+                      <!--1st button-->
+                      <button class="btn cube-button">
+                        <img
+                          src="./assests/product_page/white-cart.svg"
+                          alt=""
+                        />
+                        <span class="mx-2">Buy Now</span>
+                      </button>
+                      <!--2nd button-->
+                      <button class="btn watch-button">
+                        <img src="./assests/product_page/quotes.svg" alt="" />
+                        <span> Get a Quote</span>
+                      </button>
+
+                      <!--3rd button-->
+                      <button class="btn watch-button border-0">
+                        <img src="./assests/product_page/addcart.svg" alt="" />
+                        <span>
+                          <a class="text-black" href="">Add to Cart</a>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--section 2: -->
+    <section class="section-two pt-5 pb-4">
+      <div class="text-center">
+        <h1 class="headline-small">Additional  Products</h1>
+        <h1 class="headline-large">Customers Who Bought </h1>
+        <h1 class="headline-large">This Also Bought</h1>
+      </div>
+
+      <!--slider-->
+      <div class="our-product px-5">
+        <div class="container-fluid our-product-slider-container ">
+          <div class="row">
+            <div class="slide-container swiper">
+              <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                  <!-- Card 1 -->
+                  <div class="card swiper-slide favourite-card h-100">
+                    <!-- Best Seller Badge -->
+                    <div class="best-seller-badge">Best Seller</div>
+                    <img
+                      src="./assests/profile/f1.svg"
+                      class="card-img-top mt-5"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="star">
+                        <img src="./assests/profile/star.svg" alt="" />
+                        <span class="mx-2">4.67</span>
+                      </div>
+                      <h6 class="card-title mt-3">
+                        Long Ran Monocrystalline 220W Half-Cut Solar Panel
+                        12V...
+                      </h6>
+                      <p class="card-text"> <p> seller: <span class="seller">RAACH Solar</span> </p> </p>
+                      <p class="card-text"> <p> seller: <span class="regular-price">BDT 6090</span>  </p> </p>
+                      <!--buttons-->
+                      <div class="d-flex  justify-content-center align-items-center flex-md-row gap-3">
+                          <!--cart-->
+                          <button class="btn cart-button">
+                              <img src="./assests/home/shopping.svg" alt="" />
+                          </button>
+                          <!--Buy Now-->
+                          <button class="btn cube-button">Buy Now</button>
+                          <!--heart icon button-->
+                          <button class="btn cart-button">
+                              <img src="./assests/product_page/heart-white.svg" alt="" />
+                          </button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Card 2 -->
+                  <div class="card swiper-slide favourite-card h-100">
+                    <!-- 30% Off -->
+                    <div class="off-badge">30% Off</div>
+                    <img
+                      src="./assests/profile/f2.svg"
+                      class="card-img-top mt-5"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="star">
+                        <img src="./assests/profile/star.svg" alt="" />
+                        <span class="mx-2">4.67</span>
+                      </div>
+                      <h6 class="card-title mt-3">
+                        Long Ran Monocrystalline 220W Half-Cut Solar Panel
+                        12V...
+                      </h6>
+                      <p class="card-text"> <p> seller: <span class="seller">RAACH Solar</span> </p> </p>
+                      <p class="card-text"> <p> seller: <span class="regular-price">BDT 6090</span> </p> </p>
+                      <!--buttons-->
+                      <div class="d-flex justify-content-center align-items-center flex-md-row gap-3">
+                          <!--cart-->
+                          <button class="btn cart-button">
+                              <img src="./assests/home/shopping.svg" alt="" />
+                          </button>
+                          <!--Buy Now-->
+                          <button class="btn cube-button">Buy Now</button>
+                          <!--heart icon button-->
+                          <button class="btn cart-button">
+                            <img src="./assests/product_page/heart-white.svg" alt="" />
+                          </button>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <!-- Card 3 -->
+                  <div class="card swiper-slide favourite-card h-100">
+                        
+                    <img
+                      src="./assests/profile/f4.svg"
+                      class="card-img-top mt-5"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="star">
+                        <img src="./assests/profile/star.svg" alt="" />
+                        <span class="mx-2">4.67</span>
+                      </div>
+                      <h6 class="card-title mt-3">
+                        Long Ran Monocrystalline 220W Half-Cut Solar Panel
+                        12V...
+                      </h6>
+                      <p class="card-text"> <p> seller: <span class="seller">RAACH Solar</span> </p> </p>
+                      <p class="card-text"> <p> seller: <span class="regular-price">BDT 6090</span>  </p> </p>
+                      <!--buttons-->
+                      <div class="d-flex justify-content-center align-items-center flex-md-row gap-3">
+                          <!--cart-->
+                          <button class="btn cart-button">
+                              <img src="./assests/home/shopping.svg" alt="" />
+                          </button>
+                          <!--Buy Now-->
+                          <button class="btn cube-button">Buy Now</button>
+                          <!--heart icon button-->
+                          <button class="btn cart-button">
+                            <img src="./assests/product_page/heart-white.svg" alt="" />
+                          </button>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <!-- Card 4 -->
+                  <div class="card swiper-slide favourite-card h-100">
+                    <!-- Best Seller Badge -->
+                    <div class="best-seller-badge">Best Seller</div>
+                    <img
+                      src="./assests/profile/f1.svg"
+                      class="card-img-top mt-5"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="star">
+                        <img src="./assests/profile/star.svg" alt="" />
+                        <span class="mx-2">4.67</span>
+                      </div>
+                      <h6 class="card-title mt-3">
+                        Long Ran Monocrystalline 220W Half-Cut Solar Panel
+                        12V...
+                      </h6>
+                      <p class="card-text"> <p> seller: <span class="seller">RAACH Solar</span> </p> </p>
+                      <p class="card-text"> <p> seller: <span class="regular-price">BDT 6090</span>  </p> </p>
+                      <!--buttons-->
+                      <div class="d-flex justify-content-center align-items-center flex-md-row gap-3">
+                          <!--cart-->
+                          <button class="btn cart-button">
+                              <img src="./assests/home/shopping.svg" alt="" />
+                          </button>
+                          <!--Buy Now-->
+                          <button class="btn cube-button">Buy Now</button>
+                          <!--heart icon button-->
+                          <button class="btn cart-button">
+                            <img src="./assests/product_page/heart-white.svg" alt="" />
+                          </button>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <!-- Card 5 -->
+                  <div class="card swiper-slide favourite-card h-100">
+                    <!-- 30% Off -->
+                    <div class="off-badge">30% Off</div>
+                    <img
+                      src="./assests/profile/f2.svg"
+                      class="card-img-top mt-5"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="star">
+                        <img src="./assests/profile/star.svg" alt="" />
+                        <span class="mx-2">4.67</span>
+                      </div>
+                      <h6 class="card-title mt-3">
+                        Long Ran Monocrystalline 220W Half-Cut Solar Panel
+                        12V...
+                      </h6>
+                      <p class="card-text"> <p> seller: <span class="seller">RAACH Solar</span> </p> </p>
+                      <p class="card-text"> <p> seller: <span class="regular-price">BDT 6090</span> </p> </p>
+                      <!--buttons-->
+                      <div class="d-flex justify-content-center align-items-center flex-md-row gap-3">
+                          <!--cart-->
+                          <button class="btn cart-button">
+                              <img src="./assests/home/shopping.svg" alt="" />
+                          </button>
+                          <!--Buy Now-->
+                          <button class="btn cube-button">Buy Now</button>
+                          <!--heart icon button-->
+                          <button class="btn cart-button">
+                            <img src="./assests/product_page/heart-white.svg" alt="" />
+                          </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--card 6-->
+                  <div class="card swiper-slide favourite-card h-100">
+                        
+                    <img
+                      src="./assests/profile/f4.svg"
+                      class="card-img-top mt-5"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="star">
+                        <img src="./assests/profile/star.svg" alt="" />
+                        <span class="mx-2">4.67</span>
+                      </div>
+                      <h6 class="card-title mt-3">
+                        Long Ran Monocrystalline 220W Half-Cut Solar Panel
+                        12V...
+                      </h6>
+                      <p class="card-text"> <p> seller: <span class="seller">RAACH Solar</span> </p> </p>
+                      <p class="card-text"> <p> seller: <span class="regular-price">BDT 6090</span>  </p> </p>
+                      <!--buttons-->
+                      <div class="d-flex justify-content-center align-items-center flex-md-row gap-3">
+                          <!--cart-->
+                          <button class="btn cart-button">
+                              <img src="./assests/home/shopping.svg" alt="" />
+                          </button>
+                          <!--Buy Now-->
+                          <button class="btn cube-button">Buy Now</button>
+                          <!--heart icon button-->
+                          <button class="btn cart-button">
+                            <img src="./assests/product_page/heart-white.svg" alt="" />
+                          </button>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+  
+              <div class="swiper-button-next swiper-navBtn"></div>
+              <div class="swiper-button-prev swiper-navBtn"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+    </section>
+
+    <!--section: 3-->
+    <section class="section-three pb-4">
+      <div class="text-center">
+        <h1 class="headline-small">Product Specifications</h1>
+        <h1 class="headline-large">See the Specifications of </h1>
+        <h1 class="headline-large">the Product</h1>
+      </div>
+
+      <div class="container-xxl my-5">
+        <div class="row">
+          <div class="col-md-6 col-lg-6 mb-4">
+            <!--table-->
+            <div class="custom-table-container">
+              <table class="table custom-table mb-0">
+                <tbody>
+                  <tr>
+                    <th scope="row">Brand:</th>
+                    <td>RAACH Solar</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Material:</th>
+                    <td>Tributyltin, Tempered Glass, Aluminium</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Product Dimensions:</th>
+                    <td>41.8" L x 20.9" W x 1.4" H</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Item Weight:</th>
+                    <td>4.1 Pounds</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Efficiency:</th>
+                    <td>High Efficiency</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Connector Type</th>
+                    <td>MC4</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">First</th>
+                    <td>Mark</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Included Components</th>
+                    <td>Solar Panel</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Maximum Voltage</th>
+                    <td>12 Volts</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Maximum Power</th>
+                    <td>100 Watts</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">UPC</th>
+                    <td>840315228535</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">ASIN</th>
+                    <td>B0D3DZWXT4</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Country of Origin</th>
+                    <td>Thailand</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Item model number</th>
+                    <td>N-Type 16BB 100W Solar Panel</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Product Description</th>
+                    <td>Model: GP-SOP001 <br> Peak Power: 120W <br>  Max Operating Voltage: 20.9V <br> Maximum Operating current: 5.74A <br>  Recommended Ambient Temperature: -20 °C-65 °C <br> Efficiency: ≥23% <br>  Waterproof Level: IP67 <br> Weight: 9lbs <br>  Dimension (Unfolded): 68.8x21.7x0.1 inch <br> Dimension (Folded): 18.3x21.7x0.1 inch <br> Cell Type: A+ Monocrystalline Silicon Solar Cell <br> Connector Type: MC4 <br> What’s in the Box: 1x Green Pulse solar panel, 1x <br> MC4 output controller, user manual and warranty card.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 mb-4">
+            <p class="fw-bold">Warranty & Support</p>
+            <p>Manufacturer’s warranty can be requested from customer service. Click Here to make a request to customer service.</p>
+            <hr class="custom-hr" />
+            <p class="fw-bold">Feedback</p>
+            <p>You can request the manufacturer’s warranty by reaching out to customer service. Just Click Here to submit your request!</p>
+          </div>
+        </div>
+      </div>
+
+      <!--section: 4 -->
+      <section class="  ">
+        <div class="text-center">
+          <h1 class="headline-small">Customer Review</h1>
+          <h1 class="headline-large">Customers’ Opinions  </h1>
+          <h1 class="headline-large">about This Product</h1>
+        </div>
+      </section>
+      <!--reviews-->
+      <div class="container-xxl my-5">
+        <!--reviews card-->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <!--review 1-->
+          <div class="col">
+            <div class="card review-card h-100">
+              <img src="./assests/product_page/dp1.svg" class="card-img-top dp mx-3" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Paul Stiffen <img class="verified" src="./assests/product_page/verified.svg" alt=""> <span class="verified-text">Verified Buyer</span> </h5>
+                <p > <img src="./assests/product_page/star.svg" class="verified" alt=""> 5.0 </p>
+                <p class="card-text verified-text">As a customer, I am thrilled with the solar panel I purchased! The team behind it genuinely cares about their customers, and it reflects in the exceptional quality of their product. It's so refreshing to find a company that truly values customer feedback and is committed to ongoing improvement. My experience has been absolutely outstanding!</p>
+                <!-- Responsive Image Row -->
+                <div class="d-flex flex-wrap gap-2 mt-3">
+                  <img class="review-img" src="./assests/product_page/r1.svg" class="img-fluid rounded" style="width: 100px; height: auto;" alt="Review image 1">
+                  <img class="review-img"  src="./assests/product_page/r2.svg" class="img-fluid rounded" style="width: 100px; height: auto;" alt="Review image 2">
+                  <img class="review-img"  src="./assests/product_page/r3.svg" class="img-fluid rounded" style="width: 100px; height: auto;" alt="Review image 3">
+                  <div class="position-relative d-inline-block">
+                    <img class="review-img img-fluid rounded" src="./assests/product_page/r4.svg" style="width: 100px; height: auto;" alt="Review image 4">
+                    <span class="position-absolute top-50 start-50 translate-middle text-white fw-bold" style="font-size: 20px;">
+                      4+
+                    </span>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--review 2-->
+          <div class="col">
+            <div class="card review-card h-100">
+              <img src="./assests/product_page/dp2.svg" class="card-img-top dp mx-3" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Sam Adler  <img class="verified" src="./assests/product_page/not-verified.svg" alt=""> <span class="verified-text">Verifying...</span> </h5>
+                <p > <img src="./assests/product_page/star.svg" class="verified" alt=""> 5.0 </p>
+                <p class="card-text verified-text">As a customer, I am thrilled with the solar panel I purchased! The team behind it genuinely cares about their customers, and it reflects in the exceptional quality of their product.</p>
+                <!-- Responsive Image Row -->
+                <div class="d-flex flex-wrap gap-2 mt-3">
+                  <img class="review-img" src="./assests/product_page/r1.svg" class="img-fluid rounded" style="width: 100px; height: auto;" alt="Review image 1">
+                  <img class="review-img"  src="./assests/product_page/r2.svg" class="img-fluid rounded" style="width: 100px; height: auto;" alt="Review image 2">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--review 3-->
+          <div class="col">
+            <div class="card review-card h-100">
+              <img src="./assests/product_page/dp3.svg" class="card-img-top dp mx-3" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Paul Stiffen <img class="verified" src="./assests/product_page/verified.svg" alt=""> <span class="verified-text">Verified Buyer</span> </h5>
+                <p > <img src="./assests/product_page/star.svg" class="verified" alt=""> 5.0 </p>
+                <p class="card-text verified-text">As a customer, I am thrilled with the solar panel I purchased! The team behind it genuinely cares about their customers, and it reflects in the exceptional quality of their product. It's so refreshing to find a company that truly values customer feedback and is committed to ongoing improvement. My experience has been absolutely outstanding!</p>
+                <!-- Responsive Image Row -->
+                <div class="d-flex flex-wrap gap-2 mt-3">
+                  <img class="review-img" src="./assests/product_page/r1.svg" class="img-fluid rounded" style="width: 100px; height: auto;" alt="Review image 1">
+                  <img class="review-img"  src="./assests/product_page/r2.svg" class="img-fluid rounded" style="width: 100px; height: auto;" alt="Review image 2">
+                  <img class="review-img"  src="./assests/product_page/r3.svg" class="img-fluid rounded" style="width: 100px; height: auto;" alt="Review image 3">
+                  <div class="position-relative d-inline-block">
+                    <img class="review-img img-fluid rounded" src="./assests/product_page/r4.svg" style="width: 100px; height: auto;" alt="Review image 4">
+                    <span class="position-absolute top-50 start-50 translate-middle text-white fw-bold" style="font-size: 20px;">
+                      4+
+                    </span>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <!--pagination-->
+      <div class="container pb-5">
+        <nav>
+            <ul class="pagination">
+                <li><span class="disabled">« First</span></li>
+                <li><span class="disabled">‹ Previous</span></li>
+                <li><span class="active">1</span></li>
+                <li><a href="#">2</a></li>
+                <li class="ellipsis"><span>.</span></li>
+                <li class="ellipsis"><span>.</span></li>
+                <li class="ellipsis"><span>.</span></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">Next ›</a></li>
+                <li><a href="#">Last »</a></li>
+            </ul>
+        </nav>
+      </div>
+
+
+    </section>
+
+    <!--footer start-->
+    <section class="footer">
+      <div class="container mx-auto text-center">
+        <img src="assests/raachLogo.svg" alt="Logo" class="" />
+        <p class="mt-4">
+          At interdum pellentesque odio faucibus. Nibh tempor in id ultricies
+          orci morbi sit mi id. <br />
+          Arcu sed vestibulum liber sed vestibulum liber sed vestibulum .
+        </p>
+
+        <p class="fw-bold">Contact Us</p>
+        <p>
+          <span> <img src="./assests/footer/envelope.svg" alt="" /></span>
+          info@ourhoneybee.eu
+        </p>
+
+        <div>
+          <img src="./assests/footer/Facebook.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/instagram.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/linkedin.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/x.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/other.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/youtube.svg" alt="" class="mx-2" />
+        </div>
+        <hr class="custom-hr" />
+        <div>
+          <p>
+            Copyright © 2024
+            <span class="footer-text"> RAACH Solar </span>
+            <span class="mx-2">Powered by</span>
+            <span class="fw-bold">© 2024 RAACH Solar</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--footer end-->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/product_page.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

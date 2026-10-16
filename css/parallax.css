@@ -1,0 +1,107 @@
+/* our project */
+.project-bg {
+  background: radial-gradient(120.09% 50% at 50% 50%, #ebfbfe 0%, #c1e3ff 100%),
+    rgba(255, 255, 255, 0.2);
+}
+
+.flash-div {
+  min-width: 140px;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(27px);
+}
+
+.flash-div1 {
+  min-width: 100px;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(27px);
+}
+
+.p-text {
+  font-size: 14px;
+}
+
+.icon {
+  width: 15px;
+}
+
+/* test */
+.parallax {
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transform: translateZ(0);
+  will-change: transform;
+  transition: transform 0.3s ease;
+}
+
+.image-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  z-index: 1;
+}
+
+.info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.top-left {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.top-right {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+}
+
+.centered-bottom {
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translate(-50%, -2%);
+}
+
+/* text Sections */
+.sec1 {
+  margin-top: 10px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.parallax-text {
+  color: #fff;
+  text-align: center;
+  font-family: "Gilroy";
+  font-size: clamp(1rem, 0.6379rem + 1.6552vw, 2.5rem);
+  font-style: normal;
+  font-weight: 600;
+}

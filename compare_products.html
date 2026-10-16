@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compare Product</title>
+    <!--swipper and others css links-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!--nav start-->
+    <nav class="navbar navbar-expand-lg nav-background">
+      <div class="container-xxl">
+        <a class="navbar-brand" href="/">
+          <img src="assests/raachLogo.svg" alt="Logo" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse custom-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto text-center">
+            <!-- Always visible nav links -->
+            <li class="nav-item">
+              <a class="nav-link active" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="our_projects.html">Projects</a>
+            </li>
+
+            <!-- Menu Dropdown: Only visible on large devices -->
+            <li class="nav-item dropdown d-none d-lg-block">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Menu
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="about_us.html">About Us</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="build_customer_plant.html"
+                    >Build Custom Plant</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="checkout_details.html"
+                    >Checkout Details</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="company_profile.html"
+                    >Company Profile</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="company_profile_edit.html"
+                    >Company Profile Edit</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="compare_products.html"
+                    >Compare Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="my_cart_empty.html"
+                    >Empty Cart</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="my_cart.html">My Cart</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="my_profile_details.html"
+                    >My Profile Details</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="order_confirmed.html"
+                    >Order Confirmed</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="order_track.html"
+                    >Order Track</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="our_product.html"
+                    >Our Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="product_page.html"
+                    >Product Page</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_add_product.html"
+                    >Vendor Add Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_edit_product.html"
+                    >Vendor Edit Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_profile_details.html"
+                    >Vendor Profile Details</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_login.html"
+                    >Vendor Login</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_signup.html"
+                    >Vendor Signup</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- search-->
+            <li class="nav-item d-none d-lg-block">
+              <form class="search-box">
+                <div class="input-group input-group-sm mt-1">
+                  <span class="input-group-text border-0">
+                    <img src="./assests/header/search.svg" alt="" />
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control border-0 custom-search-input"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </div>
+              </form>
+            </li>
+
+            <!--cart -->
+            <button class="cart-button d-none d-lg-block">
+              <div class="cart-container">
+                <img
+                  src="./assests/header/cart.svg"
+                  alt="Cart Icon"
+                  class="cart-icon"
+                />
+                <span class="cart-count">3</span>
+                <!-- Dynamic cart count -->
+              </div>
+              <span class="mx-2">Cart</span>
+            </button>
+
+            <!-- Expanded menu: visible only on small & medium devices -->
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="about_us.html">About Us</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="build_customer_plant.html"
+                >Build Custom Plant</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="checkout_details.html"
+                >Checkout Details</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="company_profile.html"
+                >Company Profile</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="company_profile_edit.html"
+                >Company Profile Edit</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="compare_products.html"
+                >Compare Product</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="my_cart_empty.html">Empty Cart</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="my_cart.html">My Cart</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="my_profile_details.html"
+                >My Profile Details</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="order_confirmed.html"
+                >Order Confirmed</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="order_track.html">Order Track</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="our_product.html">Our Product</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="product_page.html">Product Page</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_add_product.html"
+                >Vendor Add Product</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_edit_product.html"
+                >Vendor Edit Product</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_profile_details.html"
+                >Vendor Profile Details</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_login.html">Vendor Login</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_signup.html">Vendor Signup</a>
+            </li>
+
+            <!-- search box -->
+            <li class="nav-item d-lg-none d-flex justify-content-center">
+              <form class="search-box">
+                <div class="input-group input-group-sm mt-1">
+                  <span class="input-group-text border-0">
+                    <img src="./assests/header/search.svg" alt="" />
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control border-0 custom-search-input"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </div>
+              </form>
+            </li>
+
+            <!--cart -->
+            <button class="cart-button d-flex justify-content-center d-lg-none">
+              <div class="cart-container">
+                <img
+                  src="./assests/header/cart.svg"
+                  alt="Cart Icon"
+                  class="cart-icon"
+                />
+                <span class="cart-count">3</span>
+                <!-- Dynamic cart count -->
+              </div>
+              <span class="mx-2">Cart</span>
+            </button>
+          </ul>
+
+          <div class="nav-btn-area text-center text-lg-end">
+            <a href="login.html" class="login-btn btn ms-2">Login</a>
+            <a href="signup.html" class="create-account-btn btn">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--nav end-->
+
+    <section class="categories-bg pt-5">
+      <!--OUR PRODUCTS div-->
+      <div class="container-fluid p-3 pb-4">
+        <!--headline-->
+        <div class="text-center">
+          <p class="headline-small">CHOOSE PRODUCT</p>
+          <p class="headline-large">We Bring You the Best</p>
+          <p class="headline-large">Products in Town</p>
+        </div>
+
+        <div class="container my-4 solar-compare-wrapper">
+          <div class="mb-3 d-flex justify-content-center">
+            <input
+              style="max-width: 250px"
+              type="text"
+              class="form-control"
+              id="productSearch"
+              placeholder="Search products..."
+            />
+          </div>
+
+          <div class="table-responsive">
+            <table class="comparison-table" id="comparisonTable">
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>Product 1</th>
+                  <th>Product 2</th>
+                  <th>Product 3</th>
+                  <th>Product 4</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="fw-bold">Image</td>
+                  <td>
+                    <img
+                      src="./assests/compare/p1.png"
+                      alt="Product 1"
+                      class="product-image"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      src="./assests/compare/p2.png"
+                      alt="Product 2"
+                      class="product-image"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      src="./assests/compare/p3.png"
+                      alt="Product 3"
+                      class="product-image"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      src="./assests/compare/p4.png"
+                      alt="Product 4"
+                      class="product-image"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Brand</td>
+                  <td>Trina Solar</td>
+                  <td>LONGi</td>
+                  <td>Jinko</td>
+                  <td>Canadian Solar</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Model</td>
+                  <td>TSM-425DE09</td>
+                  <td>LR4-72HPH-450M</td>
+                  <td>JKM440M-7RL3</td>
+                  <td>CS3W-445MS</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Technology</td>
+                  <td>Monocrystalline</td>
+                  <td>Monocrystalline</td>
+                  <td>Bifacial Mono</td>
+                  <td>Monocrystalline</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Rated Power (Pmax)</td>
+                  <td>425 W</td>
+                  <td>450 W</td>
+                  <td>440 W</td>
+                  <td>445 W</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Efficiency</td>
+                  <td>20.8%</td>
+                  <td>20.9%</td>
+                  <td>20.1%</td>
+                  <td>20.3%</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Voc</td>
+                  <td>49.0 V</td>
+                  <td>50.5 V</td>
+                  <td>49.8 V</td>
+                  <td>50.1 V</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Isc</td>
+                  <td>11.0 A</td>
+                  <td>11.2 A</td>
+                  <td>11.1 A</td>
+                  <td>11.3 A</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Vmp / Imp</td>
+                  <td>40.5 V / 10.5 A</td>
+                  <td>41.0 V / 11.0 A</td>
+                  <td>40.8 V / 10.8 A</td>
+                  <td>41.2 V / 10.8 A</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Max System Voltage</td>
+                  <td>1500 V</td>
+                  <td>1500 V</td>
+                  <td>1500 V</td>
+                  <td>1500 V</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Dimensions</td>
+                  <td>2015×1002×40 mm</td>
+                  <td>2094×1038×35 mm</td>
+                  <td>2108×1048×35 mm</td>
+                  <td>2108×1048×35 mm</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Weight</td>
+                  <td>22 kg</td>
+                  <td>23.5 kg</td>
+                  <td>23.0 kg</td>
+                  <td>24.0 kg</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Certifications</td>
+                  <td>IEC 61215 / 61730</td>
+                  <td>IEC 61215 / 61730</td>
+                  <td>IEC 61215 / 61730</td>
+                  <td>IEC 61215 / 61730</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Warranty (Product / Performance)</td>
+                  <td>12 / 25 years</td>
+                  <td>12 / 25 years</td>
+                  <td>12 / 25 years</td>
+                  <td>12 / 25 years</td>
+                </tr>
+                <tr>
+                  <td class="fw-bold">Price</td>
+                  <td>€150</td>
+                  <td>€160</td>
+                  <td>€155</td>
+                  <td>€158</td>
+                </tr>
+                <tr>
+                  <td>purchase Now?</td>
+                  <td><button class="btn cube-button">Buy Now</button></td>
+                  <td><button class="btn cube-button">Buy Now</button></td>
+                  <td><button class="btn cube-button">Buy Now</button></td>
+                  <td><button class="btn cube-button">Buy Now</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--footer start-->
+    <section class="footer">
+      <div class="container mx-auto text-center">
+        <img src="assests/raachLogo.svg" alt="Logo" class="" />
+        <p class="mt-4">
+          At interdum pellentesque odio faucibus. Nibh tempor in id ultricies
+          orci morbi sit mi id. <br />
+          Arcu sed vestibulum liber sed vestibulum liber sed vestibulum .
+        </p>
+
+        <p class="fw-bold">Contact Us</p>
+        <p>
+          <span> <img src="./assests/footer/envelope.svg" alt="" /></span>
+          info@ourhoneybee.eu
+        </p>
+
+        <div>
+          <img src="./assests/footer/Facebook.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/instagram.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/linkedin.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/x.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/other.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/youtube.svg" alt="" class="mx-2" />
+        </div>
+        <hr class="custom-hr" />
+        <div>
+          <p>
+            Copyright © 2024
+            <span class="footer-text"> RAACH Solar </span>
+            <span class="mx-2">Powered by</span>
+            <span class="fw-bold">© 2024 RAACH Solar</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--footer end-->
+
+    <!--js files-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/range.js"></script>
+  </body>
+</html>

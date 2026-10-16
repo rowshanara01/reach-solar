@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Build Custom Plant</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!--nav start-->
+    <nav class="navbar navbar-expand-lg nav-background">
+      <div class="container-xxl">
+        <a class="navbar-brand" href="/">
+          <img src="assests/raachLogo.svg" alt="Logo" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse custom-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto text-center">
+            <!-- Always visible nav links -->
+            <li class="nav-item">
+              <a class="nav-link active" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="our_projects.html">Projects</a>
+            </li>
+
+            <!-- Menu Dropdown: Only visible on large devices -->
+            <li class="nav-item dropdown d-none d-lg-block">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Menu
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="about_us.html">About Us</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="build_customer_plant.html"
+                    >Build Custom Plant</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="checkout_details.html"
+                    >Checkout Details</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="company_profile.html"
+                    >Company Profile</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="company_profile_edit.html"
+                    >Company Profile Edit</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="compare_products.html"
+                    >Compare Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="my_cart_empty.html"
+                    >Empty Cart</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="my_cart.html">My Cart</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="my_profile_details.html"
+                    >My Profile Details</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="order_confirmed.html"
+                    >Order Confirmed</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="order_track.html"
+                    >Order Track</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="our_product.html"
+                    >Our Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="product_page.html"
+                    >Product Page</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_add_product.html"
+                    >Vendor Add Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_edit_product.html"
+                    >Vendor Edit Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_profile_details.html"
+                    >Vendor Profile Details</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_login.html"
+                    >Vendor Login</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_signup.html"
+                    >Vendor Signup</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- search-->
+            <li class="nav-item d-none d-lg-block">
+              <form class="search-box">
+                <div class="input-group input-group-sm mt-1">
+                  <span class="input-group-text border-0">
+                    <img src="./assests/header/search.svg" alt="" />
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control border-0 custom-search-input"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </div>
+              </form>
+            </li>
+
+            <!--cart -->
+            <button class="cart-button d-none d-lg-block">
+              <div class="cart-container">
+                <img
+                  src="./assests/header/cart.svg"
+                  alt="Cart Icon"
+                  class="cart-icon"
+                />
+                <span class="cart-count">3</span>
+                <!-- Dynamic cart count -->
+              </div>
+              <span class="mx-2">Cart</span>
+            </button>
+
+            <!-- Expanded menu: visible only on small & medium devices -->
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="about_us.html">About Us</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="build_customer_plant.html"
+                >Build Custom Plant</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="checkout_details.html"
+                >Checkout Details</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="company_profile.html"
+                >Company Profile</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="company_profile_edit.html"
+                >Company Profile Edit</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="compare_products.html"
+                >Compare Product</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="my_cart_empty.html">Empty Cart</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="my_cart.html">My Cart</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="my_profile_details.html"
+                >My Profile Details</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="order_confirmed.html"
+                >Order Confirmed</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="order_track.html">Order Track</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="our_product.html">Our Product</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="product_page.html">Product Page</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_add_product.html"
+                >Vendor Add Product</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_edit_product.html"
+                >Vendor Edit Product</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_profile_details.html"
+                >Vendor Profile Details</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_login.html">Vendor Login</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_signup.html">Vendor Signup</a>
+            </li>
+
+            <!-- search box -->
+            <li class="nav-item d-lg-none d-flex justify-content-center">
+              <form class="search-box">
+                <div class="input-group input-group-sm mt-1">
+                  <span class="input-group-text border-0">
+                    <img src="./assests/header/search.svg" alt="" />
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control border-0 custom-search-input"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </div>
+              </form>
+            </li>
+
+            <!--cart -->
+            <button class="cart-button d-flex justify-content-center d-lg-none">
+              <div class="cart-container">
+                <img
+                  src="./assests/header/cart.svg"
+                  alt="Cart Icon"
+                  class="cart-icon"
+                />
+                <span class="cart-count">3</span>
+                <!-- Dynamic cart count -->
+              </div>
+              <span class="mx-2">Cart</span>
+            </button>
+          </ul>
+
+          <div class="nav-btn-area text-center text-lg-end">
+            <span class="header-user-name">RoroNoa Zoro</span>
+            <img
+              src="./assests/header/propic.svg"
+              class="profile-img-header"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--nav end-->
+    <section class="page-background pb-4">
+      <!--headline-->
+      <div class="text-center pt-5">
+        <p class="raach-title">CUSTOM PLANT</p>
+        <p class="first-pera">Leading the</p>
+        <p class="second-pera">Solar Revolution</p>
+      </div>
+
+      <!--raach solar info-->
+      <div class="container-xxl pt-5 px-4">
+        <div class="row info-div">
+          <div class="col-md-4 col-12">
+            <img
+              src="./assests/raachLogo.svg"
+              class="py-4 mx-auto d-block"
+              alt=""
+            />
+          </div>
+          <div class="col-md-8 col-12">
+            <div class="row row-cols-1 row-cols-md-4 g-3">
+              <!--card 1-->
+              <div class="col">
+                <div class="d-flex align-items-center">
+                  <div class="h-100 py-4 bg-transparent border-0 mx-auto">
+                    <img
+                      src="./assests/custom-plant/cart.svg"
+                      class="card-img-top mx-auto d-block icon-size"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <p class="card-text text-center text-style">
+                        Add to cart
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--card 2-->
+              <div class="col">
+                <div class="d-flex align-items-center">
+                  <div class="divider2 d-none d-md-block"></div>
+                  <!-- Divider on the left -->
+                  <div class="h-100 py-4 bg-transparent border-0 mx-auto">
+                    <img
+                      src="./assests/custom-plant/pdf.svg"
+                      class="card-img-top mx-auto d-block icon-size"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <p class="card-text text-center text-style">PDF</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--card 3-->
+              <div class="col">
+                <div class="d-flex align-items-center">
+                  <div class="divider2 d-none d-md-block"></div>
+                  <!-- Divider on the left -->
+                  <div class="mx-auto h-100 py-4 bg-transparent border-0">
+                    <img
+                      src="./assests/custom-plant/print.svg"
+                      class="card-img-top mx-auto d-block icon-size"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <p class="card-text text-center text-style">Print</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--card 4-->
+              <div class="col">
+                <div class="d-flex align-items-center">
+                  <div class="divider2 d-none d-md-block"></div>
+                  <!-- Divider on the left -->
+                  <div class="mx-auto h-100 py-4 bg-transparent border-0">
+                    <img
+                      src="./assests/custom-plant/camera.svg"
+                      class="card-img-top mx-auto d-block icon-size"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <p class="card-text text-center text-style">Screenshot</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--custom plant div-->
+        <div class="row custom-plant-div mt-4 p-3">
+          <div class="col-md-7 col-12 mt-4 px-3 mb-4">
+            <p class="headline-others">Custom Plant Builder</p>
+            <div class="remember">
+              <div class="terms">
+                <input type="checkbox" class="checkBox" id="check" required />
+                <label for="check">
+                  <span class="text-style">Hide Unconfigured Components</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-12 mt-4">
+            <div class="row gap-3 d-flex justify-content-end flex-wrap">
+              <div
+                class="col-12 col-md-auto d-flex flex-column align-items-center power py-3"
+              >
+                <p class="headline-others">100 kW</p>
+                <p>Estimated Power</p>
+              </div>
+
+              <div
+                class="col-12 col-md-auto d-flex flex-column align-items-center items py-3"
+              >
+                <p class="headline-others text-white">$15887</p>
+                <p class="text-white">122 Items</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--plants-->
+      <div class="container-xxl px-3">
+        <div class="table-responsive">
+          <table class="table mt-4">
+            <tbody class="mt-5">
+              <!--1st row-->
+              <tr class="table-head">
+                <!-- Product Column -->
+                <th class="product-column">
+                  <div class="d-flex align-items-center gap-3">
+                    <img
+                      src="./assests/cart/solarproduct.svg"
+                      alt="Product"
+                      class="product-img"
+                    />
+                    <div class="product-details">
+                      <p class="product-category">
+                        Solar Panel
+                        <span class="badge required mx-3"> Required</span>
+                      </p>
+                      <p class="product-text">
+                        Long Ran Monocrystalline 220W Half-Cut Solar Panel 12V
+                        Half-Cut Solar Panel 12V
+                      </p>
+                      <p class="product-power">4000 W - 5040 W</p>
+                    </div>
+                  </div>
+                </th>
+
+                <!-- Quantity Control Column -->
+                <td class="quantity-container">
+                  <div
+                    class="d-flex align-items-center justify-content-center gap-3"
+                  >
+                    <!-- Minus Button -->
+                    <button id="iminus" class="btn">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <!-- Product Quantity -->
+                    <span class="quantity-value">15</span>
+                    <!-- Plus Button -->
+                    <button id="iplus" class="btn">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                </td>
+
+                <!-- Total Price Column -->
+                <td class="total-container">
+                  <span class="total-price">$2234</span>
+                </td>
+
+                <!-- Divider Column -->
+                <td class="divider-column">
+                  <div class="divider"></div>
+                </td>
+
+                <!-- Buttons Column -->
+                <td class="button-container">
+                  <button class="icon-button">
+                    <img src="./assests/custom-plant/Close.svg" alt="Remove" />
+                  </button>
+                  <button class="icon-button purple-border">
+                    <img
+                      src="./assests/custom-plant/refresh.svg"
+                      alt="Refresh"
+                    />
+                  </button>
+                </td>
+              </tr>
+
+              <!--2nd row-->
+              <tr class="table-head">
+                <!-- Product Column -->
+                <th class="product-column">
+                  <div class="d-flex align-items-center gap-3">
+                    <img
+                      src="./assests/custom-plant/gallery.svg"
+                      alt="Product"
+                      class="product-img p-4"
+                    />
+                    <div class="product-details">
+                      <p class="product-category">
+                        Battery Cell
+                        <span class="badge required mx-3"> Required</span>
+                      </p>
+                      <p class="product-text">----</p>
+                      <p class="product-text">----</p>
+                    </div>
+                  </div>
+                </th>
+
+                <!-- Quantity Control Column -->
+                <td class="quantity-container">
+                  <div
+                    class="d-flex align-items-center justify-content-center gap-3"
+                  >
+                    <!-- Minus Button -->
+                    <button id="iminus" class="btn">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <!-- Product Quantity -->
+                    <span class="quantity-value">15</span>
+                    <!-- Plus Button -->
+                    <button id="iplus" class="btn">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                </td>
+
+                <!-- Total Price Column -->
+                <td class="total-container">
+                  <span class="total-price">$----</span>
+                </td>
+
+                <!-- Divider Column -->
+                <td class="divider-column">
+                  <div class="divider"></div>
+                </td>
+
+                <!-- Buttons Column -->
+                <td class="button-container">
+                  <button class="choose-btn">Choose</button>
+                </td>
+              </tr>
+
+              <!--3rd row-->
+              <tr class="table-head">
+                <!-- Product Column -->
+                <th class="product-column">
+                  <div class="d-flex align-items-center gap-3">
+                    <img
+                      src="./assests/custom-plant/gallery.svg"
+                      alt="Product"
+                      class="product-img p-4"
+                    />
+                    <div class="product-details">
+                      <p class="product-category">
+                        Inverters
+                        <span class="badge required mx-3"> Required</span>
+                      </p>
+                      <p class="product-text">----</p>
+                      <p class="product-text">----</p>
+                    </div>
+                  </div>
+                </th>
+
+                <!-- Quantity Control Column -->
+                <td class="quantity-container">
+                  <div
+                    class="d-flex align-items-center justify-content-center gap-3"
+                  >
+                    <!-- Minus Button -->
+                    <button id="iminus" class="btn">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <!-- Product Quantity -->
+                    <span class="quantity-value">15</span>
+                    <!-- Plus Button -->
+                    <button id="iplus" class="btn">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                </td>
+
+                <!-- Total Price Column -->
+                <td class="total-container">
+                  <span class="total-price">$----</span>
+                </td>
+
+                <!-- Divider Column -->
+                <td class="divider-column">
+                  <div class="divider"></div>
+                </td>
+
+                <!-- Buttons Column -->
+                <td class="button-container">
+                  <button class="choose-btn">Choose</button>
+                </td>
+              </tr>
+              <!--4th-->
+              <tr class="table-head">
+                <!-- Product Column -->
+                <th class="product-column">
+                  <div class="d-flex align-items-center gap-3">
+                    <img
+                      src="./assests/custom-plant/gallery.svg"
+                      alt="Product"
+                      class="product-img p-4"
+                    />
+                    <div class="product-details">
+                      <p class="product-category">
+                        Charge Controllers
+                        <span class="badge required mx-3"> Required</span>
+                      </p>
+                      <p class="product-text">----</p>
+                      <p class="product-text">----</p>
+                    </div>
+                  </div>
+                </th>
+
+                <!-- Quantity Control Column -->
+                <td class="quantity-container">
+                  <div
+                    class="d-flex align-items-center justify-content-center gap-3"
+                  >
+                    <!-- Minus Button -->
+                    <button id="iminus" class="btn">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <!-- Product Quantity -->
+                    <span class="quantity-value">15</span>
+                    <!-- Plus Button -->
+                    <button id="iplus" class="btn">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                </td>
+
+                <!-- Total Price Column -->
+                <td class="total-container">
+                  <span class="total-price">$----</span>
+                </td>
+
+                <!-- Divider Column -->
+                <td class="divider-column">
+                  <div class="divider"></div>
+                </td>
+
+                <!-- Buttons Column -->
+                <td class="button-container">
+                  <button class="choose-btn">Choose</button>
+                </td>
+              </tr>
+              <!--5th-->
+              <tr class="table-head">
+                <!-- Product Column -->
+                <th class="product-column">
+                  <div class="d-flex align-items-center gap-3">
+                    <img
+                      src="./assests/custom-plant/gallery.svg"
+                      alt="Product"
+                      class="product-img p-4"
+                    />
+                    <div class="product-details">
+                      <p class="product-category">
+                        Surge Protection Devices (SPDs)
+                        <span class="badge required mx-3"> Required</span>
+                      </p>
+                      <p class="product-text">----</p>
+                      <p class="product-text">----</p>
+                    </div>
+                  </div>
+                </th>
+
+                <!-- Quantity Control Column -->
+                <td class="quantity-container">
+                  <div
+                    class="d-flex align-items-center justify-content-center gap-3"
+                  >
+                    <!-- Minus Button -->
+                    <button id="iminus" class="btn">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <!-- Product Quantity -->
+                    <span class="quantity-value">15</span>
+                    <!-- Plus Button -->
+                    <button id="iplus" class="btn">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                </td>
+
+                <!-- Total Price Column -->
+                <td class="total-container">
+                  <span class="total-price">$----</span>
+                </td>
+
+                <!-- Divider Column -->
+                <td class="divider-column">
+                  <div class="divider"></div>
+                </td>
+
+                <!-- Buttons Column -->
+                <td class="button-container">
+                  <button class="choose-btn">Choose</button>
+                </td>
+              </tr>
+              <!--6th-->
+              <tr class="table-head">
+                <!-- Product Column -->
+                <th class="product-column">
+                  <div class="d-flex align-items-center gap-3">
+                    <img
+                      src="./assests/custom-plant/gallery.svg"
+                      alt="Product"
+                      class="product-img p-4"
+                    />
+                    <div class="product-details">
+                      <p class="product-category">
+                        Grounding Equipment
+                        <span class="badge required mx-3"> Required</span>
+                      </p>
+                      <p class="product-text">----</p>
+                      <p class="product-text">----</p>
+                    </div>
+                  </div>
+                </th>
+
+                <!-- Quantity Control Column -->
+                <td class="quantity-container">
+                  <div
+                    class="d-flex align-items-center justify-content-center gap-3"
+                  >
+                    <!-- Minus Button -->
+                    <button id="iminus" class="btn">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <!-- Product Quantity -->
+                    <span class="quantity-value">15</span>
+                    <!-- Plus Button -->
+                    <button id="iplus" class="btn">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                </td>
+
+                <!-- Total Price Column -->
+                <td class="total-container">
+                  <span class="total-price">$----</span>
+                </td>
+
+                <!-- Divider Column -->
+                <td class="divider-column">
+                  <div class="divider"></div>
+                </td>
+
+                <!-- Buttons Column -->
+                <td class="button-container">
+                  <button class="choose-btn">Choose</button>
+                </td>
+              </tr>
+              <!--7th-->
+              <tr class="table-head">
+                <!-- Product Column -->
+                <th class="product-column">
+                  <div class="d-flex align-items-center gap-3">
+                    <img
+                      src="./assests/custom-plant/gallery.svg"
+                      alt="Product"
+                      class="product-img p-4"
+                    />
+                    <div class="product-details">
+                      <p class="product-category">
+                        Combiner Boxes
+                        <span class="badge required mx-3"> Required</span>
+                      </p>
+                      <p class="product-text">----</p>
+                      <p class="product-text">----</p>
+                    </div>
+                  </div>
+                </th>
+
+                <!-- Quantity Control Column -->
+                <td class="quantity-container">
+                  <div
+                    class="d-flex align-items-center justify-content-center gap-3"
+                  >
+                    <!-- Minus Button -->
+                    <button id="iminus" class="btn">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <!-- Product Quantity -->
+                    <span class="quantity-value">15</span>
+                    <!-- Plus Button -->
+                    <button id="iplus" class="btn">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                </td>
+
+                <!-- Total Price Column -->
+                <td class="total-container">
+                  <span class="total-price">$----</span>
+                </td>
+
+                <!-- Divider Column -->
+                <td class="divider-column">
+                  <div class="divider"></div>
+                </td>
+
+                <!-- Buttons Column -->
+                <td class="button-container">
+                  <button class="choose-btn">Choose</button>
+                </td>
+              </tr>
+              <!--8th-->
+              <tr class="table-head">
+                <!-- Product Column -->
+                <th class="product-column">
+                  <div class="d-flex align-items-center gap-3">
+                    <img
+                      src="./assests/custom-plant/gallery.svg"
+                      alt="Product"
+                      class="product-img p-4"
+                    />
+                    <div class="product-details">
+                      <p class="product-category">
+                        Monitoring Systems
+                        <span class="badge required mx-3"> Required</span>
+                      </p>
+                      <p class="product-text">----</p>
+                      <p class="product-text">----</p>
+                    </div>
+                  </div>
+                </th>
+
+                <!-- Quantity Control Column -->
+                <td class="quantity-container">
+                  <div
+                    class="d-flex align-items-center justify-content-center gap-3"
+                  >
+                    <!-- Minus Button -->
+                    <button id="iminus" class="btn">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <!-- Product Quantity -->
+                    <span class="quantity-value">15</span>
+                    <!-- Plus Button -->
+                    <button id="iplus" class="btn">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                </td>
+
+                <!-- Total Price Column -->
+                <td class="total-container">
+                  <span class="total-price">$----</span>
+                </td>
+
+                <!-- Divider Column -->
+                <td class="divider-column">
+                  <div class="divider"></div>
+                </td>
+
+                <!-- Buttons Column -->
+                <td class="button-container">
+                  <button class="choose-btn">Choose</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!--plants end-->
+    </section>
+
+    <!--footer start-->
+    <section class="footer">
+      <div class="container mx-auto text-center">
+        <img src="assests/raachLogo.svg" alt="Logo" class="" />
+        <p class="mt-4">
+          At interdum pellentesque odio faucibus. Nibh tempor in id ultricies
+          orci morbi sit mi id. <br />
+          Arcu sed vestibulum liber sed vestibulum liber sed vestibulum .
+        </p>
+
+        <p class="fw-bold">Contact Us</p>
+        <p>
+          <span> <img src="./assests/footer/envelope.svg" alt="" /></span>
+          info@ourhoneybee.eu
+        </p>
+
+        <div>
+          <img src="./assests/footer/Facebook.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/instagram.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/linkedin.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/x.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/other.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/youtube.svg" alt="" class="mx-2" />
+        </div>
+        <hr class="custom-hr" />
+        <div>
+          <p>
+            Copyright © 2024
+            <span class="footer-text"> RAACH Solar </span>
+            <span class="mx-2">Powered by</span>
+            <span class="fw-bold">© 2024 RAACH Solar</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--footer end-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!--calender css-->
+    <link rel="stylesheet" href="css/calender.css" />
+  </head>
+  <body>
+    <!--nav start-->
+    <nav class="navbar navbar-expand-lg nav-background">
+      <div class="container-xxl">
+        <a class="navbar-brand" href="/">
+          <img src="assests/raachLogo.svg" alt="Logo" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse custom-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto text-center">
+            <!-- Always visible nav links -->
+            <li class="nav-item">
+              <a class="nav-link active" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="our_projects.html">Projects</a>
+            </li>
+
+            <!-- Menu Dropdown: Only visible on large devices -->
+            <li class="nav-item dropdown d-none d-lg-block">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Menu
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="about_us.html">About Us</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="build_customer_plant.html"
+                    >Build Custom Plant</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="checkout_details.html"
+                    >Checkout Details</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="company_profile.html"
+                    >Company Profile</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="company_profile_edit.html"
+                    >Company Profile Edit</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="compare_products.html"
+                    >Compare Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="my_cart_empty.html"
+                    >Empty Cart</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="my_cart.html">My Cart</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="my_profile_details.html"
+                    >My Profile Details</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="order_confirmed.html"
+                    >Order Confirmed</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="order_track.html"
+                    >Order Track</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="our_product.html"
+                    >Our Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="product_page.html"
+                    >Product Page</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_add_product.html"
+                    >Vendor Add Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_edit_product.html"
+                    >Vendor Edit Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_profile_details.html"
+                    >Vendor Profile Details</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_login.html"
+                    >Vendor Login</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_signup.html"
+                    >Vendor Signup</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- search-->
+            <li class="nav-item d-none d-lg-block">
+              <form class="search-box">
+                <div class="input-group input-group-sm mt-1">
+                  <span class="input-group-text border-0">
+                    <img src="./assests/header/search.svg" alt="" />
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control border-0 custom-search-input"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </div>
+              </form>
+            </li>
+
+            <!--cart -->
+            <button class="cart-button d-none d-lg-block">
+              <div class="cart-container">
+                <img
+                  src="./assests/header/cart.svg"
+                  alt="Cart Icon"
+                  class="cart-icon"
+                />
+                <span class="cart-count">3</span>
+                <!-- Dynamic cart count -->
+              </div>
+              <span class="mx-2">Cart</span>
+            </button>
+
+            <!-- Expanded menu: visible only on small & medium devices -->
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="about_us.html">About Us</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="build_customer_plant.html"
+                >Build Custom Plant</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="checkout_details.html"
+                >Checkout Details</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="company_profile.html"
+                >Company Profile</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="company_profile_edit.html"
+                >Company Profile Edit</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="compare_products.html"
+                >Compare Product</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="my_cart_empty.html">Empty Cart</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="my_cart.html">My Cart</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="my_profile_details.html"
+                >My Profile Details</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="order_confirmed.html"
+                >Order Confirmed</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="order_track.html">Order Track</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="our_product.html">Our Product</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="product_page.html">Product Page</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_add_product.html"
+                >Vendor Add Product</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_edit_product.html"
+                >Vendor Edit Product</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_profile_details.html"
+                >Vendor Profile Details</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_login.html">Vendor Login</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_signup.html">Vendor Signup</a>
+            </li>
+
+            <!-- search box -->
+            <li class="nav-item d-lg-none d-flex justify-content-center">
+              <form class="search-box">
+                <div class="input-group input-group-sm mt-1">
+                  <span class="input-group-text border-0">
+                    <img src="./assests/header/search.svg" alt="" />
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control border-0 custom-search-input"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </div>
+              </form>
+            </li>
+
+            <!--cart -->
+            <button class="cart-button d-flex justify-content-center d-lg-none">
+              <div class="cart-container">
+                <img
+                  src="./assests/header/cart.svg"
+                  alt="Cart Icon"
+                  class="cart-icon"
+                />
+                <span class="cart-count">3</span>
+                <!-- Dynamic cart count -->
+              </div>
+              <span class="mx-2">Cart</span>
+            </button>
+          </ul>
+
+          <div class="nav-btn-area text-center text-lg-end">
+            <span class="header-user-name">RoroNoa Zoro</span>
+            <img
+              src="./assests/header/propic.svg"
+              class="profile-img-header"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--nav end-->
+
+    <!--headline and calender-->
+    <section class="login-page-background">
+      <div class="about-us-background pt-5 pb-5">
+        <div class="container-xxl">
+          <!--headline-->
+          <div class="text-center">
+            <p class="raach-title">ABOUT US</p>
+            <p class="first-pera">Leading the</p>
+            <p class="second-pera">Solar Revolution</p>
+          </div>
+          <!--buttons-->
+          <div
+            class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3"
+          >
+            <!--1st button-->
+            <button class="btn cube-button">
+              <img src="./assests/home/cube.svg" alt="" />
+              <span>Build Your Custom Plant</span>
+            </button>
+            <!--2nd button-->
+            <button class="btn watch-button">
+              <img src="./assests/home/play.svg" alt="" />
+              <span> Watch a Video</span>
+            </button>
+          </div>
+          <div class="row calender-div mt-5">
+            <div class="col-12 col-md-6 col-lg-6">
+              <div class="calendar-container mt-5">
+                <!-- Meeting Details -->
+                <div class="meeting-details">
+                  <h6>Meeting Details</h6>
+
+                  <hr />
+                  <div class="meeting-item"><span>🕒</span> 10 AM</div>
+                  <div class="meeting-item"><span>⏳</span> 1 Hour</div>
+                  <div class="meeting-item"><span>📍</span> Online</div>
+                  <div class="meeting-item"><span>🌍</span> English</div>
+                </div>
+                <div class="calender-devider"></div>
+
+                <!-- Calendar -->
+                <div class="calendar">
+                  <div class="calendar-header">
+                    <span id="monthYear"></span>
+                    <button id="prevMonth">&lt;</button>
+                    <button id="nextMonth">&gt;</button>
+                  </div>
+                  <div class="weekdays">
+                    <div>Mo</div>
+                    <div>Tu</div>
+                    <div>We</div>
+                    <div>Th</div>
+                    <div>Fr</div>
+                    <div class="weekend">Sa</div>
+                    <div class="weekend">Su</div>
+                  </div>
+                  <div class="calendar-days" id="calendarDays"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-6 mt-5 pb-5 px-4">
+              <p class="first-pera">Get in Touch</p>
+              <p class="first-pera">with Us!</p>
+              <p>
+                Do you have a question or are you ready to start your solar
+                panel design journey with us? Our team of experts is here to
+                assist you every step of the way. Prefer to give us a call? We
+                are here for you.
+              </p>
+              <p>
+                You can reach us at +34 9650 20 262. Or simply start by filling
+                out the contact form here for a personalized panel layout design
+                and full service experience. We always respond within one
+                business day.
+              </p>
+              <button class="btn cube-button">Schedule a Call</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--headline and review section -->
+    <section class="review-background pb-4">
+      <div class="container-xl">
+        <p class="p-5 about-paragraph">
+          At Solarify, our mission is to harness the power of the sun to create
+          sustainable energy solutions for a brighter future. We are committed
+          to innovation and excellence in every product we deliver.
+        </p>
+        <div class="d-flex justify-content-center align-items-center">
+          <img class="w-25" src="./assests/about_us/sign.png" alt="" />
+        </div>
+        <p class="text-center mt-5">
+          <span class="about-headline-bold">RAACH Solar was founded</span>
+          <span class="about-headline"
+            >in 2020 with the vision of making renewable energy accessible to
+            everyone.
+          </span>
+        </p>
+
+        <div class="text-center">
+          <p class="raach-title">REVIEWS</p>
+          <p class="about-headline-bold">Read What Our Satisfied</p>
+          <p class="about-headline-bold">Clients have to Say</p>
+        </div>
+      </div>
+
+      <!-- reviews slide -->
+      <div class="home-service">
+        <div class="container-fluid service-slider-container">
+          <!-- Swiper -->
+          <div style="overflow-x: hidden; margin-top: -80px">
+            <div class="display-half">
+              <div class="swiper service-slider">
+                <div class="swiper-wrapper">
+                  <!-- 1 -->
+                  <div class="card swiper-slide h-100">
+                    <div class="card-content">
+                      <div class="description">
+                        <div class="d-flex align-items-start gap-3">
+                          <div>
+                            <img
+                              class="dp-style"
+                              src="./assests/about_us/dp1.svg"
+                              alt=""
+                            />
+                          </div>
+
+                          <div>
+                            <p class="fw-bold">
+                              Ray Sol <br />
+                              <span class="occupation"> Business Owner</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="d-flex justify-content-center align-items-center mt-3 gap-3"
+                        >
+                          <div class="about-divider"></div>
+                          <div>
+                            <p>
+                              The installation process was seamless and the
+                              support team was fantastic.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="card swiper-slide h-100">
+                    <div class="card-content">
+                      <div class="description">
+                        <div class="d-flex align-items-start gap-3">
+                          <div>
+                            <img
+                              class="dp-style"
+                              src="./assests/about_us/dp2.svg"
+                              alt=""
+                            />
+                          </div>
+
+                          <div>
+                            <p class="fw-bold">
+                              Sunny Fields <br />
+                              <span class="occupation"> Farmer</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="d-flex justify-content-center align-items-center mt-3 gap-3"
+                        >
+                          <div class="about-divider"></div>
+                          <div>
+                            <p>
+                              We've been able to power our entire farm with
+                              Solarify's products. Highly recommend!
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 3 -->
+                  <div class="card swiper-slide h-100">
+                    <div class="card-content">
+                      <div class="description">
+                        <div class="d-flex align-items-start gap-3">
+                          <div>
+                            <img
+                              class="dp-style"
+                              src="./assests/about_us/dp3.svg"
+                              alt=""
+                            />
+                          </div>
+
+                          <div>
+                            <p class="fw-bold">
+                              Dawn Light <br />
+                              <span class="occupation"> Engineer</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="d-flex justify-content-center align-items-center mt-3 gap-3"
+                        >
+                          <div class="about-divider"></div>
+                          <div>
+                            <p>
+                              Excellent quality and performance. Our solar
+                              investment is already paying off.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 4 -->
+                  <div class="card swiper-slide h-100">
+                    <div class="card-content">
+                      <div class="description">
+                        <div class="d-flex align-items-start gap-3">
+                          <div>
+                            <img
+                              class="dp-style"
+                              src="./assests/about_us/dp5.svg"
+                              alt=""
+                            />
+                          </div>
+
+                          <div>
+                            <p class="fw-bold">
+                              Sunny Fields <br />
+                              <span class="occupation"> Farmer</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="d-flex justify-content-center align-items-center mt-3 gap-3"
+                        >
+                          <div class="about-divider"></div>
+                          <div>
+                            <p>
+                              We've been able to power our entire farm with
+                              Solarify's products. Highly recommend!
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 5 -->
+                  <div class="card swiper-slide h-100">
+                    <div class="card-content">
+                      <div class="description">
+                        <div class="d-flex align-items-start gap-3">
+                          <div>
+                            <img
+                              class="dp-style"
+                              src="./assests/about_us/dp5.svg"
+                              alt=""
+                            />
+                          </div>
+
+                          <div>
+                            <p class="fw-bold">
+                              Sol Radiant <br />
+                              <span class="occupation"> Architect</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="d-flex justify-content-center align-items-center mt-3 gap-3"
+                        >
+                          <div class="about-divider"></div>
+                          <div>
+                            <p>
+                              Solarify has been a game-changer for our energy
+                              needs. Outstanding service and products.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 6 -->
+                  <div class="card swiper-slide h-100">
+                    <div class="card-content">
+                      <div class="description">
+                        <div class="d-flex align-items-start gap-3">
+                          <div>
+                            <img
+                              class="dp-style"
+                              src="./assests/about_us/dp3.svg"
+                              alt=""
+                            />
+                          </div>
+
+                          <div>
+                            <p class="fw-bold">
+                              Dawn Light <br />
+                              <span class="occupation"> Engineer</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="d-flex justify-content-center align-items-center mt-3 gap-3"
+                        >
+                          <div class="about-divider"></div>
+                          <div>
+                            <p>
+                              Excellent quality and performance. Our solar
+                              investment is already paying off.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 7 -->
+                  <div class="card swiper-slide h-100">
+                    <div class="card-content">
+                      <div class="description">
+                        <div class="d-flex align-items-start gap-3">
+                          <div>
+                            <img
+                              class="dp-style"
+                              src="./assests/about_us/dp1.svg"
+                              alt=""
+                            />
+                          </div>
+
+                          <div>
+                            <p class="fw-bold">
+                              Ray Sol <br />
+                              <span class="occupation"> Business Owner</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="d-flex justify-content-center align-items-center mt-3 gap-3"
+                        >
+                          <div class="about-divider"></div>
+                          <div>
+                            <p>
+                              The installation process was seamless and the
+                              support team was fantastic.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 8 -->
+                  <div class="card swiper-slide h-100">
+                    <div class="card-content">
+                      <div class="description">
+                        <div class="d-flex align-items-start gap-3">
+                          <div>
+                            <img
+                              class="dp-style"
+                              src="./assests/about_us/dp3.svg"
+                              alt=""
+                            />
+                          </div>
+
+                          <div>
+                            <p class="fw-bold">
+                              Dawn Light <br />
+                              <span class="occupation"> Engineer</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="d-flex justify-content-center align-items-center mt-3 gap-3"
+                        >
+                          <div class="about-divider"></div>
+                          <div>
+                            <p>
+                              Excellent quality and performance. Our solar
+                              investment is already paying off.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- reviews slide end -->
+    </section>
+
+    <!--footer start-->
+    <section class="footer">
+      <div class="container mx-auto text-center">
+        <img src="assests/raachLogo.svg" alt="Logo" class="" />
+        <p class="mt-4">
+          At interdum pellentesque odio faucibus. Nibh tempor in id ultricies
+          orci morbi sit mi id. <br />
+          Arcu sed vestibulum liber sed vestibulum liber sed vestibulum .
+        </p>
+
+        <p class="fw-bold">Contact Us</p>
+        <p>
+          <span> <img src="./assests/footer/envelope.svg" alt="" /></span>
+          info@ourhoneybee.eu
+        </p>
+
+        <div>
+          <img src="./assests/footer/Facebook.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/instagram.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/linkedin.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/x.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/other.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/youtube.svg" alt="" class="mx-2" />
+        </div>
+        <hr class="custom-hr" />
+        <div>
+          <p>
+            Copyright © 2024
+            <span class="footer-text"> RAACH Solar </span>
+            <span class="mx-2">Powered by</span>
+            <span class="fw-bold">© 2024 RAACH Solar</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--footer end-->
+
+    <script src="js/calender.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

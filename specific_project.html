@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RAACH Solar</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/parallax.css" />
+  </head>
+  <body>
+    <!--nav start-->
+    <nav class="navbar navbar-expand-lg nav-background">
+      <div class="container-xxl">
+        <a class="navbar-brand" href="/">
+          <img src="assests/raachLogo.svg" alt="Logo" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse custom-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto text-center">
+            <!-- Always visible nav links -->
+            <li class="nav-item">
+              <a class="nav-link active" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="our_projects.html">Projects</a>
+            </li>
+
+            <!-- Menu Dropdown: Only visible on large devices -->
+            <li class="nav-item dropdown d-none d-lg-block">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Menu
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="about_us.html">About Us</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="build_customer_plant.html"
+                    >Build Custom Plant</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="checkout_details.html"
+                    >Checkout Details</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="company_profile.html"
+                    >Company Profile</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="company_profile_edit.html"
+                    >Company Profile Edit</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="compare_products.html"
+                    >Compare Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="my_cart_empty.html"
+                    >Empty Cart</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="my_cart.html">My Cart</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="my_profile_details.html"
+                    >My Profile Details</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="order_confirmed.html"
+                    >Order Confirmed</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="order_track.html"
+                    >Order Track</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="our_product.html"
+                    >Our Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="product_page.html"
+                    >Product Page</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_add_product.html"
+                    >Vendor Add Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_edit_product.html"
+                    >Vendor Edit Product</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_profile_details.html"
+                    >Vendor Profile Details</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_login.html"
+                    >Vendor Login</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="vendor_signup.html"
+                    >Vendor Signup</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- search-->
+            <li class="nav-item d-none d-lg-block">
+              <form class="search-box">
+                <div class="input-group input-group-sm mt-1">
+                  <span class="input-group-text border-0">
+                    <img src="./assests/header/search.svg" alt="" />
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control border-0 custom-search-input"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </div>
+              </form>
+            </li>
+
+            <!--cart -->
+            <button class="cart-button d-none d-lg-block">
+              <div class="cart-container">
+                <img
+                  src="./assests/header/cart.svg"
+                  alt="Cart Icon"
+                  class="cart-icon"
+                />
+                <span class="cart-count">3</span>
+                <!-- Dynamic cart count -->
+              </div>
+              <span class="mx-2">Cart</span>
+            </button>
+
+            <!-- Expanded menu: visible only on small & medium devices -->
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="about_us.html">About Us</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="build_customer_plant.html"
+                >Build Custom Plant</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="checkout_details.html"
+                >Checkout Details</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="company_profile.html"
+                >Company Profile</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="company_profile_edit.html"
+                >Company Profile Edit</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="compare_products.html"
+                >Compare Product</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="my_cart_empty.html">Empty Cart</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="my_cart.html">My Cart</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="my_profile_details.html"
+                >My Profile Details</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="order_confirmed.html"
+                >Order Confirmed</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="order_track.html">Order Track</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="our_product.html">Our Product</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="product_page.html">Product Page</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_add_product.html"
+                >Vendor Add Product</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_edit_product.html"
+                >Vendor Edit Product</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_profile_details.html"
+                >Vendor Profile Details</a
+              >
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_login.html">Vendor Login</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="vendor_signup.html">Vendor Signup</a>
+            </li>
+
+            <!-- search box -->
+            <li class="nav-item d-lg-none d-flex justify-content-center">
+              <form class="search-box">
+                <div class="input-group input-group-sm mt-1">
+                  <span class="input-group-text border-0">
+                    <img src="./assests/header/search.svg" alt="" />
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control border-0 custom-search-input"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </div>
+              </form>
+            </li>
+
+            <!--cart -->
+            <button class="cart-button d-flex justify-content-center d-lg-none">
+              <div class="cart-container">
+                <img
+                  src="./assests/header/cart.svg"
+                  alt="Cart Icon"
+                  class="cart-icon"
+                />
+                <span class="cart-count">3</span>
+                <!-- Dynamic cart count -->
+              </div>
+              <span class="mx-2">Cart</span>
+            </button>
+          </ul>
+
+          <div class="nav-btn-area text-center text-lg-end">
+            <span class="header-user-name">RoroNoa Zoro</span>
+            <img
+              src="./assests/header/propic.svg"
+              class="profile-img-header"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--nav end-->
+
+    <section class="project-bg pb-5">
+      <div class="text-center pt-5 pb-4">
+        <p class="raach-title">Our Projects</p>
+        <p class="first-pera">Discover Our Engaging</p>
+        <p class="first-pera">and Exciting Projects</p>
+      </div>
+      <!-- Parallax Section -->
+      <div class="container-xxl">
+        <!--parallax 1-->
+        <div class="mb-4">
+          <div class="parallax">
+            <div class="image-container">
+              <img
+                class="w-100"
+                src="./assests/our_project/project1.svg"
+                alt=""
+              />
+              <div class="overlay"></div>
+            </div>
+
+            <div class="info">
+              <div class="banner">
+                <div class="top-left d-flex gap-2">
+                  <div class="top-left d-flex gap-2">
+                    <div
+                      class="flash-div1 gap-2 d-flex justify-content-center align-items-center"
+                    >
+                      <img
+                        class="icon"
+                        src="./assests/our_project/flash.svg"
+                        alt=""
+                      />
+
+                      <p class="p-text mt-3">50 MWp</p>
+                    </div>
+                    <div
+                      class="flash-div gap-2 d-flex justify-content-center align-items-center"
+                    >
+                      <img
+                        class="icon"
+                        src="./assests/our_project/calendar-tick.svg"
+                        alt=""
+                      />
+
+                      <p class="p-text mt-3">January 2024</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="centered-bottom">
+                    <h3 class="parallax-text">
+                      Solar Park by HETAT-DITROLIC-IFDC <br />
+                      Solar Consortium <br />
+                      <span
+                        class="gap-2 d-flex justify-content-center align-items-center"
+                      >
+                        <img
+                          class="icon"
+                          src="./assests/our_project/map-pin.svg"
+                          alt=""
+                        />
+                        <p class="p-text mt-3 text-white">
+                          Gauripur, Mymensingh
+                        </p>
+                      </span>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--text-->
+          <div class="mt-5 mb-5 custom-container">
+            <div class="row">
+              <div class="col-lg-7 col-md-7 col-12 mb-4 pr-5">
+                <h3>Overview</h3>
+                <p>
+                  In January 2024, we completed a major solar project in
+                  Gauripur, Mymensingh, with a capacity of 50 megawatts (MW).
+                  This initiative is a significant step towards renewable
+                  energy. The solar farm uses advanced photovoltaic technology
+                  to harness sunlight efficiently. High-efficiency solar panels
+                  convert sunlight into electricity, powering thousands of homes
+                  and businesses while reducing fossil fuel reliance. This
+                  project also creates jobs and lowers electricity costs for
+                  residents. This project showcases our commitment to innovation
+                  and environmental stewardship, paving the way for a cleaner
+                  future for Gauripur.
+                </p>
+              </div>
+              <div class="col-lg-5 col-md-7 col-12">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-12">
+                    <div>
+                      <h3>Client</h3>
+                      <p>BPDB</p>
+                    </div>
+                    <!--power-->
+                    <div class="mt-5">
+                      <h3>Power</h3>
+                      <p>50 MW</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-12">
+                    <!--Duration-->
+                    <div>
+                      <h3>Duration</h3>
+                      <p>3 Months</p>
+                    </div>
+                    <!--location-->
+                    <div class="mt-5">
+                      <h3>Location</h3>
+                      <p>Gauripur, Mymensingh</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--parallax 2-->
+        <div class="mb-4">
+          <div class="parallax">
+            <div class="image-container">
+              <img
+                class="w-100"
+                src="./assests/our_project/project2.svg"
+                alt=""
+              />
+              <div class="overlay"></div>
+            </div>
+          </div>
+          <div class="mt-5 mb-5 custom-container">
+            <h3 class="mb-4">Challenges We Faced</h3>
+            <p>
+              Installing solar panels in Gauripur, Mymensingh can be both
+              rewarding and challenging. A major hurdle is obtaining the
+              necessary permits and approvals from local authorities, which can
+              take time. Choosing the right spot for installation is also key;
+              it should receive plenty of sunlight throughout the year and be
+              free from shade caused by trees or buildings. Financial
+              considerations are another challenge; although solar energy can
+              lead to savings over time, the upfront costs can be quite high.
+              Homeowners often find it difficult to navigate the various
+              financing options available, including loans, leases, or power
+              purchase agreements.
+            </p>
+            <p>
+              Furthermore, the installation process demands skilled labor to
+              ensure the panels are securely and correctly mounted. This
+              expertise may be hard to find in some regions, causing potential
+              delays. Weather can also be a factor; rain, snow, or extreme heat
+              can interrupt the installation timeline. Once the panels are up,
+              regular maintenance is crucial to keep them functioning
+              efficiently, which may require additional time and resources.
+            </p>
+            <p>
+              Finally, raising awareness in the community about the advantages
+              of solar energy is essential. Many individuals might still doubt
+              its effectiveness or have misconceptions regarding its costs.
+              Addressing these challenges is vital for the broader acceptance of
+              solar technology and for advancing towards a sustainable energy
+              future.
+            </p>
+          </div>
+        </div>
+
+        <!--parallax 3-->
+        <div class="mb-4">
+          <div class="parallax">
+            <div class="image-container">
+              <img
+                class="w-100"
+                src="./assests/specific_project/part3.svg"
+                alt=""
+              />
+              <div class=""></div>
+            </div>
+          </div>
+
+          <div class="mt-5 mb-5 custom-container">
+            <h3 class="mb-4">Solution</h3>
+            <p>
+              To tackle the challenges of installing solar panels in Gauripur,
+              Mymensingh, we devised several solutions. First, we established a
+              streamlined process for obtaining permits and approvals,
+              collaborating closely with local authorities to expedite the
+              timeline. We also created a guide to help homeowners identify
+              optimal installation sites, emphasizing the importance of sunlight
+              exposure and minimizing shade from nearby structures.
+            </p>
+
+            <p>
+              To address financial concerns, we partnered with local banks to
+              offer tailored financing options that cater to various budgets,
+              including low-interest loans and flexible lease agreements. This
+              initiative aims to make solar energy more accessible and
+              affordable for everyone.
+            </p>
+
+            <p>
+              Recognizing the need for skilled labor, we initiated training
+              programs for local technicians, ensuring they are equipped with
+              the necessary skills for proper installation. This not only
+              reduces delays but also fosters job creation within the community.
+            </p>
+            <p>
+              To mitigate weather-related interruptions, we developed a
+              contingency plan that includes scheduling installations during
+              favorable seasons and providing weather-related updates to
+              homeowners.
+            </p>
+            <p>
+              Lastly, we launched a community outreach campaign to educate
+              residents about the benefits of solar energy. This includes
+              workshops, informational brochures, and testimonials from
+              satisfied customers to dispel myths and encourage adoption. By
+              addressing these key areas, we aim to promote the widespread
+              acceptance of solar technology and contribute to a sustainable
+              energy future.
+            </p>
+          </div>
+        </div>
+
+        <!--parallax 4-->
+        <div>
+          <div class="parallax">
+            <div class="image-container">
+              <img
+                class="w-100"
+                src="./assests/specific_project/part4.svg"
+                alt=""
+              />
+              <div class=""></div>
+            </div>
+          </div>
+          <div class="mt-5 mb-5 custom-container">
+            <h3 class="mb-4">Result</h3>
+            <p>
+              In conclusion, our comprehensive approach to solar panel
+              installation in Gauripur, Mymensingh, has laid a solid foundation
+              for a sustainable energy future. By streamlining the permit
+              process, offering flexible financing, and training local
+              technicians, we have not only made solar energy more accessible
+              but also empowered the community. Our proactive measures to
+              address weather challenges and our commitment to educating
+              residents have further strengthened our initiative. Together, we
+              are paving the way for a greener tomorrow, ensuring that everyone
+              can benefit from the advantages of solar technology.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--parallax end-->
+
+      <!--img album-->
+      <div class="container my-4 mt-5">
+        <div class="row g-4">
+          <div class="col-12 col-md-6">
+            <img
+              src="./assests/specific_project/p1.svg"
+              class="img-fluid w-100"
+              alt="Image 1"
+            />
+          </div>
+          <div class="col-12 col-md-6">
+            <img
+              src="./assests/specific_project/p2.svg"
+              class="img-fluid w-100"
+              alt="Image 2"
+            />
+          </div>
+          <div class="col-12 col-md-6">
+            <img
+              src="./assests/specific_project/p3.svg"
+              class="img-fluid w-100"
+              alt="Image 3"
+            />
+          </div>
+          <div class="col-12 col-md-6">
+            <img
+              src="./assests/specific_project/p4.svg"
+              class="img-fluid w-100"
+              alt="Image 4"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--footer start-->
+    <section class="footer">
+      <div class="container mx-auto text-center">
+        <img src="assests/raachLogo.svg" alt="Logo" class="" />
+        <p class="mt-4">
+          At interdum pellentesque odio faucibus. Nibh tempor in id ultricies
+          orci morbi sit mi id. <br />
+          Arcu sed vestibulum liber sed vestibulum liber sed vestibulum .
+        </p>
+
+        <p class="fw-bold">Contact Us</p>
+        <p>
+          <span> <img src="./assests/footer/envelope.svg" alt="" /></span>
+          info@ourhoneybee.eu
+        </p>
+
+        <div>
+          <img src="./assests/footer/Facebook.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/instagram.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/linkedin.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/x.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/other.svg" alt="" class="mx-2" />
+          <img src="./assests/footer/youtube.svg" alt="" class="mx-2" />
+        </div>
+        <hr class="custom-hr" />
+        <div>
+          <p>
+            Copyright © 2024
+            <span class="footer-text"> RAACH Solar </span>
+            <span class="mx-2">Powered by</span>
+            <span class="fw-bold">© 2024 RAACH Solar</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--footer end-->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
