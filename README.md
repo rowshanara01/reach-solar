@@ -55,7 +55,7 @@ project-name/
 
    ```bash
    cd your-repo-name
-   ```
+   ``
 
 3. Open `index.html` in your browser, or use the **Live Server** extension in VS Code for automatic reload while editing.
 
